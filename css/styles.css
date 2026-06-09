@@ -1,0 +1,733 @@
+/* ---------------------------------------------------------
+    * Name: Jobko
+    * Version: 1.0.1
+    * Author: Themesflat
+    * Author URI: http://themesflat.com 
+
+	* Abstracts variable
+
+    * Reset css styles
+
+    * Settings
+
+    * Components
+        * alert
+        * avatar
+        * badge
+        * button
+        * card
+        * carousel
+        * chart
+        * dropdown
+        * form
+        * header
+        * modal
+        * preloader
+        * progressbar
+        * radio button
+        * range slider
+        * spinner
+        * stepper
+        * switch
+        * tabs
+
+    * widget
+
+/*--------- Abstracts variable ---------- */
+:root {
+  --font-main-family: "Kumbh Sans", sans-serif;
+  --text-headline: #111827;
+  --text-headline2: #222222;
+  --text-base: #334155;
+  --text-white: #ffffff;
+  --primary-dark: #032D81;
+  --primary-base: #0053F6;
+  --primary-light: #F7FAFF;
+  --slate-50: #F8FAFC;
+  --slate-100: #F1F5F9;
+  --slate-200: #E2E8F0;
+  --slate-300: #CBD5E1;
+  --slate-400: #758192;
+  --slate-500: #64748B;
+  --slate-600: #475569;
+  --slate-700: #334155;
+  --slate-800: #1E293B;
+  --slate-900: #0F172A;
+  --success-dark: #16A34A;
+  --success-base: #22C55E;
+  --success-light: #4ADE80;
+  --warning-dark: #EAB308;
+  --warning-base: #FACC15;
+  --warning-light: #FDE047;
+  --error-dark: #DD3333;
+  --error-base: #FF4747;
+  --error-light: #FF7171;
+  --shadow: 2px 5px 40px 0px #4048570F;
+}
+
+/*---------- Reset css styles ----------- */
+/* ---------------------------------------------------------
+    * Name: Jobko
+    * Version: 1.0.1
+    * Author: Themesflat
+    * Author URI: http://themesflat.com 
+
+	* Abstracts variable
+
+    * Reset css styles
+
+    * Settings
+
+    * Components
+        * alert
+        * avatar
+        * badge
+        * button
+        * card
+        * carousel
+        * chart
+        * dropdown
+        * form
+        * header
+        * modal
+        * preloader
+        * progressbar
+        * radio button
+        * range slider
+        * spinner
+        * stepper
+        * switch
+        * tabs
+
+    * widget
+
+/*--------- Abstracts variable ---------- */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+caption,
+canvas,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+dialog,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+form,
+footer,
+header,
+hgroup,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+tt,
+table,
+tbody,
+textarea,
+tfoot,
+thead,
+time,
+tr,
+th,
+td,
+u,
+ul,
+var,
+video {
+  font-size: 100%;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  quotes: none;
+}
+
+figure {
+  margin: 0;
+}
+
+:focus {
+  outline: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+}
+
+legend {
+  white-space: normal;
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  max-width: 100%;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+button,
+input {
+  line-height: normal;
+}
+
+button,
+input[type=button],
+input[type=reset],
+input[type=submit] {
+  line-height: 1;
+  cursor: pointer;
+  /* Improves usability and consistency of cursor style between image-type 'input' and others */
+  -webkit-appearance: button;
+  /* Corrects inability to style clickable 'input' types in iOS */
+}
+
+input[type=checkbox],
+input[type=radio] {
+  padding: 0;
+  /* Addresses excess padding in IE8/9 */
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  /* Addresses appearance set to searchfield in S5, Chrome */
+}
+
+input[type=search]::-webkit-search-decoration {
+  /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
+  -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+  border: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Repeatable Patterns
+  -------------------------------------------------------------- */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main-family);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  background-color: var(--text-white);
+  width: 100%;
+  height: 100%;
+  font-style: normal;
+  font-optical-sizing: auto;
+  color: var(--text-base);
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: inherit;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+a:hover, a:focus, a.active {
+  text-decoration: none;
+  outline: none;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+h1,
+.h1 {
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+h2,
+.h2 {
+  font-size: 24px;
+  line-height: 100%;
+}
+
+h3,
+.h3 {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+h4,
+.h4 {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+h5,
+.h5 {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+h6,
+.h6 {
+  font-size: 16px;
+  line-height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-headline);
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+button,
+input[type=button],
+input[type=reset],
+input[type=submit] {
+  padding: 16px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: var(--text-base);
+  background-color: transparent;
+  width: 100%;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+select,
+textarea,
+input[type=text],
+input[type=password],
+input[type=datetime],
+input[type=datetime-local],
+input[type=date],
+input[type=month],
+input[type=time],
+input[type=week],
+input[type=number],
+input[type=email],
+input[type=url],
+input[type=search],
+input[type=tel],
+input[type=color] {
+  width: 100%;
+  font-size: 14px;
+  line-height: 100%;
+  padding: 15px 16px;
+  font-weight: 400;
+  border-radius: 8px;
+  border: 1.5px solid var(--slate-100);
+  color: var(--black);
+  background-color: var(--slate-50);
+  color: var(--text-base);
+}
+
+textarea {
+  height: 135px;
+  resize: none;
+}
+
+form label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--secondary);
+  margin-bottom: 8px;
+}
+
+textarea:focus,
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=datetime]:focus,
+input[type=datetime-local]:focus,
+input[type=date]:focus,
+input[type=month]:focus,
+input[type=time]:focus,
+input[type=week]:focus,
+input[type=number]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=tel]:focus,
+input[type=color]:focus {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+textarea::placeholder,
+input::placeholder {
+  color: var(--slate-400);
+}
+
+textarea,
+input[type=text],
+input[type=submit],
+input[type=password],
+input[type=datetime],
+input[type=datetime-local],
+input[type=date],
+input[type=month],
+input[type=time],
+input[type=week],
+input[type=number],
+input[type=email],
+input[type=url],
+input[type=search],
+input[type=tel],
+input[type=color] {
+  -webkit-appearance: none;
+  text-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+
+dl dt {
+  font-size: 16px;
+  line-height: 22.4px;
+  font-weight: 700;
+}
+
+code {
+  color: var(--blue-btn);
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -ms-appearance: none;
+}
+
+.page-width {
+  max-width: 1024px;
+  margin-inline: auto;
+  padding-inline: 20px;
+  width: 100%;
+}
+
+.bg-primary-dark {
+  background-color: var(--primary-dark);
+}
+
+.icon-arrow-down {
+  width: 10px;
+  height: 5px;
+}
+
+.icon-bell {
+  width: 24px;
+  height: 24px;
+}
+
+.icon-search {
+  width: 20px;
+  height: 20px;
+}
+
+.header-bg {
+  padding-top: 10px;
+  padding-bottom: 46px;
+  color: var(--text-white);
+}
+.header-bg .inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.header-bg .box-user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.header-bg .box-user .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.header-bg .box-user img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.header-bg .box-user .info {
+  display: grid;
+  gap: 4px;
+}
+.header-bg .box-user .name {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 100%;
+}
+.header-bg .box-user .address {
+  font-size: 11px;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.header-bg .box-noti {
+  position: relative;
+}
+.header-bg .box-noti .qty {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--warning-base);
+  top: 0;
+  right: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9px;
+  font-weight: 500;
+  color: var(--text-headline);
+}
+
+/*------------ Components ---------------- */
+/*------------ header ---------------- */
+/* ---------------------------------------------------------
+    * Name: Jobko
+    * Version: 1.0.1
+    * Author: Themesflat
+    * Author URI: http://themesflat.com 
+
+	* Abstracts variable
+
+    * Reset css styles
+
+    * Settings
+
+    * Components
+        * alert
+        * avatar
+        * badge
+        * button
+        * card
+        * carousel
+        * chart
+        * dropdown
+        * form
+        * header
+        * modal
+        * preloader
+        * progressbar
+        * radio button
+        * range slider
+        * spinner
+        * stepper
+        * switch
+        * tabs
+
+    * widget
+
+/*--------- Abstracts variable ---------- */
+.form-search {
+  position: relative;
+}
+.form-search .icon-search {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--slate-400);
+}
+.form-search input {
+  padding: 16px 12px;
+  padding-left: 44px;
+  border-radius: 99px;
+  background-color: var(--text-white);
+  border: none;
+  box-shadow: var(--shadow);
+  font-size: 12px;
+  line-height: 100%;
+}
+
+.box-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  color: var(--text-headline2);
+  margin-bottom: 12px;
+}
+.box-title .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: -1%;
+}
+.box-title .btn-view {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.5%;
+}
+
+.form-search_home {
+  margin-top: -22px;
+}
+
+/*# sourceMappingURL=styles.css.map */

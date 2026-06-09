@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+
+  <symbol id="cart" viewBox="0 0 24 24">
+    <path d="..." fill="currentColor" />
+  </symbol>
+
+  <symbol id="bell" viewBox="0 0 24 24">
+    <path fill="none" d="M15.5 18C15.5 19.933 13.933 21.5 12 21.5C10.067 21.5 8.5 19.933 8.5 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path fill="none" d="M19.2311 18H4.76887C3.79195 18 3 17.208 3 16.2311C3 15.762 3.18636 15.3121 3.51809 14.9803L4.12132 14.3771C4.68393 13.8145 5 13.0514 5 12.2558V9.5C5 5.63401 8.13401 2.5 12 2.5C15.866 2.5 19 5.634 19 9.5V12.2558C19 13.0514 19.3161 13.8145 19.8787 14.3771L20.4819 14.9803C20.8136 15.3121 21 15.762 21 16.2311C21 17.208 20.208 18 19.2311 18Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+
+  <symbol id="arrow-down" viewBox="0 0 10 5">
+    <path
+      d="M8.625 0.625L4.625 3.825L0.625 0.624999"
+      stroke="currentColor"
+      fill="none"
+      stroke-width="1.25"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </symbol>
+
+  <symbol id="search" viewBox="0 0 20 20">
+    <path fill="none" d="M12.5 12.5L13.75 13.75" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+    <path fill="none" d="M14.1111 15.8543C13.6296 15.3729 13.6296 14.5924 14.1111 14.1111C14.5924 13.6296 15.3729 13.6296 15.8543 14.1111L17.5556 15.8123C18.037 16.2937 18.037 17.0742 17.5556 17.5556C17.0742 18.037 16.2937 18.037 15.8123 17.5556L14.1111 15.8543Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+    <path fill="none" d="M13.7497 7.91683C13.7497 4.69517 11.138 2.0835 7.91634 2.0835C4.69468 2.0835 2.08301 4.69517 2.08301 7.91683C2.08301 11.1385 4.69468 13.7502 7.91634 13.7502C11.138 13.7502 13.7497 11.1385 13.7497 7.91683Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+
+</svg>

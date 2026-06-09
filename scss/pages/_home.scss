@@ -1,0 +1,45 @@
+@use "../abstracts/index" as *;
+
+.form-search {
+  position: relative;
+  .icon-search{
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--slate-400);
+  }
+  input{
+    padding: 16px 12px;
+    padding-left: 44px;
+    border-radius: 99px;
+    background-color: var(--text-white);
+    border: none;
+    box-shadow: var(--shadow);
+    font-size: 12px;
+    line-height: 100%;
+  }
+}
+.box-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  color: var(--text-headline2);
+  margin-bottom: 12px;
+  .title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -1%;
+  }
+  .btn-view{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.5%;
+  }
+}
+.form-search_home{
+  margin-top: -22px;
+}
