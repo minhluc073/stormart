@@ -584,6 +584,14 @@ select {
   height: 20px;
 }
 
+.spacing-1 {
+  padding-block: 20px;
+}
+
+.spacing-2 {
+  padding-block: 16px;
+}
+
 .header-bg {
   padding-top: 10px;
   padding-bottom: 46px;
