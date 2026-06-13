@@ -2,37 +2,39 @@
 :root {
   --font-main-family: "Kumbh Sans", sans-serif;
 
-  --text-headline: #111827;
-  --text-headline2: #222222;
-  --text-base: #334155;
-  --text-white: #ffffff;
+  --text-headline: 17, 24, 39;
+  --text-headline2: 34, 34, 34;
+  --text-base: 51, 65, 85;
+  --text-white: 255, 255, 255;
 
-  --primary-dark: #032D81;
-  --primary-base: #0053F6;
-  --primary-light: #F7FAFF;
+  --primary-dark: 3, 45, 129;
+  --primary-base: 0, 83, 246;
+  --primary-light: 7, 250, 255;
 
-  --slate-50: #F8FAFC;
-  --slate-100: #F1F5F9;
-  --slate-200: #E2E8F0;
-  --slate-300: #CBD5E1;
-  --slate-400: #758192;
-  --slate-500: #64748B;
-  --slate-600: #475569;
-  --slate-700: #334155;
-  --slate-800: #1E293B;
-  --slate-900: #0F172A;
+  --slate-50: 248, 250, 252;
+  --slate-100: 241, 245, 249;
+  --slate-200: 226, 232, 240;
+  --slate-300: 203, 213, 225;
+  --slate-400: 117, 129, 146;
+  --slate-500: 100, 116, 139;
+  --slate-600: 71, 85, 105;
+  --slate-700: 51, 65, 85;
+  --slate-800: 30, 41, 59;
+  --slate-900: 15, 23, 42;
 
-  --success-dark: #16A34A;
-  --success-base: #22C55E;
-  --success-light: #4ADE80;
+  --gray-400: 156, 163, 175;
 
-  --warning-dark: #EAB308;
-  --warning-base: #FACC15;
-  --warning-light: #FDE047;
+  --success-dark: 22, 163, 74;
+  --success-base: 34, 197, 94;
+  --success-light: 74, 222, 128;
 
-  --error-dark: #DD3333;
-  --error-base: #FF4747;
-  --error-light: #FF7171;
+  --warning-dark: 234, 179, 8;
+  --warning-base: 250, 204, 21;
+  --warning-light: 253, 224, 71;
+
+  --error-dark: 221, 51, 51;
+  --error-base: 255, 71, 71;
+  --error-light: 255, 113, 113;
 
   --shadow: 2px 5px 40px 0px #4048570F;
 
