@@ -64,6 +64,7 @@
   --error-base: 255, 71, 71;
   --error-light: 255, 113, 113;
   --shadow: 2px 5px 40px 0px #4048570F;
+  --gradient-1: linear-gradient(180deg, #F8FFD8 0%, #FFFFFF 19.75%);
 }
 
 /*---------- Reset css styles ----------- */
@@ -606,6 +607,10 @@ select {
   padding-block: 8px;
 }
 
+.spacing-4 {
+  padding-block: 12px;
+}
+
 .sw-overRight {
   margin-right: -20px;
   padding-right: 20px;
@@ -662,6 +667,14 @@ select {
 
 .swiper .pagination-bullets {
   caret-color: transparent !important;
+}
+
+.bg-error-base_rgba {
+  background-color: rgba(var(--error-base), 0.12);
+}
+
+.bg-gradient-1 {
+  background: var(--gradient-1);
 }
 
 /*------------ Components ---------------- */

@@ -489,6 +489,10 @@ select {
 .spacing-3 {
   padding-block: 8px;
 }
+.spacing-4 {
+  padding-block: 12px;
+}
+
 .sw-overRight {
   margin-right: -20px;
   padding-right: 20px;
@@ -540,4 +544,11 @@ select {
 }
 .swiper .pagination-bullets {
   caret-color: transparent !important;
+}
+
+.bg-error-base_rgba{
+  background-color: rgba(var(--error-base), .12);
+}
+.bg-gradient-1{
+  background: var(--gradient-1);
 }
