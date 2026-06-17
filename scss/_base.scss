@@ -479,6 +479,16 @@ select {
   height: 18px;
   color: rgb(var(--warning-base));
 }
+.icon-badgeCheck{
+  width: 14px;
+  height: 14px;
+  color: #2196F3;
+}
+ .icon-hanger{
+  width: 16px;
+  height: 16px;
+  color: rgb(var(--error-base));
+ }
 
 .spacing-1 {
   padding-block: 20px;
