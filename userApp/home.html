@@ -58,7 +58,7 @@
       </svg>
     </form>
   </div>
-
+  
   <section class="spacing-1 pb-0">
     <div class="page-width">
       <div class="box-title">
@@ -325,13 +325,18 @@
   <section class="spacing-2 bg-error-base_rgba">
     <div class="page-width">
       <div class="box-title">
-        <h3 class="title">Popular Items</h3>
-        <a href="all-products.html" class="btn-view">See more</a>
+        <img class="img-sale" src="../images/user/flash-sale.png" alt="">
+        <div class="box-sale">
+          <span class="text-sale">Ends in</span>
+          <span class="js-countdown" data-timer="29559" data-labels=",:,:,"></span></span>
+        </div>
+        <div class="pagination-popular pagination-bullets style-2"></div>
       </div>
       <div dir="ltr" class="swiper tf-swiper" data-swiper='{
           "slidesPerView": 3,
           "spaceBetween": 12,
-          "speed": 800
+          "speed": 800,
+          "pagination": { "el": ".pagination-popular", "clickable": true }
         }'>
         <div class="swiper-wrapper">
           <!-- item 1 -->
@@ -547,7 +552,7 @@
               </div>
             </div>
           </div>
- 
+
           <!-- <div class="swiper-slide">
             <div class="card-seller">
               <a href="seller-detail.html" class="card-seller_img">
@@ -764,6 +769,52 @@
       </div>
     </div>
   </section>
+
+  <div class="menubar-footer">
+    <div class="inner-bar">
+      <a href="index.html" class="item active">
+        <svg class="icon-home icon">
+          <use href="../icon/sprite.svg#home"></use>
+        </svg>
+        <svg class="icon-homeFill icon-active">
+          <use href="../icon/sprite.svg#homeFill"></use>
+        </svg>
+        Home
+      </a>
+      <a href="#" class="item">
+        <svg class="icon-mess icon">
+          <use href="../icon/sprite.svg#message"></use>
+        </svg>
+        <svg class="icon-messFill icon-active">
+          <use href="../icon/sprite.svg#messageFill"></use>
+        </svg>
+        Message
+      </a>
+      <a href="#" class="item addcart">
+        <svg class="icon-cart">
+          <use href="../icon/sprite.svg#cart"></use>
+        </svg>
+      </a>
+      <a href="message.html" class="item">
+        <svg class="icon-hearth icon">
+          <use href="../icon/sprite.svg#hearth"></use>
+        </svg>
+        <svg class="icon-hearthFill icon-active">
+          <use href="../icon/sprite.svg#hearthFill"></use>
+        </svg>
+        Favorites
+      </a>
+      <a href="profile.html" class="item">
+        <svg class="icon-user icon">
+          <use href="../icon/sprite.svg#user"></use>
+        </svg>
+        <svg class="icon-userFill icon-active">
+          <use href="../icon/sprite.svg#userFill"></use>
+        </svg>
+        Profile
+      </a>
+    </div>
+  </div>
 
 
   <script type="text/javascript" src="../js/bootstrap.min.js"></script>

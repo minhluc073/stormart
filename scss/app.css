@@ -237,9 +237,6 @@ ul {
 
 blockquote,
 q {
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-  -ms-hyphens: none;
   hyphens: none;
   quotes: none;
 }
@@ -275,8 +272,6 @@ textarea {
   margin: 0;
   max-width: 100%;
   vertical-align: baseline;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -322,8 +317,6 @@ input::-moz-focus-inner {
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -332,8 +325,6 @@ input::-moz-focus-inner {
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -355,10 +346,6 @@ a {
   outline: none;
   color: inherit;
   cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   display: inline-block;
 }
@@ -444,10 +431,6 @@ input[type=submit] {
   color: rgb(var(--text-base));
   background-color: transparent;
   width: 100%;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   border: 1px solid transparent;
   font-size: 14px;
@@ -509,11 +492,13 @@ input[type=email]:focus,
 input[type=url]:focus,
 input[type=tel]:focus,
 input[type=color]:focus {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
   box-shadow: none;
   border-color: transparent;
   background-color: transparent;
+}
+
+textarea::-moz-placeholder, input::-moz-placeholder {
+  color: var(--slate-400);
 }
 
 textarea::placeholder,
@@ -539,8 +524,6 @@ input[type=tel],
 input[type=color] {
   -webkit-appearance: none;
   text-shadow: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
   -o-box-shadow: none;
   box-shadow: none;
 }
@@ -646,10 +629,6 @@ select {
   padding-top: 56px;
 }
 
-.spacing_bottom {
-  padding-bottom: 110px;
-}
-
 .row-grid {
   display: grid;
   gap: 12px;
@@ -668,6 +647,7 @@ select {
 }
 
 .pagination-bullets {
+  width: -moz-max-content !important;
   width: max-content !important;
   display: flex;
   margin: auto;
@@ -681,10 +661,6 @@ select {
   width: 6px;
   height: 6px;
   background: rgb(var(--text-white));
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .pagination-bullets .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
@@ -741,7 +717,8 @@ select {
 .header-bg .box-user img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .header-bg .box-user .info {
   display: grid;
@@ -874,7 +851,7 @@ select {
   background-color: rgb(var(--primary-dark));
   color: rgb(var(--text-white));
   border-radius: 50%;
-  margin-top: -60px;
+  margin-top: -px;
   box-shadow: var(--shadow-3);
 }
 
@@ -1007,7 +984,8 @@ select {
 .categories-box .img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .categories-box .title {
   font-size: 11px;
@@ -1022,7 +1000,8 @@ select {
 .img-box img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .swiper-banner {
@@ -1051,7 +1030,8 @@ select {
 .card-product .card-product_banner img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .card-product .card-product_banner .badge-sale {
   position: absolute;
@@ -1272,6 +1252,4 @@ select {
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=app.css.map */

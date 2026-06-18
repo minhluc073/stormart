@@ -463,8 +463,15 @@ select {
   width: 10px;
   height: 5px;
 }
+.icon-mess,
+.icon-messFill,
+.icon-home,
+.icon-homeFill,
 .icon-hearth,
+.icon-hearthFill,
 .icon-filterSearch,
+.icon-user,
+.icon-userFill,
 .icon-back,
 .icon-bell {
   width: 24px;
@@ -489,6 +496,11 @@ select {
   height: 16px;
   color: rgb(var(--error-base));
  }
+ 
+.icon-cart{
+  width: 26px;
+  height: 26px;
+}
 
 .spacing-1 {
   padding-block: 20px;
@@ -510,6 +522,10 @@ select {
 
 .spacing_top {
   padding-top: 56px;
+}
+
+.spacing_bottom {
+  padding-bottom: 110px;
 }
 
 .row-grid {
@@ -550,6 +566,13 @@ select {
   .swiper-pagination-bullet-active {
     width: 14px;
     border-radius: 99px;
+  }
+  &.style-2{
+    padding: 0;
+    background-color: transparent;
+      > .swiper-pagination-bullet {
+        background: rgb(var(--error-base));
+      }
   }
 }
 .swiper .pagination-bullets {

@@ -24,7 +24,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
   color: rgb(var(--text-headline2));
   margin-bottom: 12px;
   .title {
@@ -38,6 +38,39 @@
     font-size: 12px;
     line-height: 16px;
     letter-spacing: -0.5%;
+  }
+  .img-sale {
+    max-width: 75px;
+  }
+  .box-sale{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .text-sale{
+    font-size: 14px;
+    line-height: 100%;
+    font-weight: 500;
+  }
+  .countdown__item,
+  .countdown__timer{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+  .countdown__value{
+    font-size: 12px;
+    line-height: 16px;
+    color:rgb(var(--text-headline));
+    padding: 0 7px;
+    background-color: rgb(var(--warning-base));
+    border-radius: 99px;
+  }
+  .countdown__label{
+    color: rgb(var(--slate-300));
+    
   }
 }
 .form-search_home {

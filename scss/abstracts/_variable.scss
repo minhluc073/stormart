@@ -36,7 +36,9 @@
   --error-base: 255, 71, 71;
   --error-light: 255, 113, 113;
 
-  --shadow: 2px 5px 40px 0px #4048570F;
+  --shadow: 2px 5px 40px 0px rgba(64, 72, 87, 0.06);
+  --shadow-2: 0px 10px 25px 0px rgba(43, 52, 74, 0.12);
+  --shadow-3: 0px 5px 18px 5px rgba(43, 105, 250, 0.2);
 
   --gradient-1: linear-gradient(180deg, #F8FFD8 0%, #FFFFFF 19.75%);
 
