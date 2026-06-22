@@ -578,6 +578,7 @@ select {
   height: 5px;
 }
 
+.icon-filter,
 .icon-mess,
 .icon-messFill,
 .icon-home,
@@ -621,6 +622,17 @@ select {
   height: 26px;
 }
 
+.icon-cart2 {
+  width: 18px;
+  height: 18px;
+}
+
+.icon-plus,
+.icon-trash {
+  width: 14px;
+  height: 14px;
+}
+
 .spacing-1 {
   padding-block: 20px;
 }
@@ -646,8 +658,16 @@ select {
   padding-top: 56px;
 }
 
+.spacing_top-2 {
+  padding-top: 64px;
+}
+
+.spacing_top-3 {
+  padding-top: 68px;
+}
+
 .spacing_bottom {
-  padding-bottom: 110px;
+  padding-bottom: 90px;
 }
 
 .row-grid {
