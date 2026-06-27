@@ -39,6 +39,7 @@
   --text-headline: 17, 24, 39;
   --text-headline2: 34, 34, 34;
   --text-base: 51, 65, 85;
+  --text-base2: 50, 59, 73;
   --text-white: 255, 255, 255;
   --primary-dark: 3, 45, 129;
   --primary-base: 0, 83, 246;
@@ -66,7 +67,9 @@
   --shadow: 2px 5px 40px 0px rgba(64, 72, 87, 0.06);
   --shadow-2: 0px 10px 25px 0px rgba(43, 52, 74, 0.12);
   --shadow-3: 0px 5px 18px 5px rgba(43, 105, 250, 0.2);
-  --gradient-1: linear-gradient(180deg, #F8FFD8 0%, #FFFFFF 19.75%);
+  --shadow-4: 2px 2px 24px 0px rgba(0, 0, 0, 0.08);
+  --gradient-1: linear-gradient(180deg, rgb(248, 255, 216) 0%, rgb(255, 255, 255) 19.75%);
+  --gradient-2: linear-gradient(180deg, rgba(108, 108, 229, 0.01) 0%, rgba(108, 108, 229, 0.09) 100%);
 }
 
 /*---------- Reset css styles ----------- */
@@ -578,6 +581,23 @@ select {
   height: 5px;
 }
 
+.icon-arrowRight,
+.icon-logout,
+.icon-accountDel,
+.icon-lockKey,
+.icon-smartphone,
+.icon-audit,
+.icon-document,
+.icon-profit,
+.icon-language,
+.icon-computer,
+.icon-mentoring,
+.icon-bell2,
+.icon-location,
+.icon-app,
+.icon-bag,
+.icon-more-vertical,
+.icon-more,
 .icon-filter,
 .icon-mess,
 .icon-messFill,
@@ -594,6 +614,8 @@ select {
   height: 24px;
 }
 
+.icon-unlock,
+.icon-share,
 .icon-search {
   width: 20px;
   height: 20px;
@@ -622,11 +644,13 @@ select {
   height: 26px;
 }
 
+.icon-search2,
 .icon-cart2 {
   width: 18px;
   height: 18px;
 }
 
+.icon-camera,
 .icon-plus,
 .icon-trash {
   width: 14px;
@@ -1292,6 +1316,121 @@ select {
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.box-profile {
+  padding: 4px 20px 16px;
+  background: var(--gradient-2);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.box-profile .avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.box-profile .content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.box-profile .name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: rgb(var(--text-headline));
+  display: block;
+  margin-bottom: 4px;
+}
+.box-profile .mail {
+  font-size: 12px;
+  line-height: 100%;
+  color: rgb(var(--text-base2));
+}
+.box-profile .box-edit {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 12px;
+  border-radius: 99px;
+  background-color: rgb(var(--text-white));
+  box-shadow: var(--shadow-4);
+  color: rgb(var(--slate-700));
+  font-size: 12px;
+  line-height: 100%;
+}
+
+.box-become_seller {
+  box-shadow: var(--shadow-4);
+  padding: 20px 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid rgb(243, 243, 243);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.box-become_seller .img {
+  width: 52px;
+  flex-shrink: 0;
+}
+.box-become_seller .content {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.box-become_seller .title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  color: rgb(15, 23, 42);
+  display: block;
+  margin-bottom: 6px;
+}
+.box-become_seller .text {
+  color: rgb(var(--text-base));
+  font-size: 11px;
+  line-height: 16px;
+}
+.box-become_seller .btn-arr {
+  background: linear-gradient(180deg, rgba(108, 108, 229, 0.09) 0%, rgba(108, 108, 229, 0.01) 100%);
+  padding: 9px 13px;
+  border: 1px solid rgba(108, 108, 229, 0.09);
+  border-radius: 99px;
+}
+.box-become_seller .btn-arr .icon-back {
+  width: 18px;
+  height: 18px;
+  transform: rotate(180deg);
+}
+
+.profile-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  color: rgb(var(--text-base));
+  padding-block: 10px;
+}
+.profile-item .title {
+  flex-grow: 1;
+  font-size: 14px;
+  font-weight: 500;
+}
+.profile-item svg {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.profile-item.active {
+  color: rgb(var(--error-base));
 }
 
 /*# sourceMappingURL=styles.css.map */

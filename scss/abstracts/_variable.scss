@@ -5,6 +5,7 @@
   --text-headline: 17, 24, 39;
   --text-headline2: 34, 34, 34;
   --text-base: 51, 65, 85;
+  --text-base2: 50, 59, 73;
   --text-white: 255, 255, 255;
 
   --primary-dark: 3, 45, 129;
@@ -39,8 +40,13 @@
   --shadow: 2px 5px 40px 0px rgba(64, 72, 87, 0.06);
   --shadow-2: 0px 10px 25px 0px rgba(43, 52, 74, 0.12);
   --shadow-3: 0px 5px 18px 5px rgba(43, 105, 250, 0.2);
+  --shadow-4: 2px 2px 24px 0px rgba(0, 0, 0, 0.08);
 
-  --gradient-1: linear-gradient(180deg, #F8FFD8 0%, #FFFFFF 19.75%);
+
+  --gradient-1: linear-gradient(180deg, rgb(248, 255, 216) 0%, rgb(255, 255, 255) 19.75%);
+  --gradient-2: linear-gradient(180deg, rgba(108, 108, 229, 0.01) 0%, rgba(108, 108, 229, 0.09) 100%);
+  
+
 
 
 }

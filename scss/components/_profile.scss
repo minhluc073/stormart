@@ -1,0 +1,115 @@
+
+.box-profile{
+  padding: 4px 20px 16px;
+  background: var(--gradient-2);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  .avatar{
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .content{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+  .name{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: rgb(var(--text-headline));
+    display: block;
+    margin-bottom: 4px;
+  }
+  .mail{
+    font-size: 12px;
+    line-height: 100%;
+    color: rgb(var(--text-base2));
+  }
+  .box-edit{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 12px;
+    border-radius: 99px;
+    background-color: rgb(var(--text-white));
+    box-shadow: var(--shadow-4);
+    color: rgb(var(--slate-700));
+    font-size: 12px;
+    line-height: 100%;
+  }
+}
+
+.box-become_seller{
+  box-shadow: var(--shadow-4);
+  padding: 20px 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid rgba(243, 243, 243, 1);
+  border-radius: 8px;
+  overflow: hidden;
+  .img{
+    width: 52px;
+    flex-shrink: 0;
+  }
+  .content{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .title{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    color: rgba(15, 23, 42, 1);
+    display: block;
+    margin-bottom: 6px;
+  }
+  .text{
+    color: rgb(var(--text-base));
+    font-size: 11px;
+    line-height: 16px;
+  }
+  .btn-arr{
+    background: linear-gradient(180deg, rgba(108, 108, 229, 0.09) 0%, rgba(108, 108, 229, 0.01) 100%);
+    padding: 9px 13px;
+    border: 1px solid rgba(108, 108, 229, 0.09);
+    border-radius: 99px;
+    .icon-back{
+      width: 18px;
+      height: 18px;
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.profile-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  color: rgb(var(--text-base));
+  padding-block: 10px;
+  .title{
+    flex-grow: 1;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  svg{
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+  &.active{
+    color: rgb(var(--error-base));
+  }
+}
