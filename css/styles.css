@@ -863,6 +863,30 @@ select {
   line-height: 26px;
 }
 
+.header-abs {
+  position: absolute;
+  background: transparent;
+}
+.header-abs button {
+  width: 36px;
+  height: 36px;
+  background-color: rgb(var(--text-white));
+  border-radius: 50%;
+  color: rgb(var(--text-headline));
+}
+.header-abs button svg {
+  width: 20px;
+  height: 20px;
+}
+.header-abs .box-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.header-abs .wishlist {
+  color: rgb(var(--error-base));
+}
+
 .menubar-footer {
   display: flex;
   padding: 10px 16px;

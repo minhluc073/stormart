@@ -100,3 +100,27 @@
     line-height: 26px;
   }
 }
+
+.header-abs{
+  position: absolute;
+  background: transparent;
+  button{
+    width: 36px;
+    height: 36px;
+    background-color: rgb(var(--text-white));
+    border-radius: 50%;
+    color: rgb(var(--text-headline));
+    svg{
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .box-btn{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .wishlist{
+    color: rgb(var(--error-base));
+  }
+}
