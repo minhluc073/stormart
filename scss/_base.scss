@@ -613,6 +613,45 @@ select {
         background: rgb(var(--error-base));
       }
   }
+  &.style-3{
+    padding: 7px 10px;
+    gap: 1px;
+    .swiper-pagination-bullet{
+      width: 12px;
+      height: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      background-color: transparent;
+      border: 1px solid transparent;
+      position: relative;
+      opacity: 1;
+      &::before{
+        content: "";
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        border-radius: 999px;
+        background-color: rgba(var(--text-white), 0.6);
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+    .swiper-pagination-bullet-active {
+      border-color: rgb(var(--text-white));
+      &::before{
+        background-color: rgb(var(--text-white));
+      }
+    }
+  }
 }
 .swiper .pagination-bullets {
   caret-color: transparent !important;

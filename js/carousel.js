@@ -21,6 +21,7 @@ if ($(".product-thumbs-slider").length > 0) {
             nextEl: ".thumbs-next",
             prevEl: ".thumbs-prev",
         },
+        pagination: { el: ".pagination-thumbs", clickable: true }
     });
 
     function updateActiveButtonThumbs(type, activeIndex) {
