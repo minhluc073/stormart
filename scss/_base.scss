@@ -463,6 +463,8 @@ select {
   width: 10px;
   height: 5px;
 }
+.icon-truck,
+.icon-question,
 .icon-arrowRight,
 .icon-logout,
 .icon-accountDel,
@@ -662,4 +664,86 @@ select {
 }
 .bg-gradient-1{
   background: var(--gradient-1);
+}
+
+.menu-tab{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-bottom: 1.5px solid rgb(var(--slate-100));
+  .nav-tab-item{
+    flex-grow: 1;
+  }
+  .tab-link{
+    padding: 9px 10px;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    color: rgb(var(--slate-600));
+    position: relative;
+    &.active{
+      color: rgb(var(--primary-dark));
+      background-color: rgba(var(--primary-dark), 0.05);
+      &::after{
+        width: 100%;
+      }
+    }
+    &::after{
+      position: absolute;
+      content: "";
+      bottom: -1px;
+      height: 1.5px;
+      width: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgb(var(--primary-dark));
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}
+
+.btn-line{
+  font-size: 14px;
+  line-height: 100%;
+  font-weight: 500;
+  color: rgb(var(--text-base));
+  transition: all 0.3s ease-in-out;
+  padding: 13px 16px;
+  border-radius: 8px;
+  background-color: rgb(var(--text-white));
+  border: 1px solid rgb(var(--slate-200));
+  display: flex;
+  justify-content: center;
+  &:hover{
+    background-color: rgb(var(--primary-dark));
+    color: rgb(var(--text-white));
+    border-color: rgb(var(--primary-dark));
+  }
+}
+
+.btn-primary{
+  font-size: 14px;
+  line-height: 100%;
+  font-weight: 500;
+  color: rgb(var(--text-white));
+  transition: all 0.3s ease-in-out;
+  padding: 13px 16px;
+  border-radius: 8px;
+  background-color: rgb(var(--primary-dark));
+  border: 1px solid rgb(var(--primary-dark));
+  display: flex;
+  justify-content: center;
+}
+
+.text-underline-primary{
+  text-decoration: underline;
+  color: rgb(var(--error-base));
+}
+.text-underline{
+  text-decoration: underline;
 }

@@ -41,6 +41,7 @@
   --text-base: 51, 65, 85;
   --text-base2: 50, 59, 73;
   --text-white: 255, 255, 255;
+  --text-border: 233, 233, 233;
   --primary-dark: 3, 45, 129;
   --primary-base: 0, 83, 246;
   --primary-light: 7, 250, 255;
@@ -581,6 +582,8 @@ select {
   height: 5px;
 }
 
+.icon-truck,
+.icon-question,
 .icon-arrowRight,
 .icon-logout,
 .icon-accountDel,
@@ -797,6 +800,89 @@ select {
   background: var(--gradient-1);
 }
 
+.menu-tab {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-bottom: 1.5px solid rgb(var(--slate-100));
+}
+.menu-tab .nav-tab-item {
+  flex-grow: 1;
+}
+.menu-tab .tab-link {
+  padding: 9px 10px;
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  color: rgb(var(--slate-600));
+  position: relative;
+}
+.menu-tab .tab-link.active {
+  color: rgb(var(--primary-dark));
+  background-color: rgba(var(--primary-dark), 0.05);
+}
+.menu-tab .tab-link.active::after {
+  width: 100%;
+}
+.menu-tab .tab-link::after {
+  position: absolute;
+  content: "";
+  bottom: -1px;
+  height: 1.5px;
+  width: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(var(--primary-dark));
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-line {
+  font-size: 14px;
+  line-height: 100%;
+  font-weight: 500;
+  color: rgb(var(--text-base));
+  transition: all 0.3s ease-in-out;
+  padding: 13px 16px;
+  border-radius: 8px;
+  background-color: rgb(var(--text-white));
+  border: 1px solid rgb(var(--slate-200));
+  display: flex;
+  justify-content: center;
+}
+.btn-line:hover {
+  background-color: rgb(var(--primary-dark));
+  color: rgb(var(--text-white));
+  border-color: rgb(var(--primary-dark));
+}
+
+.btn-primary {
+  font-size: 14px;
+  line-height: 100%;
+  font-weight: 500;
+  color: rgb(var(--text-white));
+  transition: all 0.3s ease-in-out;
+  padding: 13px 16px;
+  border-radius: 8px;
+  background-color: rgb(var(--primary-dark));
+  border: 1px solid rgb(var(--primary-dark));
+  display: flex;
+  justify-content: center;
+}
+
+.text-underline-primary {
+  text-decoration: underline;
+  color: rgb(var(--error-base));
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
 /*------------ Components ---------------- */
 /*------------ header ---------------- */
 .header-bg {
@@ -983,6 +1069,23 @@ select {
   border-radius: 50%;
   margin-top: -60px;
   box-shadow: var(--shadow-3);
+}
+
+.menubar-button {
+  display: flex;
+  gap: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgb(var(--text-white));
+  max-width: 1024px;
+  box-shadow: var(--shadow-2);
+  padding: 20px;
+}
+.menubar-button > * {
+  width: 50%;
 }
 
 /* ---------------------------------------------------------
@@ -1551,6 +1654,90 @@ select {
 }
 .tf-product-info-list .color-btn.yellow .check-color {
   background-color: rgb(var(--warning-base));
+}
+.tf-product-info-list .product-benefits {
+  display: flex;
+  margin-top: 16px;
+  align-items: center;
+  gap: 16px;
+}
+.tf-product-info-list .product-benefits .product-benefits__item:not(:last-child) {
+  padding-right: 16px;
+  position: relative;
+}
+.tf-product-info-list .product-benefits .product-benefits__item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 16px;
+  background-color: rgb(var(--text-border));
+}
+.tf-product-info-list .product-benefits .product-benefits__item {
+  color: rgb(var(--text-headline));
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.main-product_page {
+  padding-bottom: 85px;
+}
+
+.product-info-tab {
+  margin-bottom: 12px;
+}
+.product-info-tab .menu-tab {
+  margin-bottom: 16px;
+}
+.product-info-tab .title-overview {
+  margin-bottom: 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgb(var(--slate-100));
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  color: rgb(var(--text-headline));
+}
+.product-info-tab #overview p {
+  font-size: 12px;
+  line-height: 18px;
+}
+.product-info-tab #overview .feature {
+  margin-top: 8px;
+}
+.product-info-tab #overview .feature .title {
+  display: block;
+  font-size: 12px;
+  line-height: 100%;
+  margin-bottom: 6px;
+}
+.product-info-tab #overview .feature ul {
+  display: grid;
+  gap: 6px;
+}
+.product-info-tab #overview .feature ul li {
+  padding-left: 10px;
+  position: relative;
+}
+.product-info-tab #overview .feature ul li::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 2px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgb(var(--text-base));
+  border-radius: 50%;
+}
+.product-info-tab .box-title .title {
+  font-size: 14px;
+}
+.product-info-tab .box-title .title span {
+  font-weight: normal;
 }
 
 .box-profile {

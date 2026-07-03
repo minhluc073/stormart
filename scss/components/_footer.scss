@@ -58,5 +58,21 @@
       
     }
   }
-  
+}
+
+.menubar-button{
+  display: flex;
+  gap: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgb(var(--text-white));
+  max-width: 1024px;
+  box-shadow: var(--shadow-2);
+  padding: 20px;
+  >*{
+    width: 50%;
+  }
 }
