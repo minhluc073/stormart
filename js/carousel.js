@@ -21,8 +21,23 @@ if ($(".product-thumbs-slider").length > 0) {
             nextEl: ".thumbs-next",
             prevEl: ".thumbs-prev",
         },
-        pagination: { el: ".pagination-thumbs", clickable: true }
+        pagination: { el: ".pagination-thumbs", clickable: true },
+
+        on: {
+        init: function () {
+            updateFraction(this);
+        },
+        slideChange: function () {
+            updateFraction(this);
+        }
+    }
     });
+
+  function updateFraction(swiper) {
+      $(".pagination-fraction").text(
+          `${swiper.realIndex + 1}/${swiper.slides.length}`
+      );
+  }    
 
     function updateActiveButtonThumbs(type, activeIndex) {
         var btnClass = `.${type}-btn`;

@@ -266,4 +266,46 @@
       }
     }
   }
+  .btn-seemore{
+    margin: auto;
+  }
+  .list-review{
+    margin-bottom: 12px;
+    .review-item:not(:last-child){
+      margin-bottom: 16px;
+    }
+    .review-item {
+      .review{
+        margin: 8px 0 12px;
+        color: rgb(var(--text-headline));
+      }
+      .box-status{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .helpful{
+        padding: 6px 12px;
+        color: rgb(var(--text-headline));
+        border-radius: 6px;
+        border: 1px solid rgb(var(--text-border));
+      }
+      .report{
+        color: rgb(var(--text-base));
+      }
+      .info-box{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        .avatar{
+          border-radius: 50%;
+          width: 40px;
+          height: 40px;
+        }
+      }
+      .list-star{
+        margin-bottom: 4px;
+      }
+    }
+  }
 }

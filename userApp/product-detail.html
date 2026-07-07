@@ -34,13 +34,12 @@
           <use href="../icon/sprite.svg#hearthFill"></use>
         </svg>
       </button>
-      <button class="share">
+      <button class="share" type="button" data-bs-target="#popupShare" data-bs-toggle="offcanvas">
         <svg class="icon-share">
           <use href="../icon/sprite.svg#share"></use>
         </svg>
       </button>
     </div>
-
   </header>
   <div class="main-product_page">
     <div class="product-thumbs-slider page-width px-0">
@@ -61,8 +60,7 @@
           </div>
         </div>
         <div class="pagination-thumbs pagination-bullets style-3"></div>
-        <div class="swiper-button-next nav-swiper thumbs-next"></div>
-        <div class="swiper-button-prev nav-swiper thumbs-prev"></div>
+        <div class="pagination-fraction"></div>
       </div>
     </div>
     <div class="tf-product-info-wrap page-width">
@@ -185,6 +183,81 @@
                 <h3 class="title">Ratings <span>(134)</span></h3>
                 <a href="#" class="btn-view text-underline">View All</a>
               </div>
+              <div class="list-review">
+                <div class="review-item">
+                  <div class="info-box">
+                    <div class="avatar"><img src="../images/user/avatar/avt3.png" alt=""></div>
+                    <div class="content">
+                      <span class="list-star">
+                          <svg class="icon-star active"><use href="../icon/sprite.svg#star"></use></svg>
+                          <svg class="icon-star active"><use href="../icon/sprite.svg#star"></use></svg>
+                          <svg class="icon-star active"><use href="../icon/sprite.svg#star"></use></svg>
+                          <svg class="icon-star active"><use href="../icon/sprite.svg#star"></use></svg>
+                          <svg class="icon-star active"><use href="../icon/sprite.svg#star"></use></svg>
+                      </span>
+                      <div class="author-box">
+                        <span class="author"><span class="prefix">by</span>by Sophia Ray</span>
+                        <span class="dot"></span>
+                        <span class="date">April 27, 2025</span>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="review">“Absolutely love this! The fabric feels premium, and the fit is just perfect. !”</p>
+                  <div class="box-status">
+                    <span class="helpful">Helpful</span>
+                    <span class="report">Report abuse</span>
+                  </div>
+                </div>
+                <div class="review-item">
+                  <div class="info-box">
+                    <div class="avatar"><img src="../images/user/avatar/avt4.png" alt=""></div>
+                    <div class="content">
+                      <span class="list-star rate-3">
+                          <svg class="icon-star active"><use href="../icon/sprite.svg#star"></use></svg>
+                          <svg class="icon-star active"><use href="../icon/sprite.svg#star"></use></svg>
+                          <svg class="icon-star active"><use href="../icon/sprite.svg#star"></use></svg>
+                          <svg class="icon-star"><use href="../icon/sprite.svg#star"></use></svg>
+                          <svg class="icon-star"><use href="../icon/sprite.svg#star"></use></svg>
+                      </span>
+                      <div class="author-box">
+                        <span class="author"><span class="prefix">by</span>by Sophia Ray</span>
+                        <span class="dot"></span>
+                        <span class="date">April 27, 2025</span>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="review">“Absolutely love this! The fabric feels premium, and the fit is just perfect. !”</p>
+                  <div class="box-status">
+                    <span class="helpful">Helpful</span>
+                    <span class="report">Report abuse</span>
+                  </div>
+                </div>
+                <div class="review-item">
+                  <div class="info-box">
+                    <div class="avatar"><img src="../images/user/avatar/avt4.png" alt=""></div>
+                    <div class="content">
+                      <span class="list-star rate-3">
+                          <svg class="icon-star active"><use href="../icon/sprite.svg#star"></use></svg>
+                          <svg class="icon-star active"><use href="../icon/sprite.svg#star"></use></svg>
+                          <svg class="icon-star active"><use href="../icon/sprite.svg#star"></use></svg>
+                          <svg class="icon-star"><use href="../icon/sprite.svg#star"></use></svg>
+                          <svg class="icon-star"><use href="../icon/sprite.svg#star"></use></svg>
+                      </span>
+                      <div class="author-box">
+                        <span class="author"><span class="prefix">by</span>by Sophia Ray</span>
+                        <span class="dot"></span>
+                        <span class="date">April 27, 2025</span>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="review">“Absolutely love this! The fabric feels premium, and the fit is just perfect. !”</p>
+                  <div class="box-status">
+                    <span class="helpful">Helpful</span>
+                    <span class="report">Report abuse</span>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="btn-seemore">See more</a>
             </div>
           </div>
         </div>
@@ -193,8 +266,8 @@
 
     <div class="page-width">
       <div class="box-title">
-        <h3 class="title">Popular Items</h3>
-        <a href="all-products.html" class="btn-view">See more</a>
+        <h3 class="title">Similar Products</h3>
+        <a href="all-products.html" class="btn-view">See All</a>
       </div>
       <div class="row-grid column-2">
           <div class="card-product">
@@ -377,6 +450,17 @@
     <a href="#" class="btn-primary">Buy Now</a>
   </div>
 
+<div class="offcanvas offcanvas-bottom popup-wrapper" tabindex="-1" id="popupShare" aria-labelledby="offcanvasBottomLabel">
+  <div class="popup-inner">
+    <h3 class="title-share">Share this link via</h3>
+    <button type="button" class="close-popup" data-bs-dismiss="offcanvas" aria-label="Close"><svg class="icon-close"><use href="../icon/sprite.svg#close"></use></svg>
+    </button>
+    <div class="offcanvas-body small11">
+        ...asdasdas
+    </div>
+  </div>
+
+</div>
 
 
   <script type="text/javascript" src="../js/bootstrap.min.js"></script>
