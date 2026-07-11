@@ -309,3 +309,31 @@
     }
   }
 }
+
+
+#popupShare{
+  height: 244px;
+  .popup-header{
+    padding: 24px 20px 0px;
+  }
+  .popup-body{
+    padding: 0 20px 24px;
+  }
+  .popup-inner{
+    .title{
+      border-bottom: 1px solid rgb(var(--text-border));
+    }
+  }
+  .list-socials{
+    justify-content: center;
+    margin: 16px 0 12px;
+  }
+  .title-share-link{
+    margin-bottom: 4px;
+    font-size: 14px;
+    line-height: 100%;
+    font-weight: 500;
+    color: rgb(var(--text-headline));
+  }
+
+}

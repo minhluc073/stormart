@@ -1,25 +1,24 @@
-
-.box-profile{
+.box-profile {
   padding: 4px 20px 16px;
   background: var(--gradient-2);
   display: flex;
   align-items: center;
   gap: 10px;
-  .avatar{
+  .avatar {
     width: 52px;
     height: 52px;
     border-radius: 50%;
     overflow: hidden;
     flex-shrink: 0;
   }
-  .content{
+  .content {
     flex-grow: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
   }
-  .name{
+  .name {
     font-weight: 500;
     font-size: 16px;
     line-height: 100%;
@@ -27,12 +26,12 @@
     display: block;
     margin-bottom: 4px;
   }
-  .mail{
+  .mail {
     font-size: 12px;
     line-height: 100%;
     color: rgb(var(--text-base2));
   }
-  .box-edit{
+  .box-edit {
     display: flex;
     align-items: center;
     gap: 6px;
@@ -46,7 +45,7 @@
   }
 }
 
-.box-become_seller{
+.box-become_seller {
   box-shadow: var(--shadow-4);
   padding: 20px 12px;
   display: flex;
@@ -55,18 +54,18 @@
   border: 1px solid rgba(243, 243, 243, 1);
   border-radius: 8px;
   overflow: hidden;
-  .img{
+  .img {
     width: 52px;
     flex-shrink: 0;
   }
-  .content{
+  .content {
     flex-grow: 1;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 12px;
   }
-  .title{
+  .title {
     font-weight: 500;
     font-size: 14px;
     line-height: 100%;
@@ -74,17 +73,17 @@
     display: block;
     margin-bottom: 6px;
   }
-  .text{
+  .text {
     color: rgb(var(--text-base));
     font-size: 11px;
     line-height: 16px;
   }
-  .btn-arr{
+  .btn-arr {
     background: linear-gradient(180deg, rgba(108, 108, 229, 0.09) 0%, rgba(108, 108, 229, 0.01) 100%);
     padding: 9px 13px;
     border: 1px solid rgba(108, 108, 229, 0.09);
     border-radius: 99px;
-    .icon-back{
+    .icon-back {
       width: 18px;
       height: 18px;
       transform: rotate(180deg);
@@ -92,24 +91,90 @@
   }
 }
 
-.profile-item{
+.profile-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 10px;
   color: rgb(var(--text-base));
   padding-block: 10px;
-  .title{
+  .title {
     flex-grow: 1;
     font-size: 14px;
     font-weight: 500;
   }
-  svg{
+  svg {
     width: 24px;
     height: 24px;
     flex-shrink: 0;
   }
-  &.active{
+  &.active {
     color: rgb(var(--error-base));
+  }
+}
+
+// become seller
+.main-page_become--seller {
+  .box-seller_step{
+    margin: 8px 0 12px;
+  }
+  .fieldset {
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+    .label{
+      margin-bottom: 8px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 100%;
+    }
+  }
+}
+.box-seller_step {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  .step-item {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1.5px solid rgb(var(--text-border2));
+    gap: 10px;
+    .step {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      color: rgb(var(--text-headline));
+      border: 1px solid rgb(var(--slate-300));
+      background-color: rgb(var(--text-white));
+      font-size: 14px;
+      line-height: 100%;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .content{
+      display: grid;
+      gap: 4px;
+    }
+    .label{
+      font-size: 11px;
+      line-height: 16px;
+      color: rgb(var(--text-base));
+    }
+    .title{
+      font-size: 12px;
+      line-height: 16px;
+      color: rgb(var(--text-headline));
+    }
+    &.active{
+     border-color: rgb(var(--main-color)); 
+     .step{
+      background-color: rgb(var(--primary-base));
+      border-color: rgb(var(--primary-base));
+      color: rgb(var(--text-white));
+     }
+    }
   }
 }

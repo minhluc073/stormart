@@ -327,6 +327,61 @@
     });
   };
 
+  /* Copy Input
+-------------------------------------------------------------------------------------*/
+var inputCopy = function () {
+  $(".btn-copy").on("click", function () {
+    var input = $(this).siblings("input");
+
+    navigator.clipboard.writeText(input.val()).then(function () {
+      alert("Copied successfully!");
+    }).catch(function () {
+      alert("Failed to copy.");
+    });
+  });
+};
+
+var selectFlags = function () {
+
+    $(".select-current").click(function (e) {
+        e.stopPropagation();
+
+        $(".select-flag").not($(this).closest(".select-flag")).removeClass("active");
+
+        $(this).closest(".select-flag").toggleClass("active");
+    });
+
+$(".select-list li").click(function () {
+
+    const select = $(this).closest(".select-flag");
+
+    select.find(".select-list li").removeClass("active");
+    $(this).addClass("active");
+
+    // Thay ảnh
+    select.find(".select-current img").attr(
+        "src",
+        $(this).find("img").attr("src")
+    );
+
+    // Thay text
+    select.find(".select-current .text-value").text(
+        $(this).find("span").text()
+    );
+
+    // Cập nhật value
+    select.find("input").val($(this).data("value"));
+
+    // Đóng dropdown
+    select.removeClass("active");
+});
+
+    $(document).click(function () {
+        $(".select-flag").removeClass("active");
+    });
+
+};
+
   /* Preloader 
 ------------------------------------------------------------------------------------- */
   var preloader = function () {
@@ -351,6 +406,8 @@
     clickModalSecond();
     flatCounter();
     inputUpload();
+    inputCopy();
+    selectFlags();
     RTL();
     preloader();
   });
