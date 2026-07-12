@@ -58,32 +58,40 @@
       <input type="text" id="name" placeholder="Sailor Clothing">
     </fieldset>
     <fieldset class="fieldset">
-      <label for="email" class="label">Email Address </label>
-      <input type="text" placeholder="sailorclothing@gmail.com">
+      <label for="email" class="label">Email Address</label>
+      <input type="text" id="email" placeholder="sailorclothing@gmail.com">
     </fieldset>
-    <div class="select-flag fieldset">
-      <button class="select-current">
-        <img src="../images/flags/usa1.svg" alt="">
-        <span class="text-value">+1</span>
-      </button>
-      <ul class="select-list">
-        <li data-value="+1">
-          <img src="../images/flags/usa1.svg" alt="">
-          <span>+1</span>
-        </li>
+    <div class="fieldset">
+      <label for="phone" class="label">Phone Number</label>
+      <div class="select-phone">
+        <div class="select-flag">
+          <button class="select-current">
+            <img src="../images/flags/usa1.svg" alt="">
+            <span class="text-value">+1</span>
+            <svg class="icon-arrowDown">
+              <use href="../icon/sprite.svg#arrowDown"></use>
+            </svg>
+          </button>
+          <ul class="select-list">
+            <li data-value="+1">
+              <img src="../images/flags/usa1.svg" alt="">
+              <span>+1</span>
+            </li>
 
-        <li data-value="+84">
-          <img src="../images/flags/vn.svg" alt="">
-          <span>+84</span>
-        </li>
-        <li data-value="+33">
-          <img src="../images/flags/fr.svg" alt="">
-          <span>+33</span>
-        </li>
-      </ul>
-      <input type="hidden" name="phone_code" value="+1">
+            <li data-value="+84">
+              <img src="../images/flags/vn.svg" alt="">
+              <span>+84</span>
+            </li>
+            <li data-value="+33">
+              <img src="../images/flags/fr.svg" alt="">
+              <span>+33</span>
+            </li>
+          </ul>
+          <input type="hidden" name="phone_code" value="+1">
+        </div>
+        <input id="phone" type="number" placeholder="707 797 0462">
+      </div>
     </div>
-
     <fieldset class="select-flag fieldset">
       <label for="country" class="label">Country</label>
       <button class="select-current">
@@ -111,6 +119,73 @@
       </ul>
       <input type="hidden" name="country" value="US">
     </fieldset>
+    <fieldset class="fieldset">
+      <label for="state" class="label">State</label>
+      <input type="text" id="state" placeholder="State/ Province">
+    </fieldset>
+    <div class="fieldset row-grid column-2">
+      <fieldset>
+        <label for="city" class="label">City</label>
+        <input type="text" id="city" placeholder="State/ Province">
+      </fieldset>
+      <fieldset>
+        <label for="zipCode" class="label">Zip Code</label>
+        <input type="text" id="zipCode" placeholder="State/ Province">
+      </fieldset>
+    </div>
+    <fieldset class="fieldset">
+      <label for="address" class="label">Address</label>
+      <input type="text" id="address" placeholder="Address">
+    </fieldset>
+    <fieldset class="fieldset">
+      <label for="bio" class="label">Short Bio</label>
+      <input type="text" id="bio" placeholder="Street, house, apartment/unit">
+    </fieldset>
+    <div class="fieldset box-availability">
+      <div class="label">
+        Availability
+        <span class="box-check">
+          <input type="checkbox" class="check2" name="availability" id="availability">
+          <label for="availability">Open all</label>
+        </span>
+      </div>
+      <div class="availability-item">
+        <span class="day">Saturday</span>
+        <div class="select">
+          <select name="" id="">
+            <option value="">09:00 AM - 6:30 PM</option>
+            <option value="">07:00 AM - 4:30 PM</option>
+            <option value="">08:00 AM - 8:30 PM</option>
+          </select>
+          <svg class="icon-arrowDown">
+            <use href="../icon/sprite.svg#arrowDown"></use>
+          </svg>
+        </div>
+        <button class="btn-delete"> 
+          <svg class="icon-trash2">
+            <use href="../icon/sprite.svg#trash2"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="availability-item">
+        <span class="day">Sunday</span>
+        <div class="select">
+          <select name="" id="">
+            <option value="">09:00 AM - 6:30 PM</option>
+            <option value="">07:00 AM - 4:30 PM</option>
+            <option value="">08:00 AM - 8:30 PM</option>
+          </select>
+          <svg class="icon-arrowDown">
+            <use href="../icon/sprite.svg#arrowDown"></use>
+          </svg>
+        </div>
+        <button class="btn-plus"> 
+          <svg class="icon-plus">
+            <use href="../icon/sprite.svg#plus"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
   </div>
 
 

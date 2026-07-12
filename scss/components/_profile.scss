@@ -115,18 +115,34 @@
 
 // become seller
 .main-page_become--seller {
-  .box-seller_step{
+  .box-seller_step {
     margin: 8px 0 12px;
   }
   .fieldset {
     &:not(:last-child) {
       margin-bottom: 12px;
     }
-    .label{
+    .label {
       margin-bottom: 8px;
       font-weight: 500;
       font-size: 14px;
       line-height: 100%;
+    }
+  }
+  .box-availability {
+    .label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+    }
+    .box-check {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      label {
+        font-weight: normal;
+      }
     }
   }
 }
@@ -154,27 +170,61 @@
       align-items: center;
       justify-content: center;
     }
-    .content{
+    .content {
       display: grid;
       gap: 4px;
     }
-    .label{
+    .label {
       font-size: 11px;
       line-height: 16px;
       color: rgb(var(--text-base));
     }
-    .title{
+    .title {
       font-size: 12px;
       line-height: 16px;
       color: rgb(var(--text-headline));
     }
-    &.active{
-     border-color: rgb(var(--main-color)); 
-     .step{
-      background-color: rgb(var(--primary-base));
-      border-color: rgb(var(--primary-base));
-      color: rgb(var(--text-white));
-     }
+    &.active {
+      border-color: rgb(var(--main-color));
+      .step {
+        background-color: rgb(var(--primary-base));
+        border-color: rgb(var(--primary-base));
+        color: rgb(var(--text-white));
+      }
+    }
+  }
+}
+
+.box-availability {
+  .availability-item {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    .select {
+      flex-grow: 1;
+    }
+    .day {
+      max-width: 84px;
+      font-size: 14px;
+      font-weight: normal;
+      width: 100%;
+    }
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+    button {
+      padding: 10px;
+      width: auto;
+      svg{
+        width: 24px;
+        height: 24px;
+      }
+    }
+    .btn-delete {
+      color: rgb(var(--error-base));
+    }
+    .btn-plus {
+      color: rgb(var(--success-base));
     }
   }
 }

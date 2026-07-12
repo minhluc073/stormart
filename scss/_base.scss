@@ -475,6 +475,7 @@ select {
   width: 10px;
   height: 5px;
 }
+.icon-trash2,
 .icon-arrowDown,
 .icon-close,
 .icon-truck,
@@ -924,7 +925,7 @@ select {
     padding: 12px 14px;
     background-color: rgb(var(--slate-50));
   }
-  .text-value{
+  .text-value {
     flex-grow: 1;
     text-align: start;
     font-size: 14px;
@@ -947,10 +948,10 @@ select {
     background: rgb(var(--text-white));
     border-radius: 8px;
     display: none;
-    z-index: 1000;
+    z-index: 1200;
     max-height: 250px;
     overflow-y: auto;
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow-2);
   }
 
   &.active .select-list {
@@ -968,5 +969,89 @@ select {
   .select-list li.active {
     font-weight: 500;
     color: rgb(var(--primary-dark));
+  }
+}
+
+.select-phone {
+  display: flex;
+  border-radius: 8px;
+  .select-flag .select-current img,
+  .select-flag .select-list img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+  }
+  .select-list {
+
+  }
+  .select-current {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding-right: 8px;
+    gap: 6px;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 1px;
+      height: 22px;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(238, 239, 242, 1);
+    }
+  }
+  input {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding-left: 10px;
+  }
+}
+
+.check2 {
+  position: relative;
+  border: 1.5px solid rgb(var(--secondary-100));
+  border-radius: 50%;
+  background: none;
+  cursor: pointer;
+  outline: 0;
+  height: 14px;
+  width: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-appearance: none;
+  &::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(var(--primary-base));
+    opacity: 0;
+  }
+  &:checked {
+    border-color: rgb(var(--primary-base));
+    &::before {
+      opacity: 1;
+    }
+  }
+}
+
+.select {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 100%;
+  color: rgb(var(--text-headline));
+  border: 1.5px solid rgb(var(--slate-100));
+  background-color: rgb(var(--slate-50));
+  color: rgb(var(--text-base));
+  position: relative;
+  .icon-arrowDown{
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
   }
 }
