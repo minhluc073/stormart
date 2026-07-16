@@ -44,6 +44,7 @@
   --text-border: 233, 233, 233;
   --text-border2: 243, 243, 243;
   --main-color: 43, 105, 250;
+  --main-color2: 70, 95, 255;
   --primary-dark: 3, 45, 129;
   --primary-base: 0, 83, 246;
   --primary-light: 7, 250, 255;
@@ -921,6 +922,19 @@ select {
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+.menu-tab.column2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.menu-tab.column2 .tab-link {
+  font-size: 12px;
+  padding: 10px 12px;
+}
+.menu-tab.primary .tab-link.active {
+  color: rgb(var(--primary-base));
+}
+.menu-tab.primary .tab-link::after {
+  background-color: rgb(var(--primary-base));
 }
 
 .btn-line {
@@ -2424,6 +2438,78 @@ select {
   justify-content: space-between;
   gap: 15px;
   margin-top: 24px;
+}
+
+.main-page_address .tab-content {
+  padding-top: 20px;
+}
+
+.address-item {
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 16px;
+  background-color: rgb(var(--slate-50));
+  transition: all 0.3s ease-in-out;
+  border: 1px solid rgb(var(--slate-50));
+  display: grid;
+  gap: 8px;
+  position: relative;
+}
+.address-item .title {
+  color: rgb(var(--text-headline));
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+}
+.address-item .note {
+  position: absolute;
+  padding: 2px 4px;
+  background-color: rgb(217, 255, 232);
+  color: rgb(var(--success-base));
+  font-size: 9px;
+  line-height: 100%;
+  left: 0;
+  top: 0;
+  display: block;
+}
+.address-item .edit {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  color: rgb(var(--main-color2));
+}
+.address-item.active {
+  border-color: rgb(217, 255, 232);
+}
+.address-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.box-notification:not(:last-child) {
+  margin-bottom: 24px;
+}
+.box-notification .note {
+  padding-bottom: 6px;
+  font-weight: 500;
+  color: rgb(var(--text-headline));
+  font-weight: 500;
+  border-bottom: 1px solid rgb(var(--slate-200));
+}
+.box-notification .noti-item {
+  padding: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.box-notification .noti-item .label {
+  flex-grow: 1;
+  display: grid;
+  gap: 8px;
+}
+.box-notification .noti-item .title {
+  font-weight: 500;
+  color: rgb(var(--text-headline));
 }
 
 /*# sourceMappingURL=styles.css.map */

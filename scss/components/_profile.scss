@@ -264,3 +264,79 @@
   gap: 15px;
   margin-top: 24px;
 }
+
+.main-page_address{
+  .tab-content{
+    padding-top: 20px;
+  }
+}
+
+.address-item {
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 16px;
+  background-color: rgb(var(--slate-50));
+  transition: all 0.3s ease-in-out;
+  border: 1px solid rgb(var(--slate-50));
+  display: grid;
+  gap: 8px;
+  position: relative;
+  .title{
+    color: rgb(var(--text-headline));
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+  }
+  .note {
+    position: absolute;
+    padding: 2px 4px;
+    background-color: rgba(217, 255, 232, 1);
+    color: rgb(var(--success-base));
+    font-size: 9px;
+    line-height: 100%;
+    left: 0;
+    top: 0;
+    display: block;
+  }
+  .edit {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    color: rgb(var(--main-color2));
+  }
+  &.active{
+    border-color: rgba(217, 255, 232, 1); ;
+  }
+  &:not(:last-child){
+    margin-bottom: 16px;
+  }
+}
+
+.box-notification{
+   &:not(:last-child){
+    margin-bottom: 24px;
+  } 
+  .note{
+    padding-bottom: 6px;
+    font-weight: 500;
+    color: rgb(var(--text-headline));
+    font-weight: 500;
+    border-bottom: 1px solid rgb(var(--slate-200));
+  }
+  .noti-item{
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    .label{
+      flex-grow: 1;
+      display: grid;
+      gap: 8px;
+    }
+    .title{
+      font-weight: 500;
+      color: rgb(var(--text-headline));
+    }
+  }
+}

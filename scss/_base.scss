@@ -779,6 +779,24 @@ select {
       transition: all 0.3s ease-in-out;
     }
   }
+  &.column2{
+    grid-template-columns: repeat(2, 1fr);
+    .tab-link{
+      font-size: 12px;
+      padding:10px 12px ;
+    }
+  }
+  &.primary{
+    .tab-link{
+      &.active{
+        color: rgb(var(--primary-base));
+      }
+      &::after{
+        background-color: rgb(var(--primary-base));
+      }
+    }
+
+  }
 }
 
 .btn-line {
