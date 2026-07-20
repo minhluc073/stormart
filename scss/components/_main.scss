@@ -20,6 +20,24 @@
     line-height: 100%;
   }
 }
+.box-search{
+  .title{
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  .form-search {
+    input {
+      font-size: 14px;
+      line-height: 100%;
+      padding: 13px 14px;
+      padding-left: 44px;
+      border: 1px solid rgba(241, 245, 249, 1);
+      box-shadow: none;
+      border-radius: 6px;
+      background-color: rgb(var(--slate-50));
+    }
+  }
+}
 .box-title {
   display: flex;
   justify-content: space-between;

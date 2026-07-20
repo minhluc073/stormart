@@ -970,7 +970,7 @@ select {
   .select-list img {
     width: 25px;
     height: 18px;
-    border-radius: 2px;
+    border-radius: 3px;
     object-fit: cover;
   }
 
@@ -1038,6 +1038,41 @@ select {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     padding-left: 10px;
+  }
+}
+
+.check {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgb(var(--secondary-100));
+  border-radius: 50%;
+  background: rgb(var(--text-white));
+  cursor: pointer;
+  position: relative;
+  transition: all .2s ease;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 7px;
+    width: 4px;
+    height: 8px;
+    border: solid rgb(var(--text-white));
+    border-width: 0 1px 1px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+  }
+
+  &:checked {
+    background: rgb(var(--primary-base));
+    border-color: rgb(var(--primary-base));
+
+    &::after {
+      opacity: 1;
+    }
   }
 }
 
