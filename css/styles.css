@@ -1287,6 +1287,50 @@ select {
   background-color: rgb(var(--primary-base));
 }
 
+.mb2 {
+  margin-bottom: 2px;
+}
+
+.mb4 {
+  margin-bottom: 4px;
+}
+
+.mb8 {
+  margin-bottom: 8px;
+}
+
+.mb12 {
+  margin-block-end: 12px;
+}
+
+.mb16 {
+  margin-block-end: 16px;
+}
+
+.mb6 {
+  margin-block-end: 6px;
+}
+
+.cl-text-headline {
+  color: rgb(var(--text-headline)) !important;
+}
+
+.cl-text-base {
+  color: rgb(var(--text-base)) !important;
+}
+
+.fw-7 {
+  font-weight: 700 !important;
+}
+
+.fw-6 {
+  font-weight: 600 !important;
+}
+
+.fw-5 {
+  font-weight: 500 !important;
+}
+
 /*------------ Components ---------------- */
 /*------------ header ---------------- */
 .header-bg {
@@ -2579,6 +2623,30 @@ select {
 }
 .box-localization .localization-item .flag {
   width: 20px;
+}
+
+.main-page_policy ul li {
+  font-size: 12px;
+  line-height: 18px;
+}
+.main-page_policy ul li:not(.title) {
+  position: relative;
+  padding-left: 10px;
+}
+.main-page_policy ul li:not(.title)::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 2px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgb(var(--text-base));
+  border-radius: 50%;
+}
+.main-page_policy .logo {
+  max-width: 120px;
+  margin: 0 auto 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */

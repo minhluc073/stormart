@@ -362,3 +362,28 @@
     }
   }
 }
+.main-page_policy {
+  ul li{
+    font-size: 12px;
+    line-height: 18px;
+    &:not(.title){
+      position: relative;
+      padding-left: 10px;
+      &::after{
+        position: absolute;
+        content: "";
+        width: 2px;
+        height: 2px;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgb(var(--text-base));
+        border-radius: 50%;
+      }
+    }
+  }
+  .logo{
+    max-width: 120px;
+    margin: 0 auto 20px;
+  }
+}
