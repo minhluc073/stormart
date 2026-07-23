@@ -387,3 +387,16 @@
     margin: 0 auto 20px;
   }
 }
+
+#logout{
+  .modal-content{
+    padding-block: 34px;
+    gap: 20px;
+    text-align: center;
+  }
+  .icon {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+  }
+}

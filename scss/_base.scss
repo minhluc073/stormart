@@ -326,6 +326,12 @@ h6,
   font-size: 11px;
   line-height: 16px;
 }
+.text-large{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: rgb(var(--text-headline));
+}
 
 h1,
 h2,
@@ -805,7 +811,7 @@ select {
   font-weight: 500;
   color: rgb(var(--text-base));
   transition: all 0.3s ease-in-out;
-  padding: 13px 16px;
+  padding: 14px 16px;
   border-radius: 8px;
   background-color: rgb(var(--text-white));
   border: 1px solid rgb(var(--slate-200));
@@ -824,7 +830,7 @@ select {
   font-weight: 500;
   color: rgb(var(--text-white));
   transition: all 0.3s ease-in-out;
-  padding: 13px 16px;
+  padding: 14px 16px;
   border-radius: 8px;
   background-color: rgb(var(--primary-dark));
   border: 1px solid rgb(var(--primary-dark));
@@ -838,7 +844,7 @@ select {
   font-weight: 500;
   color: rgb(var(--text-white));
   transition: all 0.3s ease-in-out;
-  padding: 13px 16px;
+  padding: 14px 16px;
   border-radius: 8px;
   background-color: rgb(var(--text-headline));
   border: 1px solid rgb(var(--text-headline));
@@ -877,11 +883,32 @@ select {
 .offcanvas {
   border: 0 !important;
 }
+.modal-backdrop,
 .offcanvas-backdrop {
   background-color: rgb(var(--text-headline));
 }
+.modal-backdrop.show,
 .offcanvas-backdrop.show {
   opacity: 0.4;
+}
+.modal{
+--bs-modal-margin: 20px;
+  .modal-content{
+    padding: 30px 24px;
+    border: 0;
+    border-radius: 12px;
+  }
+  .box-btn2{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .btn-line{
+    color: rgb(var(--text-headline));
+  }
+  button{
+    border-radius: 6px;
+  }
 }
 
 .popup-wrapper {

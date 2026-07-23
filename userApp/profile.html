@@ -168,7 +168,7 @@
           </a>
         </li>
         <li>
-          <a href="#" class="profile-item active">
+          <a href="#logout" data-bs-toggle="modal" class="profile-item active">
             <svg class="icon-logout"><use href="../icon/sprite.svg#logout"></use></svg>
             <span class="title">Logout</span>
             <svg class="icon-arrowRight"><use href="../icon/sprite.svg#arrowRight"></use></svg>
@@ -223,6 +223,19 @@
       </a>
     </div>
   </div>
+
+  <div class="modal fade" id="logout">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+        <img class="icon" src="../images/icon/logout.png" alt="">
+        <h6 class="text-large">Are you Sure? <br> Logout your Account</h6>
+        <div class="box-btn2">
+          <button type="button" class="btn-line" data-bs-dismiss="modal">No</button>
+          <button type="button" class="btn-dark" data-bs-dismiss="modal">Yes</button>
+        </div>
+    </div>
+  </div>
+</div>
 
 
   <script type="text/javascript" src="../js/bootstrap.min.js"></script>
