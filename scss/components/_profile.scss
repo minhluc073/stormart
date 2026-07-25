@@ -400,3 +400,40 @@
     margin: auto;
   }
 }
+
+
+#updatePass{
+  .modal-content{
+    gap: 20px;
+    text-align: center;
+  }
+  .icon {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+  }
+}
+
+
+.main-page_change--pass{
+  .icon {
+    width: 116px;
+    height: 116px;
+    margin: 28px auto 22px;
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+.main-page_accountDel{
+    .icon {
+    width: 80px;
+    height: 80px;
+    margin: 12px auto 20px;
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+}

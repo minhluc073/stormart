@@ -373,3 +373,20 @@
   top: 50%;
   transform: translateY(-50%);
 }
+
+.password-wrap{
+  position: relative;
+  .show-pass{
+    position: absolute;
+    padding: 0;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+  }
+  .icon{
+    width: 20px;
+    height: 20px;
+  }
+}

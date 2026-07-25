@@ -646,6 +646,8 @@ select {
   height: 24px;
 }
 
+.icon-eye,
+.icon-eyeOff,
 .icon-unlock,
 .icon-share,
 .icon-search {
@@ -1328,8 +1330,16 @@ select {
   margin-bottom: 8px;
 }
 
+.mb10 {
+  margin-block-end: 10px;
+}
+
 .mb12 {
   margin-block-end: 12px;
+}
+
+.mb14 {
+  margin-block-end: 14px;
 }
 
 .mb16 {
@@ -1338,6 +1348,10 @@ select {
 
 .mb6 {
   margin-block-end: 6px;
+}
+
+.mb20 {
+  margin-block-end: 20px;
 }
 
 .cl-text-headline {
@@ -1979,6 +1993,23 @@ select {
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.password-wrap {
+  position: relative;
+}
+.password-wrap .show-pass {
+  position: absolute;
+  padding: 0;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+}
+.password-wrap .icon {
+  width: 20px;
+  height: 20px;
 }
 
 .img-thumbnail {
@@ -2687,6 +2718,36 @@ select {
   width: 80px;
   height: 80px;
   margin: auto;
+}
+
+#updatePass .modal-content {
+  gap: 20px;
+  text-align: center;
+}
+#updatePass .icon {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+}
+
+.main-page_change--pass .icon {
+  width: 116px;
+  height: 116px;
+  margin: 28px auto 22px;
+}
+.main-page_change--pass .icon img {
+  width: 100%;
+  height: auto;
+}
+
+.main-page_accountDel .icon {
+  width: 80px;
+  height: 80px;
+  margin: 12px auto 20px;
+}
+.main-page_accountDel .icon img {
+  width: 100%;
+  height: auto;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -519,6 +519,8 @@ select {
   width: 24px;
   height: 24px;
 }
+.icon-eye,
+.icon-eyeOff,
 .icon-unlock,
 .icon-share,
 .icon-search {
@@ -1190,14 +1192,23 @@ select {
 .mb8{
   margin-bottom: 8px;
 }
+.mb10{
+  margin-block-end: 10px;
+}
 .mb12{
   margin-block-end: 12px;
+}
+.mb14{
+  margin-block-end: 14px;
 }
 .mb16{
   margin-block-end: 16px;
 }
 .mb6{
   margin-block-end: 6px;
+}
+.mb20{
+  margin-block-end: 20px;
 }
 .cl-text-headline{
   color: rgb(var(--text-headline)) !important;

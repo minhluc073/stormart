@@ -22,21 +22,16 @@
   ------------------------------------------------------------------------------------- */
   var showPass = function () {
     $(".show-pass").on("click", function () {
-      $(this).toggleClass("active");
-      if ($(".password-field").attr("type") == "password") {
-        $(".password-field").attr("type", "text");
-      } else if ($(".password-field").attr("type") == "text") {
-        $(".password-field").attr("type", "password");
-      }
-    });
+        const input = $(this).closest(".password-wrap").find(".password-field");
+        const use = $(this).find("use");
 
-    $(".show-pass2").on("click", function () {
-      $(this).toggleClass("active");
-      if ($(".password-field2").attr("type") == "password") {
-        $(".password-field2").attr("type", "text");
-      } else if ($(".password-field2").attr("type") == "text") {
-        $(".password-field2").attr("type", "password");
-      }
+        if (input.attr("type") === "password") {
+            input.attr("type", "text");
+            use.attr("href", "../icon/sprite.svg#eye");
+        } else {
+            input.attr("type", "password");
+            use.attr("href", "../icon/sprite.svg#eyeOff");
+        }
     });
   };
 
