@@ -50,16 +50,16 @@
   --primary-light: 7, 250, 255;
   --primary-light2: 240, 245, 255;
   --secondary-100: 203, 213, 225;
-  --slate-50: 248, 250, 252;
-  --slate-100: 241, 245, 249;
-  --slate-200: 226, 232, 240;
-  --slate-300: 203, 213, 225;
-  --slate-400: 117, 129, 146;
-  --slate-500: 100, 116, 139;
-  --slate-600: 71, 85, 105;
-  --slate-700: 51, 65, 85;
-  --slate-800: 30, 41, 59;
-  --slate-900: 15, 23, 42;
+  --state-50: 248, 250, 252;
+  --state-100: 241, 245, 249;
+  --state-200: 226, 232, 240;
+  --state-300: 203, 213, 225;
+  --state-400: 117, 129, 146;
+  --state-500: 100, 116, 139;
+  --state-600: 71, 85, 105;
+  --state-700: 51, 65, 85;
+  --state-800: 30, 41, 59;
+  --state-900: 15, 23, 42;
   --gray-400: 156, 163, 175;
   --success-dark: 22, 163, 74;
   --success-base: 34, 197, 94;
@@ -436,6 +436,12 @@ h6,
   color: rgb(var(--text-headline));
 }
 
+.text-caption-1 {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
 .text-caption-2 {
   font-size: 12px;
   line-height: 16px;
@@ -509,8 +515,8 @@ input[type=color] {
   padding: 15px 16px;
   font-weight: 400;
   border-radius: 8px;
-  border: 1.5px solid rgb(var(--slate-100));
-  background-color: rgb(var(--slate-50));
+  border: 1.5px solid rgb(var(--state-100));
+  background-color: rgb(var(--state-50));
   color: rgb(var(--text-base));
 }
 
@@ -548,7 +554,7 @@ input[type=color]:focus {
 
 textarea::placeholder,
 input::placeholder {
-  color: rgb(var(--slate-400));
+  color: rgb(var(--state-400));
 }
 
 textarea,
@@ -771,6 +777,10 @@ select {
   padding-bottom: 85px;
 }
 
+.spacing_bottom-3 {
+  padding-bottom: 40px;
+}
+
 .row-grid {
   display: grid;
   gap: 12px;
@@ -895,7 +905,7 @@ select {
 .menu-tab {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  border-bottom: 1.5px solid rgb(var(--slate-100));
+  border-bottom: 1.5px solid rgb(var(--state-100));
 }
 .menu-tab .nav-tab-item {
   flex-grow: 1;
@@ -907,7 +917,7 @@ select {
   font-weight: 500;
   font-size: 14px;
   line-height: 100%;
-  color: rgb(var(--slate-600));
+  color: rgb(var(--state-600));
   position: relative;
 }
 .menu-tab .tab-link.active {
@@ -955,7 +965,7 @@ select {
   padding: 14px 16px;
   border-radius: 8px;
   background-color: rgb(var(--text-white));
-  border: 1px solid rgb(var(--slate-200));
+  border: 1px solid rgb(var(--state-200));
   display: flex;
   justify-content: center;
 }
@@ -993,6 +1003,12 @@ select {
   justify-content: center;
 }
 
+.btn-large {
+  font-size: 16px;
+  line-height: 22px;
+  padding-block: 12.5px;
+}
+
 .text-underline-primary {
   text-decoration: underline;
   color: rgb(var(--error-base));
@@ -1002,10 +1018,15 @@ select {
   text-decoration: underline;
 }
 
+.text-underline-offest2 {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .btn-seemore {
   border-radius: 6px;
   padding: 8px 16px;
-  background-color: rgb(var(--slate-100));
+  background-color: rgb(var(--state-100));
   color: rgb(var(--text-headline));
   width: max-content;
   display: block;
@@ -1019,7 +1040,7 @@ select {
 .list-star .icon-star {
   width: 16px;
   height: 16px;
-  color: rgb(var(--slate-200));
+  color: rgb(var(--state-200));
 }
 .list-star .icon-star.active {
   color: rgb(var(--warning-base));
@@ -1129,9 +1150,9 @@ select {
   gap: 8px;
   cursor: pointer;
   border-radius: 8px;
-  border: 1px solid rgb(var(--slate-100));
+  border: 1px solid rgb(var(--state-100));
   padding: 12px 14px;
-  background-color: rgb(var(--slate-50));
+  background-color: rgb(var(--state-50));
 }
 .select-flag .text-value {
   flex-grow: 1;
@@ -1275,8 +1296,8 @@ select {
   font-weight: normal;
   line-height: 100%;
   color: rgb(var(--text-headline));
-  border: 1.5px solid rgb(var(--slate-100));
-  background-color: rgb(var(--slate-50));
+  border: 1.5px solid rgb(var(--state-100));
+  background-color: rgb(var(--state-50));
   color: rgb(var(--text-base));
   position: relative;
 }
@@ -1293,7 +1314,7 @@ select {
   width: 36px;
   height: 20px;
   -webkit-appearance: none;
-  background-color: rgb(var(--slate-100));
+  background-color: rgb(var(--state-100));
   border-radius: 99px;
   transition: 0.2s;
   margin-right: 0;
@@ -1354,6 +1375,10 @@ select {
   margin-block-end: 20px;
 }
 
+.mb24 {
+  margin-block-end: 24px;
+}
+
 .cl-text-headline {
   color: rgb(var(--text-headline)) !important;
 }
@@ -1375,7 +1400,84 @@ select {
 }
 
 /*------------ Components ---------------- */
-/*------------ header ---------------- */
+.box-head-signUp,
+.box-head-signIn {
+  text-align: center;
+  display: grid;
+  gap: 8px;
+  margin: 48px auto 40px;
+}
+.box-head-signUp .title,
+.box-head-signIn .title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+}
+.box-head-signUp .text,
+.box-head-signIn .text {
+  font-size: 16px;
+  line-height: 100%;
+}
+
+.box-head-signUp {
+  margin-top: 16px;
+}
+
+.box-check_signIn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.checkbox .check {
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+}
+.checkbox .check::after {
+  top: 2px;
+  left: 5px;
+}
+.checkbox .label {
+  margin-bottom: 0;
+}
+
+.box-btn-social {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.btn-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 100%;
+  font-weight: 500;
+  gap: 10px;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1.5px solid rgb(var(--state-100));
+  background-color: rgb(var(--state-50));
+}
+.btn-social img {
+  width: 20px;
+  height: 20px;
+}
+
+.main-page_account .box-ip {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
 .header-bg {
   padding-top: 10px;
   padding-bottom: 46px;
@@ -1478,6 +1580,10 @@ select {
   font-weight: 500;
   line-height: 26px;
 }
+.header-main .logo {
+  max-width: 112px;
+  height: auto;
+}
 
 .header-abs {
   position: absolute;
@@ -1535,7 +1641,7 @@ select {
   font-size: 12px;
   line-height: 100%;
   font-weight: 500;
-  color: rgb(var(--slate-800));
+  color: rgb(var(--state-800));
 }
 .menubar-footer .inner-bar .addcart {
   width: calc((100% - 8px) / 5 + 8px);
@@ -1628,7 +1734,7 @@ select {
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
-  color: rgb(var(--slate-400));
+  color: rgb(var(--state-400));
 }
 .form-search input {
   padding: 16px 12px;
@@ -1653,7 +1759,7 @@ select {
   border: 1px solid rgb(241, 245, 249);
   box-shadow: none;
   border-radius: 6px;
-  background-color: rgb(var(--slate-50));
+  background-color: rgb(var(--state-50));
 }
 
 .box-title {
@@ -1706,7 +1812,7 @@ select {
   border-radius: 99px;
 }
 .box-title .countdown__label {
-  color: rgb(var(--slate-300));
+  color: rgb(var(--state-300));
 }
 
 .form-search_home {
@@ -1833,7 +1939,7 @@ select {
   display: flex;
   align-items: center;
   gap: 6px;
-  color: rgb(var(--slate-600));
+  color: rgb(var(--state-600));
   font-size: 12px;
   line-height: 100%;
 }
@@ -1845,7 +1951,7 @@ select {
   content: "";
   height: 10px;
   width: 1px;
-  background-color: rgb(var(--slate-300));
+  background-color: rgb(var(--state-300));
   position: absolute;
   right: 0;
   top: 50%;
@@ -1942,7 +2048,7 @@ select {
   right: 0;
   width: 14px;
   height: 14px;
-  color: #2196F3;
+  color: #2196f3;
 }
 
 .card-seller .card-seller_info {
@@ -1988,7 +2094,7 @@ select {
   content: "";
   height: 12px;
   width: 1px;
-  background-color: rgb(var(--slate-200));
+  background-color: rgb(var(--state-200));
   position: absolute;
   right: 0;
   top: 50%;
@@ -2038,7 +2144,7 @@ select {
 }
 
 .tf-product-info-list .label {
-  color: rgb(var(--slate-600));
+  color: rgb(var(--state-600));
   font-size: 12px;
   line-height: 16px;
 }
@@ -2076,7 +2182,7 @@ select {
 }
 .tf-product-info-list .rate-box .num {
   font-weight: normal;
-  color: rgb(var(--slate-600));
+  color: rgb(var(--state-600));
 }
 .tf-product-info-list .box-price {
   display: flex;
@@ -2223,7 +2329,7 @@ select {
 .product-info-tab .title-overview {
   margin-bottom: 8px;
   padding-bottom: 6px;
-  border-bottom: 1px solid rgb(var(--slate-100));
+  border-bottom: 1px solid rgb(var(--state-100));
   font-weight: 500;
   font-size: 14px;
   line-height: 100%;
@@ -2374,7 +2480,7 @@ select {
   border-radius: 99px;
   background-color: rgb(var(--text-white));
   box-shadow: var(--shadow-4);
-  color: rgb(var(--slate-700));
+  color: rgb(var(--state-700));
   font-size: 12px;
   line-height: 100%;
 }
@@ -2496,7 +2602,7 @@ select {
   height: 32px;
   border-radius: 50%;
   color: rgb(var(--text-headline));
-  border: 1px solid rgb(var(--slate-300));
+  border: 1px solid rgb(var(--state-300));
   background-color: rgb(var(--text-white));
   font-size: 14px;
   line-height: 100%;
@@ -2599,9 +2705,9 @@ select {
   border-radius: 8px;
   overflow: hidden;
   padding: 16px;
-  background-color: rgb(var(--slate-50));
+  background-color: rgb(var(--state-50));
   transition: all 0.3s ease-in-out;
-  border: 1px solid rgb(var(--slate-50));
+  border: 1px solid rgb(var(--state-50));
   display: grid;
   gap: 8px;
   position: relative;
@@ -2644,7 +2750,7 @@ select {
   font-weight: 500;
   color: rgb(var(--text-headline));
   font-weight: 500;
-  border-bottom: 1px solid rgb(var(--slate-200));
+  border-bottom: 1px solid rgb(var(--state-200));
 }
 .box-notification .noti-item {
   padding: 10px 0px;

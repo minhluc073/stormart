@@ -7,7 +7,7 @@
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
-    color: rgb(var(--slate-400));
+    color: rgb(var(--state-400));
   }
   input {
     padding: 16px 12px;
@@ -20,8 +20,8 @@
     line-height: 100%;
   }
 }
-.box-search{
-  .title{
+.box-search {
+  .title {
     margin-bottom: 8px;
     font-size: 14px;
   }
@@ -34,7 +34,7 @@
       border: 1px solid rgba(241, 245, 249, 1);
       box-shadow: none;
       border-radius: 6px;
-      background-color: rgb(var(--slate-50));
+      background-color: rgb(var(--state-50));
     }
   }
 }
@@ -60,35 +60,34 @@
   .img-sale {
     max-width: 75px;
   }
-  .box-sale{
+  .box-sale {
     flex-grow: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
   }
-  .text-sale{
+  .text-sale {
     font-size: 14px;
     line-height: 100%;
     font-weight: 500;
   }
   .countdown__item,
-  .countdown__timer{
+  .countdown__timer {
     display: flex;
     align-items: center;
     gap: 3px;
   }
-  .countdown__value{
+  .countdown__value {
     font-size: 12px;
     line-height: 16px;
-    color:rgb(var(--text-headline));
+    color: rgb(var(--text-headline));
     padding: 0 7px;
     background-color: rgb(var(--warning-base));
     border-radius: 99px;
   }
-  .countdown__label{
-    color: rgb(var(--slate-300));
-    
+  .countdown__label {
+    color: rgb(var(--state-300));
   }
 }
 .form-search_home {
@@ -214,7 +213,7 @@
     display: flex;
     align-items: center;
     gap: 6px;
-    color: rgb(var(--slate-600));
+    color: rgb(var(--state-600));
     font-size: 12px;
     line-height: 100%;
     li:not(:last-child) {
@@ -224,7 +223,7 @@
         content: "";
         height: 10px;
         width: 1px;
-        background-color: rgb(var(--slate-300));
+        background-color: rgb(var(--state-300));
         position: absolute;
         right: 0;
         top: 50%;
@@ -232,16 +231,16 @@
       }
     }
   }
-  .box-price{
+  .box-price {
     display: flex;
     gap: 8px;
     align-items: center;
-    .price-new{
+    .price-new {
       font-size: 14px;
       color: rgb(var(--text-headline));
       font-weight: 500;
     }
-    .price-old{
+    .price-old {
       font-size: 12px;
       font-weight: normal;
       line-height: 100%;
@@ -249,63 +248,63 @@
       color: rgb(var(--gray-400));
     }
   }
-  &.style-sm{
+  &.style-sm {
     gap: 8px;
-  .card-product_banner {
-    border-radius: 6px;
-    .badge-sale {
-      left: 6px;
-      top: 6px;
-      font-size: 10px;
-      line-height: 16px;
-      padding: 0 6px;
-      height: 16px;
-    }
-    .btn-wishlist {
-      right: 6px;
-      top: 6px;
-      padding: 4px;
-      svg {
-        width: 10px;
-        height: 10px;
+    .card-product_banner {
+      border-radius: 6px;
+      .badge-sale {
+        left: 6px;
+        top: 6px;
+        font-size: 10px;
+        line-height: 16px;
+        padding: 0 6px;
+        height: 16px;
+      }
+      .btn-wishlist {
+        right: 6px;
+        top: 6px;
+        padding: 4px;
+        svg {
+          width: 10px;
+          height: 10px;
+        }
       }
     }
-  }
-  .card-product_info {
-    .name-product {
-      font-size: 12px;
-      letter-spacing: -0.5%;
-    }
-    .icon-star {
-      width: 12px;
-      height: 12px;
-      margin-right: 2px;
-      margin-top: -2px;
-    }
-  }
-  .meta-box {
-    gap: 4px;
-    font-size: 11px;
-    li:not(:last-child) {
-      padding-right: 4px;
-      &::after {
-        height: 8px;
-        width: 1px;
+    .card-product_info {
+      .name-product {
+        font-size: 12px;
+        letter-spacing: -0.5%;
+      }
+      .icon-star {
+        width: 12px;
+        height: 12px;
+        margin-right: 2px;
+        margin-top: -2px;
       }
     }
-  }
-  .box-price{
-    .price-new{
-      font-size: 12px;
+    .meta-box {
+      gap: 4px;
+      font-size: 11px;
+      li:not(:last-child) {
+        padding-right: 4px;
+        &::after {
+          height: 8px;
+          width: 1px;
+        }
+      }
     }
-    .price-old{
-      font-size: 10px;
+    .box-price {
+      .price-new {
+        font-size: 12px;
+      }
+      .price-old {
+        font-size: 10px;
+      }
     }
-  }
   }
 }
 
-.card-seller{
+.card-seller {
   padding: 12px;
   border-radius: 8px;
   background-color: rgb(var(--text-white));
@@ -314,38 +313,38 @@
   align-items: center;
   gap: 8px;
 }
-.card-seller .card-seller_img{
+.card-seller .card-seller_img {
   position: relative;
   flex-shrink: 0;
   width: 48px;
   height: 48px;
 }
-.card-seller .card-seller_img .icon-badgeCheck{
+.card-seller .card-seller_img .icon-badgeCheck {
   position: absolute;
   bottom: 0;
   right: 0;
   width: 14px;
   height: 14px;
-  color: #2196F3;
+  color: #2196f3;
 }
-.card-seller .card-seller_info{
+.card-seller .card-seller_info {
   display: flex;
   flex-direction: column;
   gap: 8px;
   flex-grow: 1;
 }
-.card-seller .card-seller_info .name{
+.card-seller .card-seller_info .name {
   font-weight: 600;
   font-size: 14px;
   line-height: 100%;
   color: rgb(var(--text-headline));
 }
-.card-seller .card-seller_info .meta-box{
+.card-seller .card-seller_info .meta-box {
   display: flex;
   gap: 8px;
 }
 
-.card-seller .meta-box .item{
+.card-seller .meta-box .item {
   display: flex;
   align-items: center;
 }
@@ -353,12 +352,12 @@
   margin-top: -2px;
   margin-right: 6px;
 }
-.card-seller .meta-box .item .num{
+.card-seller .meta-box .item .num {
   color: rgb(var(--text-headline));
   font-weight: 600;
 }
 
-.card-seller .meta-box .item:not(:last-child){
+.card-seller .meta-box .item:not(:last-child) {
   padding-right: 8px;
   position: relative;
 }
@@ -367,16 +366,16 @@
   content: "";
   height: 12px;
   width: 1px;
-  background-color: rgb(var(--slate-200));
+  background-color: rgb(var(--state-200));
   position: absolute;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
 }
 
-.password-wrap{
+.password-wrap {
   position: relative;
-  .show-pass{
+  .show-pass {
     position: absolute;
     padding: 0;
     right: 16px;
@@ -385,7 +384,7 @@
     width: 20px;
     height: 20px;
   }
-  .icon{
+  .icon {
     width: 20px;
     height: 20px;
   }

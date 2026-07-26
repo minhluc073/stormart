@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Jobko - Job Finder Mobile App</title>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+  <!-- font -->
+  <link rel="stylesheet" href="../fonts/fonts.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/nouislider.min.css" />
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+  <!-- manifest json -->
+  <link rel="manifest" href="../_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+  <!-- Favicon and Touch Icons  -->
+  <link rel="shortcut icon" href="../images/logo/168.png" />
+  <link rel="apple-touch-icon-precomposed" href="../images/logo/168.png" />
+
+</head>
+
+<body>
+
+  <header class="header-main">
+    <button class="btn-left btn_back">
+      <svg class="icon-back">
+        <use href="../icon/sprite.svg#back"></use>
+      </svg>
+    </button>
+    <img src="../images/logo.png" class="logo" alt="">
+
+  </header>
+
+  <div class="page-width main-page_account spacing_top spacing_bottom-3">
+    <div class="box-head-signUp">
+      <h6 class="title">Register your Account</h6>
+      <p class="text">Create an account to start shopping and track your orders easily.</p>
+    </div>
+    <form action="home.html">
+      <div class="box-ip mb14">
+        <fieldset class="field">
+          <label for="firstName" class="text-body-3 mb8">First Name</label>
+          <input type="text" id="firstName" placeholder="Jonson">
+        </fieldset>
+        <fieldset class="field">
+          <label for="lastName" class="text-body-3 mb8">Last Name</label>
+          <input type="text" id="lastName" placeholder="Roy">
+        </fieldset>
+      </div>
+      <fieldset class="field mb14">
+        <label for="email" class="text-body-3 mb8">Email Address</label>
+        <input type="text" id="email" placeholder="codylee@gmail.com">
+      </fieldset>
+      <div class="mb14">
+        <label for="phone" class="label text-body-3 mb8">Phone Number</label>
+        <div class="select-phone">
+          <div class="select-flag">
+            <button class="select-current">
+              <img src="../images/flags/usa1.svg" alt="">
+              <span class="text-value">+1</span>
+              <svg class="icon-arrowDown">
+                <use href="../icon/sprite.svg#arrowDown"></use>
+              </svg>
+            </button>
+            <ul class="select-list">
+              <li data-value="+1">
+                <img src="../images/flags/usa1.svg" alt="">
+                <span>+1</span>
+              </li>
+
+              <li data-value="+84">
+                <img src="../images/flags/vn.svg" alt="">
+                <span>+84</span>
+              </li>
+              <li data-value="+33">
+                <img src="../images/flags/fr.svg" alt="">
+                <span>+33</span>
+              </li>
+            </ul>
+            <input type="hidden" name="phone_code" value="+1">
+          </div>
+          <input id="phone" type="number" placeholder="707 797 0462">
+        </div>
+      </div>
+      <fieldset class="field mb14">
+        <label for="pass" class="text-body-3 mb8">Password *</label>
+        <div class="password-wrap">
+          <input type="password" id="pass" class="password-field" placeholder="e.g., co@ak2024@ l"
+            value="e.g., co@ak2024@ l">
+          <button type="button" class="show-pass">
+            <svg class="icon">
+              <use href="../icon/sprite.svg#eyeOff"></use>
+            </svg>
+          </button>
+        </div>
+      </fieldset>
+      <div class="box-check_signIn mb24">
+        <fieldset class="checkbox">
+          <input type="checkbox" class="check" id="remember">
+          <label for="remember" class="label text-caption-1">I agree to <a href="term.html" class="text-underline-offest2">Terms & Conditions</a> and <a href="privacy-policy.html" class="text-underline-offest2">Privacy Policy</a></label>
+        </fieldset>
+      </div>
+      <button class="btn-primary btn-large mb16">Sign Up</button>
+      <p class="text-center text-caption-1 fw-normal mb20">Don’t have an Account yet? <a href="sign-in.html"
+          class="fw-medium text-underline-offest2">Sign In</a></p>
+      <h6 class="text-center mb20">OR</h6>
+      <div class="box-btn-social">
+        <a href="home.html" class="btn-social">
+          <img src="../images/icon/google.png" alt="">
+          Google
+        </a>
+        <a href="home.html" class="btn-social">
+          <img src="../images/icon/facebook.png" alt="">
+          Facebook
+        </a>
+      </div>
+    </form>
+
+  </div>
+
+
+
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/lazysize.min.js"></script>
+  <script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="../js/carousel.js"></script>
+  <script type="text/javascript" src="../js/jquery.nice-select.min.js"></script>
+  <script type="text/javascript" src="../js/count-down.js"></script>
+  <script type="text/javascript" src="../js/multiple-modal.js"></script>
+  <script type="text/javascript" src="../js/nouislider.min.js"></script>
+  <script type="text/javascript" src="../js/rangle-slider.js"></script>
+  <script type="text/javascript" src="../js/init.js"></script>
+  <script type="text/javascript" src="../js/main.js"></script>
+
+</body>
+
+</html>
