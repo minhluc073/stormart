@@ -73,3 +73,103 @@
     gap: 16px;
   }
 }
+
+.main-page_account-password{
+  .box-head_new--password{
+    text-align: center;
+    margin: 72px auto 40px;
+    .icon{
+      width: 86px;
+      height: 86px;
+    }
+    .title{
+      margin: 20px auto 12px;
+      font-weight: 600;
+    }
+    .text{
+      font-weight: normal;
+    }
+  }
+
+}
+.main-page_account-password--success{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .box-head_new--password-success{
+    text-align: center;
+    .title{
+      margin: 20px auto 12px;
+      font-weight: 600;
+    }
+    .text{
+      font-weight: normal;
+      margin-bottom: 40px;
+    }
+    .icon{
+      width: 86px;
+      height: 86px;
+    }
+  }
+}
+
+.main-page_account-verify{
+  .box-head_account-verify{
+    text-align: center;
+    margin: 69px auto 40px;
+    .icon{
+      width: 86px;
+      height: 86px;
+      margin-bottom: 20px;
+    }
+    .title{
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    .text{
+      font-weight: normal;
+      margin-bottom: 0;
+    }
+  }
+  .text-resend {
+    color: rgb(var(--text-base));
+    font-weight: 400;
+    text-align: center;
+    margin: 12px auto 24px;
+    span{
+      color: rgb(var(--text-headline));
+      font-weight: 500;
+    }
+  }
+  .box-info-verify{
+    display: flex;
+    gap: 10px;
+    padding: 12px;
+    margin-bottom: 36px;
+    background: rgba(250, 204, 21, 0.08);
+    border: 1px solid rgba(250, 204, 21, 0.32);
+    border-radius: 8px;
+    svg{
+      width: 15px;
+      height: 15px;
+      color: rgb(var(--warning-base));
+    }
+    .text{
+      color: rgb(var(--warning-dark));
+      p{
+        color: rgb(var(--text-headline));
+      }
+    }
+  }
+}
+.digit-group{
+  display: flex;
+  gap: 8px;
+  .form-control{
+    width: 48px;
+    height: 48px;
+    border: 1px solid rgb(var(--state-100));
+    background-color: rgb(var(--state-50));
+  }
+}

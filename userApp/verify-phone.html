@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Jobko - Job Finder Mobile App</title>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+  <!-- font -->
+  <link rel="stylesheet" href="../fonts/fonts.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/nouislider.min.css" />
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+  <!-- manifest json -->
+  <link rel="manifest" href="../_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+  <!-- Favicon and Touch Icons  -->
+  <link rel="shortcut icon" href="../images/logo/168.png" />
+  <link rel="apple-touch-icon-precomposed" href="../images/logo/168.png" />
+
+</head>
+
+<body>
+
+  <header class="header-main">
+    <button class="btn-left btn_back">
+      <svg class="icon-back">
+        <use href="../icon/sprite.svg#back"></use>
+      </svg>
+    </button>
+    <img src="../images/logo.png" class="logo" alt="">
+
+  </header>
+
+  <div class="page-width main-page_account-verify spacing_top spacing_bottom-3">
+    <div class="box-head_account-verify">
+      <img class="icon" src="../images/icon/verify-phone.png" alt="">
+      <h3 class="title">Verify your Phone Number</h3>
+      <p class="h6 text">Enter the 6-digit verification code sent to your phone number.</p>
+    </div>
+    <div class="box-info-verify">
+      <svg class="icon-warning">
+        <use href="../icon/sprite.svg#warning"></use>
+      </svg>
+      <div class="text">We sent a verification code to your Phone<br><p>+1 707 *** ***2</p></div>
+    </div>
+    <p class="mb6 text-body-3">Verification Code</p>
+    <div class="digit-group">
+      <input class="form-control" required type="text" id="digit-2" name="digit-2" data-next="digit-3"
+        data-previous="digit-1" value="7">
+      <input class="form-control" required type="text" id="digit-3" name="digit-3" data-next="digit-4"
+        data-previous="digit-2">
+      <input class="form-control" required type="text" id="digit-4" name="digit-4" data-next="digit-5"
+        data-previous="digit-3">
+      <input class="form-control" required type="text" id="digit-5" name="digit-5" data-next="digit-6"
+        data-previous="digit-4">
+      <input class="form-control" required type="text" id="digit-6" name="digit-6" data-next="digit-7"
+        data-previous="digit-5">
+      <input class="form-control" required type="text" id="digit-7" name="digit-7" data-next="digit-8"
+        data-previous="digit-6">
+    </div>
+    <p class="text-resend text-body-3">Didn’t get the code? <span>(Resend in 30s)</span></p>
+    <a href="new-password.html" class="btn-primary btn-large">Submit</a>
+  
+  </div>
+
+
+
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/lazysize.min.js"></script>
+  <script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="../js/carousel.js"></script>
+  <script type="text/javascript" src="../js/jquery.nice-select.min.js"></script>
+  <script type="text/javascript" src="../js/count-down.js"></script>
+  <script type="text/javascript" src="../js/multiple-modal.js"></script>
+  <script type="text/javascript" src="../js/nouislider.min.js"></script>
+  <script type="text/javascript" src="../js/rangle-slider.js"></script>
+  <script type="text/javascript" src="../js/init.js"></script>
+  <script type="text/javascript" src="../js/main.js"></script>
+
+</body>
+
+</html>

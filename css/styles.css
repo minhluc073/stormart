@@ -703,6 +703,11 @@ select {
   height: 18px;
 }
 
+.icon-warning {
+  width: 15px;
+  height: 15px;
+}
+
 .list-socials {
   display: flex;
   align-items: center;
@@ -1476,6 +1481,103 @@ select {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
+}
+
+.main-page_account-password .box-head_new--password {
+  text-align: center;
+  margin: 72px auto 40px;
+}
+.main-page_account-password .box-head_new--password .icon {
+  width: 86px;
+  height: 86px;
+}
+.main-page_account-password .box-head_new--password .title {
+  margin: 20px auto 12px;
+  font-weight: 600;
+}
+.main-page_account-password .box-head_new--password .text {
+  font-weight: normal;
+}
+
+.main-page_account-password--success {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-page_account-password--success .box-head_new--password-success {
+  text-align: center;
+}
+.main-page_account-password--success .box-head_new--password-success .title {
+  margin: 20px auto 12px;
+  font-weight: 600;
+}
+.main-page_account-password--success .box-head_new--password-success .text {
+  font-weight: normal;
+  margin-bottom: 40px;
+}
+.main-page_account-password--success .box-head_new--password-success .icon {
+  width: 86px;
+  height: 86px;
+}
+
+.main-page_account-verify .box-head_account-verify {
+  text-align: center;
+  margin: 69px auto 40px;
+}
+.main-page_account-verify .box-head_account-verify .icon {
+  width: 86px;
+  height: 86px;
+  margin-bottom: 20px;
+}
+.main-page_account-verify .box-head_account-verify .title {
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.main-page_account-verify .box-head_account-verify .text {
+  font-weight: normal;
+  margin-bottom: 0;
+}
+.main-page_account-verify .text-resend {
+  color: rgb(var(--text-base));
+  font-weight: 400;
+  text-align: center;
+  margin: 12px auto 24px;
+}
+.main-page_account-verify .text-resend span {
+  color: rgb(var(--text-headline));
+  font-weight: 500;
+}
+.main-page_account-verify .box-info-verify {
+  display: flex;
+  gap: 10px;
+  padding: 12px;
+  margin-bottom: 36px;
+  background: rgba(250, 204, 21, 0.08);
+  border: 1px solid rgba(250, 204, 21, 0.32);
+  border-radius: 8px;
+}
+.main-page_account-verify .box-info-verify svg {
+  width: 15px;
+  height: 15px;
+  color: rgb(var(--warning-base));
+}
+.main-page_account-verify .box-info-verify .text {
+  color: rgb(var(--warning-dark));
+}
+.main-page_account-verify .box-info-verify .text p {
+  color: rgb(var(--text-headline));
+}
+
+.digit-group {
+  display: flex;
+  gap: 8px;
+}
+.digit-group .form-control {
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgb(var(--state-100));
+  background-color: rgb(var(--state-50));
 }
 
 .header-bg {
