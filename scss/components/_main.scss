@@ -389,3 +389,17 @@
     height: 20px;
   }
 }
+
+
+.meta-group-filter{
+  margin-bottom: 12px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  .tf-dropdown{
+    width: auto;
+    select{
+      width: 100%;
+    }
+  }
+}

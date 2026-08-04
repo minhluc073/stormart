@@ -934,6 +934,40 @@ select {
   }
 }
 
+.offcanvas {
+    background-color: rgb(var(--text-white));
+    &.offcanvas-end {
+        border: none;
+        width: 250px;
+        &.full {
+            width: 100%;
+        }
+    }
+
+    &.offcanvas-bottom {
+        border-top: none;
+        border-top-left-radius: 32px;
+        border-top-right-radius: 32px;
+        height: auto;
+    }
+
+    .offcanvas-header {
+        padding: 24px;
+        &.style-1 {
+            padding-bottom: 19px;
+        }
+        .icon-close-popup {
+            justify-content: flex-end;
+            font-size: 12px;
+        }
+    }
+    .offcanvas-body {
+        padding: 40px 24px 24px;
+    }
+}
+
+
+
 .popup-wrapper {
   border-radius: 12px;
   .close-popup {
@@ -1248,4 +1282,30 @@ select {
 }
 .fw-5 {
   font-weight: 500 !important;
+}
+
+
+.tf-dropdown{
+  position: relative;
+  width: max-content;
+  background-color: rgb(var(--state-50));
+  border-radius: 99px;
+  select{
+    width: auto;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 8px 12px;
+    padding-right: 28px;
+    border-radius: 99px;
+  }
+  .icon-arrowDown {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    width: 16px;
+    height: 16px;
+  }
 }
