@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Jobko - Job Finder Mobile App</title>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+  <!-- font -->
+  <link rel="stylesheet" href="../fonts/fonts.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/nouislider.min.css" />
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+  <!-- manifest json -->
+  <link rel="manifest" href="../_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+  <!-- Favicon and Touch Icons  -->
+  <link rel="shortcut icon" href="../images/logo/168.png" />
+  <link rel="apple-touch-icon-precomposed" href="../images/logo/168.png" />
+
+</head>
+
+<body>
+
+  <header class="header-main">
+    <button class="btn-left btn_back">
+      <svg class="icon-back">
+        <use href="../icon/sprite.svg#back"></use>
+      </svg>
+    </button>
+    <button class="btn-right" type="button" data-bs-target="#popupShare" data-bs-toggle="offcanvas">
+      <svg class="icon-share">
+        <use href="../icon/sprite.svg#share"></use>
+      </svg>
+    </button>
+  </header>
+
+  <div class="page-width seller-detail-page spacing_top spacing_bottom">
+    <div class="card-seller style-profile">
+      <div class="card-seller_img">
+        <img src="../images/user/brand/logo2.png" alt="TrueStyle Store">
+      </div>
+      <div class="card-seller_info">
+        <span class="name">TrueStyle Store</span>
+        <ul class="meta-box">
+          <li class="item">
+            <svg class="icon-calendar" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.5" />
+              <path d="M3 9H21" stroke="currentColor" stroke-width="1.5" />
+              <path d="M8 3V6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              <path d="M16 3V6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+            Join 12 April, 2025
+          </li>
+          <li class="item">
+            <svg class="icon-star">
+              <use href="../icon/sprite.svg#star"></use>
+            </svg>
+            <span class="num">4.9</span>
+            (1,234)
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="seller-stats">
+      <div class="stat-item">
+        <svg class="icon-hanger">
+          <use href="../icon/sprite.svg#hanger"></use>
+        </svg>
+        <div class="stat-info">
+          <span class="num">3,587</span>
+          <span class="label">Products List</span>
+        </div>
+      </div>
+      <div class="stat-item">
+        <svg class="icon-bag">
+          <use href="../icon/sprite.svg#bag"></use>
+        </svg>
+        <div class="stat-info">
+          <span class="num">3,587</span>
+          <span class="label">Products Sales</span>
+        </div>
+      </div>
+    </div>
+
+    <ul class="menu-tab column2 primary" role="tablist">
+      <li class="nav-tab-item" role="presentation">
+        <a href="#allProducts" class="tab-link active" data-bs-toggle="tab">All Products</a>
+      </li>
+      <li class="nav-tab-item" role="presentation">
+        <a href="#review" class="tab-link" data-bs-toggle="tab">Review</a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane fade show active" id="allProducts" role="tabpanel">
+        <div class="box-result">
+          <span class="text">Showing 16 Results</span>
+          <div class="tf-dropdown">
+            <select class="select">
+              <option>Short by</option>
+              <option>Best selling</option>
+              <option>Low to high</option>
+              <option>High to low</option>
+            </select>
+            <svg class="icon-arrowDown">
+              <use href="../icon/sprite.svg#arrowDown"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="row-grid column-2">
+          <div class="card-product">
+            <a href="product-detail.html" class="card-product_banner">
+              <img src="../images/user/product/product13.jpg" alt="">
+              <span class="badge-sale">25%</span>
+              <button class="btn-wishlist">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M10.4107 19.9677C7.58942 17.858 2 13.0348 2 8.69444C2 5.82563 4.10526 3.5 7 3.5C8.5 3.5 10 4 12 6C14 4 15.5 3.5 17 3.5C19.8947 3.5 22 5.82563 22 8.69444C22 13.0348 16.4106 17.858 13.5893 19.9677C12.6399 20.6776 11.3601 20.6776 10.4107 19.9677Z"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </a>
+            <div class="card-product_info">
+              <a href="product-detail.html" class="name-product">Luminous Evening Dress</a>
+              <ul class="meta-box">
+                <li class="box-rate">
+                  <svg class="icon-star">
+                    <use href="../icon/sprite.svg#star"></use>
+                  </svg>
+                  4.8 <span class="num">(379)</span>
+                </li>
+                <li class="sold">540 Sold</li>
+              </ul>
+              <div class="box-price">
+                <span class="price-new">$59.99</span>
+                <span class="price-old">$59.99</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-product">
+            <a href="product-detail.html" class="card-product_banner">
+              <img src="../images/user/product/product14.jpg" alt="">
+              <span class="badge-sale">25%</span>
+              <button class="btn-wishlist active">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M10.4107 19.9677C7.58942 17.858 2 13.0348 2 8.69444C2 5.82563 4.10526 3.5 7 3.5C8.5 3.5 10 4 12 6C14 4 15.5 3.5 17 3.5C19.8947 3.5 22 5.82563 22 8.69444C22 13.0348 16.4106 17.858 13.5893 19.9677C12.6399 20.6776 11.3601 20.6776 10.4107 19.9677Z"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </a>
+            <div class="card-product_info">
+              <a href="product-detail.html" class="name-product">Glistening Dusk Attire</a>
+              <ul class="meta-box">
+                <li class="box-rate">
+                  <svg class="icon-star">
+                    <use href="../icon/sprite.svg#star"></use>
+                  </svg>
+                  4.8 <span class="num">(379)</span>
+                </li>
+                <li class="sold">540 Sold</li>
+              </ul>
+              <div class="box-price">
+                <span class="price-new">$59.99</span>
+                <span class="price-old">$59.99</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-product">
+            <a href="product-detail.html" class="card-product_banner">
+              <img src="../images/user/product/product15.jpg" alt="">
+              <span class="badge-sale">25%</span>
+              <button class="btn-wishlist">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M10.4107 19.9677C7.58942 17.858 2 13.0348 2 8.69444C2 5.82563 4.10526 3.5 7 3.5C8.5 3.5 10 4 12 6C14 4 15.5 3.5 17 3.5C19.8947 3.5 22 5.82563 22 8.69444C22 13.0348 16.4106 17.858 13.5893 19.9677C12.6399 20.6776 11.3601 20.6776 10.4107 19.9677Z"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </a>
+            <div class="card-product_info">
+              <a href="product-detail.html" class="name-product">Shimmering Nightfall</a>
+              <ul class="meta-box">
+                <li class="box-rate">
+                  <svg class="icon-star">
+                    <use href="../icon/sprite.svg#star"></use>
+                  </svg>
+                  4.8 <span class="num">(379)</span>
+                </li>
+                <li class="sold">540 Sold</li>
+              </ul>
+              <div class="box-price">
+                <span class="price-new">$59.99</span>
+                <span class="price-old">$59.99</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-product">
+            <a href="product-detail.html" class="card-product_banner">
+              <img src="../images/user/product/product16.jpg" alt="">
+              <span class="badge-sale">25%</span>
+              <button class="btn-wishlist">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M10.4107 19.9677C7.58942 17.858 2 13.0348 2 8.69444C2 5.82563 4.10526 3.5 7 3.5C8.5 3.5 10 4 12 6C14 4 15.5 3.5 17 3.5C19.8947 3.5 22 5.82563 22 8.69444C22 13.0348 16.4106 17.858 13.5893 19.9677C12.6399 20.6776 11.3601 20.6776 10.4107 19.9677Z"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </a>
+            <div class="card-product_info">
+              <a href="product-detail.html" class="name-product">Glowing Ensemble</a>
+              <ul class="meta-box">
+                <li class="box-rate">
+                  <svg class="icon-star">
+                    <use href="../icon/sprite.svg#star"></use>
+                  </svg>
+                  4.8 <span class="num">(379)</span>
+                </li>
+                <li class="sold">540 Sold</li>
+              </ul>
+              <div class="box-price">
+                <span class="price-new">$59.99</span>
+                <span class="price-old">$59.99</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-product">
+            <a href="product-detail.html" class="card-product_banner">
+              <img src="../images/user/product/product17.jpg" alt="">
+              <span class="badge-sale">25%</span>
+              <button class="btn-wishlist">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M10.4107 19.9677C7.58942 17.858 2 13.0348 2 8.69444C2 5.82563 4.10526 3.5 7 3.5C8.5 3.5 10 4 12 6C14 4 15.5 3.5 17 3.5C19.8947 3.5 22 5.82563 22 8.69444C22 13.0348 16.4106 17.858 13.5893 19.9677C12.6399 20.6776 11.3601 20.6776 10.4107 19.9677Z"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </a>
+            <div class="card-product_info">
+              <a href="product-detail.html" class="name-product">Brilliant Starlight Outfit</a>
+              <ul class="meta-box">
+                <li class="box-rate">
+                  <svg class="icon-star">
+                    <use href="../icon/sprite.svg#star"></use>
+                  </svg>
+                  4.8 <span class="num">(379)</span>
+                </li>
+                <li class="sold">540 Sold</li>
+              </ul>
+              <div class="box-price">
+                <span class="price-new">$59.99</span>
+                <span class="price-old">$59.99</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-product">
+            <a href="product-detail.html" class="card-product_banner">
+              <img src="../images/user/product/product18.jpg" alt="">
+              <span class="badge-sale">25%</span>
+              <button class="btn-wishlist">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M10.4107 19.9677C7.58942 17.858 2 13.0348 2 8.69444C2 5.82563 4.10526 3.5 7 3.5C8.5 3.5 10 4 12 6C14 4 15.5 3.5 17 3.5C19.8947 3.5 22 5.82563 22 8.69444C22 13.0348 16.4106 17.858 13.5893 19.9677C12.6399 20.6776 11.3601 20.6776 10.4107 19.9677Z"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </a>
+            <div class="card-product_info">
+              <a href="product-detail.html" class="name-product">Moonlight Gown</a>
+              <ul class="meta-box">
+                <li class="box-rate">
+                  <svg class="icon-star">
+                    <use href="../icon/sprite.svg#star"></use>
+                  </svg>
+                  4.8 <span class="num">(379)</span>
+                </li>
+                <li class="sold">540 Sold</li>
+              </ul>
+              <div class="box-price">
+                <span class="price-new">$59.99</span>
+                <span class="price-old">$59.99</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="review" role="tabpanel">
+        <div class="order-list">
+          <div class="order-group">
+            <div class="order-group_head">
+              <h6 class="status">Awaiting Review</h6>
+              <span class="date">Sep 16, 2025</span>
+            </div>
+            <div class="order-item has-review">
+              <div class="order-item_top">
+                <div class="order-item_img" style="background-color: #e9e9e9;">
+                  <img src="../images/user/product/product13.jpg" alt="Luminous Evening Dress">
+                </div>
+                <div class="order-item_info">
+                  <p class="name">Luminous Evening Dress</p>
+                  <div class="meta">
+                    <span>Color: Gray</span>
+                    <span>Size: M</span>
+                  </div>
+                  <div class="bottom">
+                    <span class="price">$59.99</span>
+                  </div>
+                </div>
+                <a href="write-review.html" class="btn-review">Review</a>
+              </div>
+            </div>
+            <div class="order-item has-review">
+              <div class="order-item_top">
+                <div class="order-item_img" style="background-color: #ffebeb;">
+                  <img src="../images/user/product/product14.jpg" alt="Glistening Dusk Attire">
+                </div>
+                <div class="order-item_info">
+                  <p class="name">Glistening Dusk Attire</p>
+                  <div class="meta">
+                    <span>Color: Pink</span>
+                    <span>Size: M</span>
+                  </div>
+                  <div class="bottom">
+                    <span class="price">$59.99</span>
+                  </div>
+                </div>
+                <a href="write-review.html" class="btn-review">Review</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="menubar-button full">
+    <button type="button" class="btn-dark" data-bs-toggle="offcanvas" data-bs-target="#popupSendMessage">Send a
+      Message</button>
+  </div>
+
+  <div class="offcanvas offcanvas-bottom popup-wrapper" tabindex="-1" id="popupSendMessage" aria-labelledby="popupSendMessageLabel">
+    <div class="popup-inner">
+      <div class="popup-header">
+        <h3 class="title">Send a message</h3>
+        <button type="button" class="close-popup" data-bs-dismiss="offcanvas" aria-label="Close"><svg class="icon-close"><use href="../icon/sprite.svg#close"></use></svg></button>
+      </div>
+      <div class="popup-body">
+        <fieldset class="field mb14">
+          <label class="text-body-3 mb8">Subject</label>
+          <div class="select-wrap">
+            <select class="select">
+              <option>Subject</option>
+              <option>Product Question</option>
+              <option>Order Issue</option>
+              <option>Other</option>
+            </select>
+            <svg class="icon-arrowDown">
+              <use href="../icon/sprite.svg#arrowDown"></use>
+            </svg>
+          </div>
+        </fieldset>
+        <fieldset class="field mb16">
+          <label class="text-body-3 mb8">Write a message</label>
+          <textarea placeholder="Type message"></textarea>
+        </fieldset>
+        <div class="checkbox mb20">
+          <input type="checkbox" class="check" id="agreeMessage" checked>
+          <label for="agreeMessage" class="text-caption-1">I agree to the <a href="term.html"
+              class="text-underline-offest2">Terms & Conditions</a> & <a href="privacy-policy.html"
+              class="text-underline-offest2">Privacy Policy</a></label>
+        </div>
+        <button type="button" class="btn-dark">Send a Message</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="offcanvas offcanvas-bottom popup-wrapper" tabindex="-1" id="popupShare" aria-labelledby="offcanvasBottomLabel">
+    <div class="popup-inner">
+      <div class="popup-header">
+        <h3 class="title">Share this link via</h3>
+        <button type="button" class="close-popup" data-bs-dismiss="offcanvas" aria-label="Close"><svg class="icon-close"><use href="../icon/sprite.svg#close"></use></svg></button>
+      </div>
+      <div class="popup-body">
+        <ul class="list-socials">
+          <li><a href="#" class="social-link facebook"><svg class="icon-social icon-facebook"><use href="../icon/sprite.svg#facebook"></use></svg></a></li>
+          <li><a href="#" class="social-link linkedin"><svg class="icon-social icon-linkedin"><use href="../icon/sprite.svg#linkedin"></use></svg></a></li>
+          <li><a href="#" class="social-link instagram"><svg class="icon-social icon-instagram"><use href="../icon/sprite.svg#instagram"></use></svg></a></li>
+          <li><a href="#" class="social-link whatsapp"><svg class="icon-social icon-whatsapp"><use href="../icon/sprite.svg#whatsapp"></use></svg></a></li>
+          <li><a href="#" class="social-link x"><svg class="icon-social icon-x"><use href="../icon/sprite.svg#x"></use></svg></a></li>
+        </ul>
+        <h6 class="title-share-link">Share Link</h6>
+        <fieldset class="input-copy">
+          <input type="text" value="www.stormart.com/profile/0458..." placeholder="">
+          <button class="btn-copy"><svg class="icon-copy"><use href="../icon/sprite.svg#copy"></use></svg></button>
+        </fieldset>
+      </div>
+    </div>
+
+  </div>
+
+
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/lazysize.min.js"></script>
+  <script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="../js/carousel.js"></script>
+  <script type="text/javascript" src="../js/jquery.nice-select.min.js"></script>
+  <script type="text/javascript" src="../js/count-down.js"></script>
+  <script type="text/javascript" src="../js/multiple-modal.js"></script>
+  <script type="text/javascript" src="../js/nouislider.min.js"></script>
+  <script type="text/javascript" src="../js/rangle-slider.js"></script>
+  <script type="text/javascript" src="../js/init.js"></script>
+  <script type="text/javascript" src="../js/main.js"></script>
+
+</body>
+
+</html>

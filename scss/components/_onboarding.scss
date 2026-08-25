@@ -1,0 +1,245 @@
+@use "../abstracts/index" as *;
+
+/* ---------- Splash Screen (01) — preloader overlay on top of onboarding.html ---------- */
+.splash-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background-color: rgb(var(--text-white));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .blur-circle {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(50px);
+    opacity: 0.6;
+    pointer-events: none;
+  }
+  .blur-circle.top-right {
+    width: 260px;
+    height: 260px;
+    top: -70px;
+    right: -70px;
+    background-color: #e6e2fb;
+  }
+  .blur-circle.bottom-left {
+    width: 280px;
+    height: 280px;
+    bottom: -80px;
+    left: -90px;
+    background-color: #e5efff;
+  }
+
+  .splash-logo {
+    position: relative;
+    z-index: 1;
+    max-width: 210px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* ---------- Onboarding (02, 03, 04) ---------- */
+.onboarding-page {
+  position: relative;
+  min-height: 100vh;
+  background-color: rgb(var(--text-white));
+  overflow: hidden;
+
+  .btn-skip {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 20;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(var(--text-headline));
+  }
+}
+
+.onboarding-swiper {
+  position: relative;
+  z-index: 5;
+  height: 100vh;
+  background: transparent;
+
+  .swiper-wrapper,
+  .swiper-slide {
+    background: transparent;
+  }
+
+  .swiper-slide {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 64px;
+    padding-inline: 24px;
+  }
+}
+
+.onboard-mockup {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 280px;
+  height: 300px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: rgb(var(--text-white));
+  box-shadow: var(--shadow-2);
+  margin-bottom: 28px;
+
+  .mockup-scale {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 350px;
+    transform: scale(0.8);
+    transform-origin: top left;
+    pointer-events: none;
+  }
+
+  .mockup-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.32);
+    z-index: 2;
+  }
+}
+
+// Static shell: white background + shadow, does NOT slide with the swiper.
+// Sits outside .swiper (fixed to the viewport), only the mockup image and
+// the title/text content (below) move when the slide changes.
+.onboard-card-bg {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 287px;
+  border-radius: 20px 20px 0 0;
+  background-color: rgb(var(--text-white));
+  box-shadow: var(--shadow-2);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.onboard-card {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 287px;
+  background: transparent;
+  box-shadow: none;
+  padding: 32px 20px 0;
+  text-align: center;
+  z-index: 3;
+
+  .title {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(var(--text-headline));
+    margin-bottom: 16px;
+  }
+  .text {
+    font-size: 13px;
+    line-height: 20px;
+    color: rgb(var(--state-600));
+  }
+}
+
+.btn-onboard-next {
+  position: fixed;
+  right: 20px;
+  bottom: 48px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: rgb(var(--primary-dark));
+  color: rgb(var(--text-white));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-3);
+  z-index: 30;
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.onboarding-pagination {
+  position: absolute;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 140px;
+  transform: none !important;
+  width: auto !important;
+  z-index: 6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+
+  .swiper-pagination-bullet {
+    margin: 0 !important;
+    width: 6px;
+    height: 6px;
+    border-radius: 99px;
+    background-color: rgb(var(--state-200));
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+  }
+  .swiper-pagination-bullet-active {
+    width: 20px;
+    background-color: rgb(var(--primary-base));
+  }
+}
+
+.mockup-media {
+  position: relative;
+}
+
+/* ---------- Decorative extras on the mockup frames ---------- */
+.onboard-decor-hearts {
+  position: absolute;
+  top: -14px;
+  left: 10px;
+  z-index: 3;
+  color: #b9a6f7;
+  svg {
+    width: 46px;
+    height: 30px;
+  }
+}
+
+.badge-discount-round {
+  position: absolute;
+  top: -14px;
+  right: -10px;
+  z-index: 3;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: #7c5cfc;
+  color: rgb(var(--text-white));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 12px;
+  transform: rotate(12deg);
+  box-shadow: var(--shadow-2);
+}
+
+.badge-sale.style-orange {
+  background-color: #ff8a00;
+}

@@ -254,43 +254,134 @@
 
 
   <div class="offcanvas offcanvas-end full" id="filterSearch">
-    <div class="header-main">
-      <button class="btn-left btn_back" data-bs-dismiss="offcanvas">
+    <div class="header-main style-search">
+      <button class="btn_back" data-bs-dismiss="offcanvas">
         <svg class="icon-back">
           <use href="../icon/sprite.svg#back"></use>
         </svg>
       </button>
-      <h2 class="title">Filter & Search</h2>
-      <button class="btn-right btn-clearAll">Clear All</button>
+      <form class="form-search">
+        <input type="search" placeholder="Search Product">
+        <svg class="icon-search">
+          <use href="../icon/sprite.svg#search2"></use>
+        </svg>
+      </form>
     </div>
     <div class="overflow-auto spacing_top-2 spacing_bottom">
-      
-      <p>hhhh</p>
-      <p>hhhh</p>
-      <p>hhhh</p>
-      <p>hhhh</p>
-      <p>hhhh</p>
-      <p>hhhh</p>
-      <p>hhhh</p>
-      <p>hhhh</p>
-      <p>hhhh</p>
-      <p>hhhh</p>
-      <p>hhhh</p>
-      <p>hhhh</p>
-      <p>hhhh</p>
-      <p>hhhh</p>
-      <p>hhhh</p>
-      <p>hhhh</p>
-      <p>hhhh</p>
-      <p>hhhh</p>
-      <p>hhhh</p>
-      <p>hhhh</p>
-      <p>hhhh</p>
-      <p>hhhh</p>
-      <p>hhhh</p>
-      <p>hhhh</p>
-      <p>hhhh</p>
-      <p>hhhh</p>
+
+      <div class="filter-wrap">
+        <div class="filter-tab flat-check-list">
+          <a href="#filter-category" class="check-item active">Category</a>
+          <a href="#filter-price" class="check-item">Price Range</a>
+          <a href="#filter-size" class="check-item">Size</a>
+          <a href="#filter-color" class="check-item">Color</a>
+          <a href="#filter-brands" class="check-item">Brands</a>
+          <a href="#filter-availability" class="check-item">Availability</a>
+        </div>
+        <div class="filter-content">
+          <div class="filter-group" id="filter-category">
+            <p class="filter-group_title">Category</p>
+            <div class="list-tag flat-cb-list">
+              <div class="cb-item active">Men's</div>
+              <div class="cb-item">Women's</div>
+              <div class="cb-item">Sporty</div>
+              <div class="cb-item">Kids</div>
+              <div class="cb-item">Baby</div>
+              <div class="cb-item">Sporty</div>
+              <button class="btn-more-tag">
+                <svg class="icon-arrowDown">
+                  <use href="../icon/sprite.svg#arrowDown"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="filter-group" id="filter-price">
+            <p class="filter-group_title">Price</p>
+            <div class="price-box">
+              <div class="price-inputs">
+                <div class="price-input">
+                  <span class="label">Min.</span>
+                  <span class="value" id="price-min-value">10</span>
+                </div>
+                <span class="dash">-</span>
+                <div class="price-input">
+                  <span class="label">Max</span>
+                  <span class="value" id="price-max-value">1000</span>
+                </div>
+              </div>
+              <div class="price-tags">
+                <span class="tag">$00-$20</span>
+                <span class="tag">$20-$100</span>
+                <span class="tag">$100-$200</span>
+              </div>
+              <div class="price-slider">
+                <div id="price-range-slider"></div>
+                <div class="price-slider_label">
+                  <span>$10</span>
+                  <span>$1000</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filter-group" id="filter-size">
+            <p class="filter-group_title">Standard Size</p>
+            <div class="size-list flat-check-list">
+              <div class="check-item">S</div>
+              <div class="check-item">M</div>
+              <div class="check-item active">L</div>
+              <div class="check-item">XL</div>
+              <div class="check-item">XXL</div>
+            </div>
+          </div>
+          <div class="filter-group" id="filter-color">
+            <p class="filter-group_title">Color</p>
+            <div class="color-list flat-cb-list">
+              <span class="cb-item" style="background-color: #dfc6b8;"></span>
+              <span class="cb-item active" style="background-color: #c9c9c9;"></span>
+              <span class="cb-item" style="background-color: #ff4747;"></span>
+              <span class="cb-item" style="background-color: #22c55e;"></span>
+              <span class="cb-item" style="background-color: #facc15;"></span>
+            </div>
+          </div>
+          <div class="filter-group" id="filter-brands">
+            <p class="filter-group_title">Brands</p>
+            <div class="list-tag flat-cb-list">
+              <div class="cb-item">Zara</div>
+              <div class="cb-item">Gucci</div>
+              <div class="cb-item">Sara LifeStyle</div>
+              <div class="cb-item">Calvin Klein</div>
+              <div class="cb-item">Levis</div>
+              <div class="cb-item">Puma</div>
+              <div class="cb-item">adidas</div>
+              <div class="cb-item">Dior</div>
+              <button class="btn-more-tag">
+                <svg class="icon-arrowDown">
+                  <use href="../icon/sprite.svg#arrowDown"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="filter-group" id="filter-availability">
+            <p class="filter-group_title">Availability</p>
+            <div class="availability-list">
+              <label class="availability-item">
+                <span class="availability-item_left">
+                  <input type="radio" name="availability" class="check" checked>
+                  <span class="text">In stock</span>
+                </span>
+                <span class="num">(32)</span>
+              </label>
+              <label class="availability-item">
+                <span class="availability-item_left">
+                  <input type="radio" name="availability" class="check">
+                  <span class="text">Out of stock</span>
+                </span>
+                <span class="num">(2)</span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
 
     </div>
     <div class="menubar-button">

@@ -110,6 +110,21 @@
     border: 1px solid rgb(var(--state-100));
     background-color: rgb(var(--state-50));
   }
+  &.style-search {
+    justify-content: flex-start;
+    gap: 10px;
+    .btn_back {
+      position: static;
+      transform: none;
+      flex-shrink: 0;
+    }
+    .form-search {
+      flex-grow: 1;
+      input {
+        height: 48px;
+      }
+    }
+  }
 }
 
 .header-abs{

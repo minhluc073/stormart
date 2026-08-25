@@ -1,0 +1,160 @@
+@use "../abstracts/index" as *;
+
+.badge-device {
+  flex-shrink: 0;
+  padding: 4px 12px;
+  border-radius: 99px;
+  background-color: rgb(var(--primary-light2));
+  color: rgb(var(--primary-base));
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.device-table-wrap {
+  overflow-x: auto;
+  margin-bottom: 16px;
+}
+
+.device-table {
+  width: 100%;
+  min-width: 340px;
+
+  th,
+  td {
+    padding: 10px 6px;
+    text-align: left;
+    white-space: nowrap;
+    font-size: 12px;
+  }
+
+  thead th {
+    color: rgb(var(--state-500));
+    font-weight: 500;
+    border-bottom: 1px solid rgb(var(--state-100));
+  }
+
+  tbody td {
+    color: rgb(var(--text-headline));
+    border-bottom: 1px solid rgb(var(--state-100));
+  }
+
+  tbody tr:last-child td {
+    border-bottom: 0;
+  }
+
+  td:last-child,
+  th:last-child {
+    text-align: right;
+  }
+}
+
+.btn-delete-device {
+  width: auto;
+  padding: 0;
+  border: 0;
+  color: rgb(var(--error-base));
+  svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.device-help {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px;
+  border-radius: 10px;
+  background-color: rgb(var(--state-50));
+
+  .text {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(var(--text-headline));
+  }
+
+  .btn-primary {
+    width: auto;
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+}
+
+#deviceDeleteModal {
+  .modal-content {
+    position: relative;
+    text-align: center;
+    gap: 16px;
+    padding-top: 40px;
+  }
+
+  .modal-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    border: 0;
+    color: rgb(var(--error-base));
+  }
+
+  .box-illustration {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: rgba(var(--error-base), 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .icon-trash2 {
+      width: 36px;
+      height: 36px;
+      color: rgb(var(--error-base));
+    }
+
+    .dot {
+      position: absolute;
+      border-radius: 50%;
+    }
+    .dot-1 {
+      top: -6px;
+      left: 4px;
+      width: 8px;
+      height: 8px;
+      background-color: rgb(var(--primary-base));
+    }
+    .dot-2 {
+      top: 6px;
+      right: -10px;
+      width: 6px;
+      height: 6px;
+      background-color: rgb(var(--error-light));
+    }
+    .dot-3 {
+      bottom: -4px;
+      left: -8px;
+      width: 5px;
+      height: 5px;
+      background-color: rgb(var(--success-base));
+    }
+    .dot-4 {
+      bottom: 10px;
+      right: -4px;
+      width: 4px;
+      height: 4px;
+      background-color: rgb(var(--warning-base));
+    }
+  }
+
+  .desc {
+    font-size: 13px;
+    color: rgb(var(--state-600));
+    margin-top: -6px;
+  }
+}

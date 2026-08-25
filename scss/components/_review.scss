@@ -1,0 +1,137 @@
+.review-product {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  &_img {
+    flex-shrink: 0;
+    width: 64px;
+    height: 72px;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &_info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    .name {
+      font-size: 14px;
+      font-weight: 500;
+      color: rgb(var(--text-headline));
+    }
+
+    .meta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      color: rgb(var(--state-600));
+    }
+  }
+}
+
+.rating-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 20px;
+  padding-block: 20px;
+  border-top: 1px solid rgb(var(--state-100));
+  border-bottom: 1px solid rgb(var(--state-100));
+}
+
+.rating-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+
+  .label {
+    font-size: 14px;
+    color: rgb(var(--text-headline));
+  }
+}
+
+.review-feedback {
+  margin-top: 20px;
+
+  .label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(var(--text-headline));
+    margin-bottom: 10px;
+  }
+
+  textarea {
+    font-size: 13px;
+    height: 100px;
+  }
+}
+
+.review-anonymous {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+
+  label {
+    font-size: 14px;
+    color: rgb(var(--text-headline));
+  }
+}
+
+#reviewSuccessModal {
+  .modal-content {
+    position: relative;
+    gap: 20px;
+    text-align: center;
+    padding-top: 44px;
+  }
+
+  .modal-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    border: 0;
+    color: rgb(var(--state-500));
+  }
+
+  .box-illustration {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: rgb(var(--primary-light2));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .icon-reviewCard {
+      width: 36px;
+      height: 36px;
+    }
+
+    .icon-badgeCheck {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 22px;
+      height: 22px;
+      color: rgb(var(--success-base));
+    }
+  }
+}

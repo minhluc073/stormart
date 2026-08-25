@@ -525,6 +525,7 @@ select {
   width: 24px;
   height: 24px;
 }
+.icon-listView,
 .icon-eye,
 .icon-eyeOff,
 .icon-unlock,
@@ -805,6 +806,13 @@ select {
     .tab-link {
       font-size: 12px;
       padding: 10px 12px;
+    }
+  }
+  &.column4 {
+    grid-template-columns: repeat(4, 1fr);
+    .tab-link {
+      font-size: 13px;
+      padding: 9px 4px;
     }
   }
   &.primary {

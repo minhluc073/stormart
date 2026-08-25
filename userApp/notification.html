@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Jobko - Job Finder Mobile App</title>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+  <!-- font -->
+  <link rel="stylesheet" href="../fonts/fonts.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/nouislider.min.css" />
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+  <!-- manifest json -->
+  <link rel="manifest" href="../_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+  <!-- Favicon and Touch Icons  -->
+  <link rel="shortcut icon" href="../images/logo/168.png" />
+  <link rel="apple-touch-icon-precomposed" href="../images/logo/168.png" />
+
+</head>
+
+<body>
+
+  <header class="header-main">
+    <button class="btn-left btn_back">
+      <svg class="icon-back">
+        <use href="../icon/sprite.svg#back"></use>
+      </svg>
+    </button>
+    <h2 class="title">Notification</h2>
+    <div class="btn-right group-icon">
+      <a href="#" class="icon-btn">
+        <svg class="icon-bag">
+          <use href="../icon/sprite.svg#bag"></use>
+        </svg>
+      </a>
+      <button type="button" class="icon-btn">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5" />
+          <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" />
+          <path
+            d="M12 3V5.5M12 18.5V21M21 12H18.5M5.5 12H3M18.3 5.7L16.6 7.4M7.4 16.6L5.7 18.3M18.3 18.3L16.6 16.6M7.4 7.4L5.7 5.7"
+            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- STATE 1: co du lieu (mac dinh hien) -->
+  <div class="page-width spacing_top spacing_bottom-3" id="notificationData">
+    <div class="notification-group">
+      <span class="group-label">Today</span>
+
+      <div class="notification-item">
+        <div class="icon-circle type-shipped">
+          <svg class="icon-truck">
+            <use href="../icon/sprite.svg#truck"></use>
+          </svg>
+        </div>
+        <div class="content">
+          <div class="top">
+            <h6 class="title">Order Shipped</h6>
+            <span class="time">2:15 PM</span>
+          </div>
+          <p class="desc">Your order #78423 has been shipped. Track delivery</p>
+        </div>
+      </div>
+
+      <div class="notification-item">
+        <div class="icon-circle type-sale">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M20 12.7V6.2C20 4.98497 20 4.37746 19.6262 4.03873C19.2524 3.7 18.6683 3.7 17.5 3.7H11C10.4416 3.7 10.1623 3.7 9.91443 3.79018C9.66658 3.88034 9.46339 4.05188 9.05702 4.39497L4.85702 8.19497C4.32234 8.65706 4.05501 8.88811 4.02752 9.15901C4 9.4299 4.19775 9.66856 4.59326 10.1459L10.5 17M13 20L18.5 14.5C19.3284 13.6716 19.7426 13.2574 19.8713 12.7809C20 12.3045 19.8284 11.8331 19.4853 10.8904L18.5 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div class="content">
+          <div class="top">
+            <h6 class="title">Flash Sale Starts Now!</h6>
+            <span class="time">2:15 PM</span>
+          </div>
+          <p class="desc">Get up to 70% OFF on electronics next 24 hours...</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="notification-group">
+      <span class="group-label">Yesterday</span>
+
+      <div class="notification-item">
+        <div class="icon-circle type-stock">
+          <svg class="icon-bag">
+            <use href="../icon/sprite.svg#bag"></use>
+          </svg>
+        </div>
+        <div class="content">
+          <div class="top">
+            <h6 class="title">Item Back in Stock</h6>
+            <span class="time">2:15 PM</span>
+          </div>
+          <p class="desc">Your favorite Wireless Earbuds are back in stock.</p>
+        </div>
+      </div>
+
+      <div class="notification-item">
+        <div class="icon-circle type-price">
+          <svg class="icon-profit">
+            <use href="../icon/sprite.svg#profit"></use>
+          </svg>
+        </div>
+        <div class="content">
+          <div class="top">
+            <h6 class="title">Price Drop Alert</h6>
+            <span class="time">2:15 PM</span>
+          </div>
+          <p class="desc">The Men's Leather Jacket you is now $79 (was $119).</p>
+        </div>
+      </div>
+
+      <div class="notification-item">
+        <div class="icon-circle type-sale">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M20 12.7V6.2C20 4.98497 20 4.37746 19.6262 4.03873C19.2524 3.7 18.6683 3.7 17.5 3.7H11C10.4416 3.7 10.1623 3.7 9.91443 3.79018C9.66658 3.88034 9.46339 4.05188 9.05702 4.39497L4.85702 8.19497C4.32234 8.65706 4.05501 8.88811 4.02752 9.15901C4 9.4299 4.19775 9.66856 4.59326 10.1459L10.5 17M13 20L18.5 14.5C19.3284 13.6716 19.7426 13.2574 19.8713 12.7809C20 12.3045 19.8284 11.8331 19.4853 10.8904L18.5 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div class="content">
+          <div class="top">
+            <h6 class="title">Flash Sale Starts Now!</h6>
+            <span class="time">2:15 PM</span>
+          </div>
+          <p class="desc">Get up to 70% OFF on electronics for the next 24 hours...</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="notification-group">
+      <span class="group-label">Earlier</span>
+
+      <div class="notification-item">
+        <div class="icon-circle type-gift">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M20 9V19C20 19.5523 19.5523 20 19 20H5C4.44772 20 4 19.5523 4 19V9M3 6C3 5.44772 3.44772 5 4 5H20C20.5523 5 21 5.44772 21 6V8C21 8.55228 20.5523 9 20 9H4C3.44772 9 3 8.55228 3 8V6Z"
+              stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+            <path d="M12 5V20" stroke="currentColor" stroke-width="1.5" />
+            <path
+              d="M12 5H8.5C7.67157 5 7 4.32843 7 3.5C7 2.67157 7.67157 2 8.5 2C10.933 2 12 4.5 12 5Z"
+              stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+            <path
+              d="M12 5H15.5C16.3284 5 17 4.32843 17 3.5C17 2.67157 16.3284 2 15.5 2C13.067 2 12 4.5 12 5Z"
+              stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div class="content">
+          <div class="top">
+            <h6 class="title">Welcome Gift Unlocked 🎉</h6>
+            <span class="time">2:15 PM</span>
+          </div>
+          <p class="desc">You've earned a $5 coupon on your first purchase.</p>
+        </div>
+      </div>
+
+      <div class="notification-item">
+        <div class="icon-circle type-price">
+          <svg class="icon-bag">
+            <use href="../icon/sprite.svg#bag"></use>
+          </svg>
+        </div>
+        <div class="content">
+          <div class="top">
+            <h6 class="title">New Collection Alert</h6>
+            <span class="time">2:15 PM</span>
+          </div>
+          <p class="desc">Check out our Fall Fashion Collection</p>
+        </div>
+      </div>
+
+      <div class="notification-item">
+        <div class="icon-circle type-stock">
+          <svg class="icon-bag">
+            <use href="../icon/sprite.svg#bag"></use>
+          </svg>
+        </div>
+        <div class="content">
+          <div class="top">
+            <h6 class="title">Item Back in Stock</h6>
+            <span class="time">2:15 PM</span>
+          </div>
+          <p class="desc">Your favorite Wireless Earbuds are now back in stock...</p>
+        </div>
+      </div>
+
+      <div class="notification-item">
+        <div class="icon-circle type-shipped">
+          <svg class="icon-truck">
+            <use href="../icon/sprite.svg#truck"></use>
+          </svg>
+        </div>
+        <div class="content">
+          <div class="top">
+            <h6 class="title">Order Delivered</h6>
+            <span class="time">2:15 PM</span>
+          </div>
+          <p class="desc">Your order #78423 has been shipped. Track delivery ...</p>
+        </div>
+      </div>
+
+      <div class="notification-item">
+        <div class="icon-circle type-gift">
+          <svg class="icon-close">
+            <use href="../icon/sprite.svg#close"></use>
+          </svg>
+        </div>
+        <div class="content">
+          <div class="top">
+            <h6 class="title">Order Canceled</h6>
+            <span class="time">2:15 PM</span>
+          </div>
+          <p class="desc">Your Order #77088 has canceled as per your request.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STATE 2: rong - them d-none de an, bo d-none de xem trang thai rong -->
+  <div class="page-width spacing_top spacing_bottom-3 d-none" id="notificationEmpty">
+    <div class="noti-empty">
+      <div class="noti-empty_illustration">
+        <svg class="icon-bell">
+          <use href="../icon/sprite.svg#bell"></use>
+        </svg>
+        <span class="badge-cancel">
+          <svg class="icon-close">
+            <use href="../icon/sprite.svg#close"></use>
+          </svg>
+        </span>
+      </div>
+      <h3 class="title">Still No Notification</h3>
+      <p class="text">We will update you as soon as we receive information.</p>
+      <a href="all-products.html" class="btn-dark">Buy Products</a>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/lazysize.min.js"></script>
+  <script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="../js/carousel.js"></script>
+  <script type="text/javascript" src="../js/jquery.nice-select.min.js"></script>
+  <script type="text/javascript" src="../js/count-down.js"></script>
+  <script type="text/javascript" src="../js/multiple-modal.js"></script>
+  <script type="text/javascript" src="../js/nouislider.min.js"></script>
+  <script type="text/javascript" src="../js/rangle-slider.js"></script>
+  <script type="text/javascript" src="../js/init.js"></script>
+  <script type="text/javascript" src="../js/main.js"></script>
+
+</body>
+
+</html>

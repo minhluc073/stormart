@@ -198,6 +198,96 @@
         color: rgb(var(--text-white));
       }
     }
+    &.current .step {
+      background-color: rgb(var(--primary-dark));
+      border-color: rgb(var(--primary-dark));
+      color: rgb(var(--text-white));
+    }
+    .icon-check {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+// become seller - step 2 (Document)
+.upload-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 22px 16px;
+  border: 1.5px dashed rgb(var(--state-200));
+  border-radius: 8px;
+  background-color: rgb(var(--state-50));
+  text-align: center;
+
+  .icon-image {
+    width: 26px;
+    height: 26px;
+    color: rgb(var(--state-400));
+  }
+
+  .btn-choose {
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(var(--main-color));
+  }
+}
+
+.file-preview {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+
+  .thumb {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .info {
+    flex-grow: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    .name {
+      font-size: 13px;
+      font-weight: 500;
+      color: rgb(var(--text-headline));
+    }
+    .size {
+      font-size: 11px;
+      color: rgb(var(--state-500));
+    }
+  }
+
+  .dots {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    span {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background-color: rgb(var(--main-color));
+      &:nth-child(2) {
+        opacity: 0.6;
+      }
+      &:nth-child(3) {
+        opacity: 0.3;
+      }
+    }
   }
 }
 

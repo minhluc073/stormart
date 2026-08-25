@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Jobko - Job Finder Mobile App</title>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+  <!-- font -->
+  <link rel="stylesheet" href="../fonts/fonts.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/nouislider.min.css" />
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+  <!-- manifest json -->
+  <link rel="manifest" href="../_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+  <!-- Favicon and Touch Icons  -->
+  <link rel="shortcut icon" href="../images/logo/168.png" />
+  <link rel="apple-touch-icon-precomposed" href="../images/logo/168.png" />
+
+</head>
+
+<body>
+
+  <header class="header-main">
+    <button class="btn-left btn_back">
+      <svg class="icon-back">
+        <use href="../icon/sprite.svg#back"></use>
+      </svg>
+    </button>
+    <h2 class="title">Tracking</h2>
+  </header>
+
+  <div class="page-width spacing_top spacing_bottom">
+    <div class="banner-delivery">Delivery: Oct 18 – 23</div>
+
+    <div class="tracking-order-info">
+      <h5 class="name">Vibrant Sunset Maxi Dress</h5>
+      <div class="tracking-number">
+        <span>Tracking number: 1Z9999W80307724443</span>
+        <a href="#" class="btn-copy-text">Copy</a>
+      </div>
+    </div>
+
+    <div class="tracking-timeline">
+      <!-- Marker 1 - state mac dinh: dang van chuyen (an du block huy don ben duoi bang d-none) -->
+      <div class="timeline-item" id="timelineTransit">
+        <div class="content">
+          <h6 class="status">In Transit</h6>
+          <p class="desc">Your package arrived at local airport</p>
+          <span class="time">Sep 30, 14:16 GMT+ 06:00</span>
+        </div>
+      </div>
+      <!-- Marker 1 - state 45 (Cancel Order - Details): bo d-none o khoi nay + them d-none cho #timelineTransit phia tren de xem trang thai huy/hoan don -->
+      <div class="timeline-item is-danger d-none" id="timelineCancelled">
+        <div class="content">
+          <h6 class="status">Order Refund/Cancel</h6>
+          <p class="desc">Delivery time is too long</p>
+          <span class="time">Sep 30, 14:16 GMT+ 06:00</span>
+        </div>
+      </div>
+
+      <!-- Marker 2 - luon hien ro -->
+      <div class="timeline-item is-secondary">
+        <div class="content">
+          <p class="desc">Package left transit country/region</p>
+          <span class="time">Sep 30, 14:16 GMT+ 06:00</span>
+        </div>
+      </div>
+
+      <!-- State 42 (collapse): moc 3-5 mo nhat + nut "View more" - hien mac dinh -->
+      <div id="timelineCollapsed">
+        <div class="timeline-item is-secondary is-dim">
+          <div class="content">
+            <p class="desc">Package left transit country/region</p>
+            <span class="time">Sep 30, 14:16 GMT+ 06:00</span>
+          </div>
+        </div>
+        <div class="timeline-item is-secondary is-dim">
+          <div class="content">
+            <p class="desc">Package left transit country/region</p>
+            <span class="time">Sep 30, 14:16 GMT+ 06:00</span>
+          </div>
+        </div>
+        <div class="timeline-item is-secondary is-dim">
+          <div class="content">
+            <p class="desc">Package left transit country/region</p>
+            <span class="time">Sep 30, 14:16 GMT+ 06:00</span>
+          </div>
+        </div>
+        <button type="button" class="btn-view-more">View more</button>
+      </div>
+
+      <!-- State 43 (expand): moc 3-5 hien ro, khong con nut "View more" - them d-none cho #timelineCollapsed phia tren va bo d-none o khoi nay de xem -->
+      <div class="d-none" id="timelineExpanded">
+        <div class="timeline-item is-secondary">
+          <div class="content">
+            <p class="desc">Package left transit country/region</p>
+            <span class="time">Sep 30, 14:16 GMT+ 06:00</span>
+          </div>
+        </div>
+        <div class="timeline-item is-secondary">
+          <div class="content">
+            <p class="desc">Package left transit country/region</p>
+            <span class="time">Sep 30, 14:16 GMT+ 06:00</span>
+          </div>
+        </div>
+        <div class="timeline-item is-secondary">
+          <div class="content">
+            <p class="desc">Package left transit country/region</p>
+            <span class="time">Sep 30, 14:16 GMT+ 06:00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tracking-address">
+      <svg class="icon-home">
+        <use href="../icon/sprite.svg#home"></use>
+      </svg>
+      <div class="text">
+        <p>House- 8,House-8, Road-7, Section -10, Mirpur, Dhaka - 1216 House- 8,Dhaka,Dhaka,BD</p>
+        <p>1216 A********r &nbsp;+880 16*****933</p>
+      </div>
+    </div>
+
+    <div class="tracking-packaged">
+      <h6 class="title">Packaged items</h6>
+      <div class="order-item">
+        <div class="order-item_top">
+          <div class="order-item_img" style="background-color: #e9e9e9;">
+            <img src="../images/user/product/product19.png" alt="Vibrant Sunset Maxi Dress">
+          </div>
+          <div class="order-item_info">
+            <p class="name">Vibrant Sunset Maxi Dress</p>
+            <div class="meta">
+              <span>Color: Gray</span>
+              <span>Size: M</span>
+            </div>
+            <div class="bottom">
+              <span class="price">$59.99</span>
+              <span class="qty">x1</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="menubar-button">
+    <a href="#" class="btn-line">Add to Cart</a>
+    <a href="#" class="btn-line" data-bs-toggle="modal" data-bs-target="#cancelOrderModal">Returns/ Refunds</a>
+  </div>
+
+  <div class="modal fade" id="cancelOrderModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="popup-header-row">
+          <h5 class="title">Cancel Order</h5>
+          <button type="button" class="modal-close" data-bs-dismiss="modal" aria-label="Close">
+            <svg class="icon-close">
+              <use href="../icon/sprite.svg#close"></use>
+            </svg>
+          </button>
+        </div>
+
+        <h6 class="section-title">Refund items</h6>
+        <div class="order-item">
+          <div class="order-item_top">
+            <div class="order-item_img" style="background-color: #e9e9e9;">
+              <img src="../images/user/product/product19.png" alt="Vibrant Sunset Maxi Dress">
+            </div>
+            <div class="order-item_info">
+              <p class="name">Vibrant Sunset Maxi Dress</p>
+              <div class="meta">
+                <span>Color: Gray</span>
+                <span>Size: M</span>
+              </div>
+              <div class="bottom">
+                <span class="price">$59.99</span>
+                <span class="qty">x1</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <fieldset class="field">
+          <label class="text-body-3 mb8">Select a Reason</label>
+          <div class="select-wrap">
+            <select class="select">
+              <option>Select a reason</option>
+              <option>Delivery time is too long</option>
+              <option>Item damaged/defective</option>
+              <option>Changed my mind</option>
+              <option>Ordered by mistake</option>
+            </select>
+            <svg class="icon-arrowDown">
+              <use href="../icon/sprite.svg#arrowDown"></use>
+            </svg>
+          </div>
+        </fieldset>
+
+        <fieldset class="field">
+          <label class="text-body-3 mb8">Additional Information</label>
+          <textarea placeholder="e.g. Additional details"></textarea>
+        </fieldset>
+
+        <div class="checkbox">
+          <input type="checkbox" class="check" id="agreeCancelTerms">
+          <label for="agreeCancelTerms" class="text-caption-1">I agree with the <a href="term.html"
+              class="text-underline-offest2">Term and Conditions</a></label>
+        </div>
+
+        <button type="button" class="btn-primary" data-bs-dismiss="modal">Submit</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/lazysize.min.js"></script>
+  <script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="../js/carousel.js"></script>
+  <script type="text/javascript" src="../js/jquery.nice-select.min.js"></script>
+  <script type="text/javascript" src="../js/count-down.js"></script>
+  <script type="text/javascript" src="../js/multiple-modal.js"></script>
+  <script type="text/javascript" src="../js/nouislider.min.js"></script>
+  <script type="text/javascript" src="../js/rangle-slider.js"></script>
+  <script type="text/javascript" src="../js/init.js"></script>
+  <script type="text/javascript" src="../js/main.js"></script>
+
+</body>
+
+</html>

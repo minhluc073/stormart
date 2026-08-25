@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Jobko - Job Finder Mobile App</title>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+  <!-- font -->
+  <link rel="stylesheet" href="../fonts/fonts.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/nouislider.min.css" />
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+  <!-- manifest json -->
+  <link rel="manifest" href="../_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+  <!-- Favicon and Touch Icons  -->
+  <link rel="shortcut icon" href="../images/logo/168.png" />
+  <link rel="apple-touch-icon-precomposed" href="../images/logo/168.png" />
+
+</head>
+
+<body>
+
+  <div class="splash-overlay">
+    <span class="blur-circle top-right"></span>
+    <span class="blur-circle bottom-left"></span>
+    <img src="../images/logo.png" alt="StorMart" class="splash-logo">
+  </div>
+
+  <div class="onboarding-page">
+    <a href="sign-in.html" class="btn-skip">Skip</a>
+
+    <div dir="ltr" class="swiper tf-swiper onboarding-swiper" data-swiper='{
+        "slidesPerView": 1,
+        "spaceBetween": 0,
+        "loop": true,
+        "speed": 600,
+        "pagination": { "el": ".onboarding-pagination", "clickable": true }
+      }'>
+      <div class="swiper-wrapper">
+
+        <!-- Slide 1/3: mockup Home -->
+        <div class="swiper-slide">
+          <div class="onboard-mockup">
+            <div class="mockup-scale">
+              <div class="header-bg bg-primary-dark">
+                <div class="inner">
+                  <div class="box-user">
+                    <div class="avatar">
+                      <img src="../images/user/avatar/avt1.jpg" alt="">
+                    </div>
+                    <div class="info">
+                      <div class="name">Hi, Alex Palu</div>
+                      <div class="address">
+                        <span>2464 Royal Ln. </span>
+                        <svg class="icon-arrow-down">
+                          <use href="../icon/sprite.svg#arrow-down"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="box-noti">
+                    <svg class="icon-bell">
+                      <use href="../icon/sprite.svg#bell"></use>
+                    </svg>
+                    <sup class="qty">2</sup>
+                  </span>
+                </div>
+              </div>
+              <div class="page-width form-search_home">
+                <div class="form-search">
+                  <input type="search" placeholder="Search Product">
+                  <svg class="icon-search">
+                    <use href="../icon/sprite.svg#search"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="page-width spacing-1 pb-0">
+                <div class="box-title">
+                  <h3 class="title">Shop by Category</h3>
+                  <span class="btn-view">See more</span>
+                </div>
+                <div class="row-grid" style="display:flex; gap:12px;">
+                  <div class="categories-box">
+                    <picture class="img">
+                      <img src="../images/user/categories/woman.png" alt="">
+                    </picture>
+                    <span class="title">Woman's</span>
+                  </div>
+                  <div class="categories-box">
+                    <picture class="img">
+                      <img src="../images/user/categories/man.png" alt="">
+                    </picture>
+                    <span class="title">Man's</span>
+                  </div>
+                  <div class="categories-box">
+                    <picture class="img">
+                      <img src="../images/user/categories/jewelry.png" alt="">
+                    </picture>
+                    <span class="title">Jewelry</span>
+                  </div>
+                  <div class="categories-box">
+                    <picture class="img">
+                      <img src="../images/user/categories/sneakers.png" alt="">
+                    </picture>
+                    <span class="title">Sneakers</span>
+                  </div>
+                  <div class="categories-box">
+                    <picture class="img">
+                      <img src="../images/user/categories/bags.png" alt="">
+                    </picture>
+                    <span class="title">Bags</span>
+                  </div>
+                </div>
+              </div>
+              <div class="page-width spacing-2">
+                <div class="img-box" style="border-radius: 8px;">
+                  <img src="../images/user/banner/banner1.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <span class="mockup-overlay"></span>
+          </div>
+          <div class="onboard-card">
+            <h2 class="title">Easy &amp; Secure Payment</h2>
+            <p class="text">Browse a wide range of products from verified sellers, all in one app.</p>
+          </div>
+        </div>
+
+        <!-- Slide 2/3: mockup Product Detail -->
+        <div class="swiper-slide">
+          <div class="onboard-mockup">
+            <span class="onboard-decor-hearts">
+              <svg viewBox="0 0 46 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11 8C8 8 6 10 6 13C6 17 11 21 12 22C13 21 18 17 18 13C18 10 16 8 13 8C12 8 11.3 8.3 11 9C10.7 8.3 12 8 11 8Z"
+                  fill="currentColor" />
+                <path
+                  d="M31 8C28 8 26 10 26 13C26 17 31 21 32 22C33 21 38 17 38 13C38 10 36 8 33 8C32 8 31.3 8.3 31 9C30.7 8.3 32 8 31 8Z"
+                  fill="currentColor" />
+                <path d="M18 12C21 6 27 6 30 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              </svg>
+            </span>
+            <div class="mockup-scale">
+              <div class="mockup-media">
+                <div class="header-main header-abs">
+                  <div class="btn-right box-btn">
+                    <button class="wishlist">
+                      <svg class="icon-hearthFill">
+                        <use href="../icon/sprite.svg#hearthFill"></use>
+                      </svg>
+                    </button>
+                    <button class="share" type="button">
+                      <svg class="icon-share">
+                        <use href="../icon/sprite.svg#share"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="img-thumbnail">
+                  <img src="../images/user/product/product7.jpg" alt="">
+                </div>
+                <div class="pagination-fraction">2/5</div>
+              </div>
+              <div class="tf-product-info-wrap page-width">
+                <div class="tf-product-info-list">
+                  <span class="label">Clothing</span>
+                  <div class="product-stock_price">
+                    <div class="box-rate-stock">
+                      <div class="rate-box">
+                        <svg class="icon-star">
+                          <use href="../icon/sprite.svg#star"></use>
+                        </svg>4.8 <span class="num">(37)</span>
+                      </div>
+                      <div class="stock-box"><span class="fw-medium">300+</span> Stocks</div>
+                    </div>
+                    <div class="box-price">
+                      <span class="price-sale">$98.99</span>
+                      <span class="price-new">$79.99</span>
+                    </div>
+                  </div>
+                  <h4 class="product-name">Double-Breasted Trench Coat</h4>
+                  <div class="tf-product-variant">
+                    <div class="variant-picker-item variant-color">
+                      <div class="variant-picker-label">
+                        Colors:<span class="variant-picker-label-value value-currentColor">Gray</span>
+                      </div>
+                      <div class="variant-picker-values">
+                        <span class="color-btn red"><span class="check-color"></span></span>
+                        <span class="color-btn gray active"><span class="check-color"></span></span>
+                        <span class="color-btn green"><span class="check-color"></span></span>
+                        <span class="color-btn yellow"><span class="check-color"></span></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <span class="mockup-overlay"></span>
+          </div>
+          <div class="onboard-card">
+            <h2 class="title">Smart Shopping Starts here</h2>
+            <p class="text">Find quality products, compare prices, &amp; shop with confidence.</p>
+          </div>
+        </div>
+
+        <!-- Slide 3/3: mockup Seller Detail -->
+        <div class="swiper-slide">
+          <div class="onboard-mockup">
+            <span class="badge-discount-round">50%<br>OFF</span>
+            <div class="mockup-scale">
+              <div class="page-width spacing-3 spacing_top-3">
+                <div class="card-seller style-profile">
+                  <div class="card-seller_img">
+                    <img src="../images/user/brand/logo2.png" alt="">
+                  </div>
+                  <div class="card-seller_info">
+                    <span class="name">TrueStyle Store</span>
+                    <ul class="meta-box">
+                      <li class="item">
+                        <svg class="icon-star">
+                          <use href="../icon/sprite.svg#star"></use>
+                        </svg>
+                        <span class="num">4.9</span>
+                        (1,234)
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="seller-stats">
+                  <div class="stat-item">
+                    <svg class="icon-hanger">
+                      <use href="../icon/sprite.svg#hanger"></use>
+                    </svg>
+                    <div class="stat-info">
+                      <span class="num">3,587</span>
+                      <span class="label">Products List</span>
+                    </div>
+                  </div>
+                  <div class="stat-item">
+                    <svg class="icon-bag">
+                      <use href="../icon/sprite.svg#bag"></use>
+                    </svg>
+                    <div class="stat-info">
+                      <span class="num">3,587</span>
+                      <span class="label">Products Sales</span>
+                    </div>
+                  </div>
+                </div>
+                <ul class="menu-tab column2 primary" role="tablist">
+                  <li class="nav-tab-item"><span class="tab-link active">All Products</span></li>
+                  <li class="nav-tab-item"><span class="tab-link">Review</span></li>
+                </ul>
+                <div class="box-result" style="margin-top:12px;">
+                  <span class="text">Showing 16 Results</span>
+                  <span class="text">Short by</span>
+                </div>
+                <div class="row-grid column-2">
+                  <div class="card-product">
+                    <div class="card-product_banner">
+                      <img src="../images/user/product/product13.jpg" alt="">
+                      <span class="badge-sale style-orange">20%</span>
+                    </div>
+                    <div class="card-product_info">
+                      <span class="name-product">Luminous Evening Dress</span>
+                      <div class="box-price">
+                        <span class="price-new">$59.99</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-product">
+                    <div class="card-product_banner">
+                      <img src="../images/user/product/product14.jpg" alt="">
+                      <span class="badge-sale">25%</span>
+                    </div>
+                    <div class="card-product_info">
+                      <span class="name-product">Glistening Dusk Attire</span>
+                      <div class="box-price">
+                        <span class="price-new">$59.99</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <span class="mockup-overlay"></span>
+          </div>
+          <div class="onboard-card">
+            <h2 class="title">Seller profile &amp; list Products.</h2>
+            <p class="text">Set up your store details, add products, and start selling in just a few steps.</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="onboarding-pagination"></div>
+    </div>
+
+    <div class="onboard-card-bg"></div>
+
+    <a href="sign-in.html" class="btn-onboard-next" aria-label="Continue">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+          stroke-linejoin="round" />
+      </svg>
+    </a>
+  </div>
+
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/lazysize.min.js"></script>
+  <script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="../js/carousel.js"></script>
+  <script type="text/javascript" src="../js/jquery.nice-select.min.js"></script>
+  <script type="text/javascript" src="../js/count-down.js"></script>
+  <script type="text/javascript" src="../js/multiple-modal.js"></script>
+  <script type="text/javascript" src="../js/nouislider.min.js"></script>
+  <script type="text/javascript" src="../js/rangle-slider.js"></script>
+  <script type="text/javascript" src="../js/init.js"></script>
+  <script type="text/javascript" src="../js/main.js"></script>
+
+</body>
+
+</html>

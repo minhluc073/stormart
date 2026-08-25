@@ -13,7 +13,11 @@
     * Modal Second
     * Counter
     * Input File
-    * Preloader 
+    * Cart Quantity Stepper
+    * Preloader
+    * Splash Preloader
+    * Dropdown More
+    * Chat Send
  */
 (function ($) {
   "use strict";
@@ -378,7 +382,105 @@ $(".select-list li").click(function () {
 };
 
  
-  /* Preloader 
+  /* Cart Quantity Stepper
+------------------------------------------------------------------------------------- */
+  var cartQtyStepper = function () {
+    var updateCartTotal = function ($page) {
+      var $footer = $page.find(".menubar-button.style-cart");
+      if ($footer.length === 0) return;
+
+      var total = 0;
+      var count = 0;
+
+      $page.find(".cart-item").each(function () {
+        var $item = $(this);
+        var $check = $item.find(".check");
+        if ($check.length && !$check.is(":checked")) return;
+
+        var qty = parseInt($item.find(".qty-stepper .value").text(), 10) || 0;
+        var price = parseFloat($item.find(".price-new").first().text().replace(/[^0-9.]/g, "")) || 0;
+
+        total += price * qty;
+        count += 1;
+      });
+
+      $footer.find(".total-price .price-new").text("$" + total.toFixed(2));
+      $footer.find(".btn-dark").text("Checkout (" + count + ")");
+    };
+
+    $(".cart-item .btn-plus").on("click", function (e) {
+      e.preventDefault();
+      var $value = $(this).closest(".qty-stepper").find(".value");
+      $value.text((parseInt($value.text(), 10) || 0) + 1);
+      updateCartTotal($(this).closest(".cart-page"));
+    });
+
+    $(".cart-item .btn-remove").on("click", function (e) {
+      e.preventDefault();
+      var $page = $(this).closest(".cart-page");
+      $(this).closest(".cart-item").remove();
+      updateCartTotal($page);
+    });
+
+    $(".cart-item .check").on("change", function () {
+      updateCartTotal($(this).closest(".cart-page"));
+    });
+  };
+
+  /* Dropdown More
+------------------------------------------------------------------------------------- */
+  var dropdownMore = function () {
+    $(".btn-more").on("click", function (e) {
+      e.stopPropagation();
+      $(".dropdown-more").not($(this).closest(".dropdown-more")).removeClass("active");
+      $(this).closest(".dropdown-more").toggleClass("active");
+    });
+
+    $(document).on("click", function () {
+      $(".dropdown-more").removeClass("active");
+    });
+  };
+
+  /* Chat Send
+------------------------------------------------------------------------------------- */
+  var chatSend = function () {
+    var $bar = $(".chat-input-bar");
+    if ($bar.length === 0) return;
+
+    var $input = $bar.find(".ip-message");
+    var $chatBody = $(".chat-body");
+
+    var sendMessage = function () {
+      var text = $input.val().trim();
+      if (!text) return;
+
+      var now = new Date();
+      var hours = String(now.getHours()).padStart(2, "0");
+      var minutes = String(now.getMinutes()).padStart(2, "0");
+
+      var $group = $('<div class="chat-group right"></div>');
+      $('<span class="chat-time"></span>').text(hours + ":" + minutes).appendTo($group);
+      $('<div class="chat-bubble"></div>').text(text).appendTo($group);
+
+      $chatBody.append($group);
+      $input.val("");
+      window.scrollTo(0, document.body.scrollHeight);
+    };
+
+    $bar.find(".btn-send").on("click", function (e) {
+      e.preventDefault();
+      sendMessage();
+    });
+
+    $input.on("keydown", function (e) {
+      if (e.key === "Enter" || e.keyCode === 13) {
+        e.preventDefault();
+        sendMessage();
+      }
+    });
+  };
+
+  /* Preloader
 ------------------------------------------------------------------------------------- */
   var preloader = function () {
     setTimeout(function () {
@@ -386,6 +488,19 @@ $(".select-list li").click(function () {
         $(this).remove();
       });
     }, 200);
+  };
+
+  /* Splash Preloader
+------------------------------------------------------------------------------------- */
+  var splashPreloader = function () {
+    var $splash = $(".splash-overlay");
+    if ($splash.length === 0) return;
+
+    setTimeout(function () {
+      $splash.fadeOut(400, function () {
+        $(this).remove();
+      });
+    }, 1800);
   };
 
   $(function () {
@@ -404,7 +519,11 @@ $(".select-list li").click(function () {
     inputUpload();
     inputCopy();
     selectFlags();
+    cartQtyStepper();
     RTL();
+    dropdownMore();
+    chatSend();
     preloader();
+    splashPreloader();
   });
 })(jQuery);

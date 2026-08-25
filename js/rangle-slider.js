@@ -264,9 +264,40 @@
       });
     }
   };
-  
-  
-  
+
+  var rangePriceFilter = function () {
+    if ($("#price-range-slider").length > 0) {
+      var priceSlider = document.getElementById("price-range-slider");
+      var minValue = document.getElementById("price-min-value");
+      var maxValue = document.getElementById("price-max-value");
+
+      noUiSlider.create(priceSlider, {
+        start: [10, 1000],
+        connect: true,
+        step: 1,
+        range: {
+          min: 10,
+          max: 1000,
+        },
+        format: {
+          from: function (value) {
+            return parseInt(value);
+          },
+          to: function (value) {
+            return parseInt(value);
+          },
+        },
+      });
+
+      priceSlider.noUiSlider.on("update", function (values, handle) {
+        if (handle === 0) {
+          minValue.textContent = values[0];
+        } else {
+          maxValue.textContent = values[1];
+        }
+      });
+    }
+  };
 
   $(function () {
     rangeSliderOne();
@@ -278,5 +309,6 @@
     rangePips();
     rangeDirection();
     rangeSalary();
+    rangePriceFilter();
   });
 })(jQuery);
