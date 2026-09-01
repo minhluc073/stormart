@@ -1,0 +1,91 @@
+@use "../abstracts/index" as *;
+
+.select-flag .select-current.placeholder .text-value {
+  font-weight: 400;
+  color: rgb(var(--state-400));
+}
+
+.vehicle-list {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+}
+
+.vehicle-card {
+  position: relative;
+  flex: 0 0 auto;
+  width: 82px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 8px;
+  border-radius: 12px;
+  border: 1px solid rgb(var(--state-200));
+  background-color: rgb(var(--text-white));
+
+  &.active {
+    border: 1.5px solid rgb(var(--primary-dark));
+
+    .radio-dot {
+      display: none;
+    }
+    .check-badge {
+      display: flex;
+    }
+  }
+
+  .radio-dot {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1px solid rgb(var(--state-300));
+  }
+
+  .check-badge {
+    display: none;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(var(--primary-dark));
+    color: rgb(var(--text-white));
+  }
+
+  .vehicle-icon {
+    display: flex;
+
+    svg {
+      width: 28px;
+      height: 28px;
+    }
+
+    &.bike {
+      color: rgb(var(--main-color2));
+    }
+    &.motorbike {
+      color: rgb(var(--error-base));
+    }
+    &.car {
+      color: rgb(var(--success-base));
+    }
+    &.van {
+      color: rgb(234, 88, 12);
+    }
+  }
+
+  .name {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 100%;
+    color: rgb(var(--text-headline));
+  }
+}

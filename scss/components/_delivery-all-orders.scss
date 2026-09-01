@@ -1,0 +1,61 @@
+@use "../abstracts/index" as *;
+
+.main-page_allOrders {
+  .tab-content {
+    padding-top: 20px;
+  }
+}
+
+.request-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.request-map {
+  border-radius: 8px;
+  overflow: hidden;
+
+  iframe {
+    display: block;
+    width: 100%;
+  }
+}
+
+.request-card .btn-dark {
+  align-items: center;
+  gap: 6px;
+
+  svg {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.order-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 64px;
+
+  &_icon {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 24px;
+  }
+
+  .title {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(var(--text-headline));
+    margin-bottom: 8px;
+  }
+
+  .text {
+    font-size: 13px;
+    color: rgb(var(--state-600));
+    max-width: 220px;
+    margin-bottom: 20px;
+  }
+}

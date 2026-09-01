@@ -1,0 +1,20 @@
+.order-list-seller {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  .seller-order-card .meta-row {
+    justify-content: space-between;
+  }
+}
+
+.badge-status {
+  &.pending {
+    background-color: rgba(var(--warning-base), 0.12);
+    color: rgb(var(--warning-dark));
+  }
+  &.canceled {
+    background-color: rgba(var(--error-base), 0.12);
+    color: rgb(var(--error-base));
+  }
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Jobko - Job Finder Mobile App</title>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+  <!-- font -->
+  <link rel="stylesheet" href="../fonts/fonts.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/nouislider.min.css" />
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+  <!-- manifest json -->
+  <link rel="manifest" href="../_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+  <!-- Favicon and Touch Icons  -->
+  <link rel="shortcut icon" href="../images/logo/168.png" />
+  <link rel="apple-touch-icon-precomposed" href="../images/logo/168.png" />
+
+</head>
+
+<body>
+
+  <header class="header-main">
+    <button class="btn-left btn_back">
+      <svg class="icon-back">
+        <use href="../icon/sprite.svg#back"></use>
+      </svg>
+    </button>
+    <h2 class="title">Support Ticket</h2>
+  </header>
+
+  <div class="page-width spacing_top spacing_bottom-3">
+    <div class="ticket-search-bar">
+      <form class="form-search style-ticket">
+        <input type="search" placeholder="Search Listing...">
+        <svg class="icon-search">
+          <use href="../icon/sprite.svg#search2"></use>
+        </svg>
+      </form>
+      <div class="dropdown-more style-filter">
+        <button type="button" class="btn-more btn-filter">
+          <svg class="icon-filterSearch">
+            <use href="../icon/sprite.svg#filterSearch"></use>
+          </svg>
+        </button>
+        <div class="dropdown-more_menu">
+          <a href="#" class="item">Open</a>
+          <a href="#" class="item">Solve</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="ticket-list">
+      <a href="support-ticket-detail.html" class="ticket-item">
+        <div class="info">
+          <h6 class="title">Account Support</h6>
+          <div class="meta">
+            <span class="code">#1325401</span>
+            <span class="dot"></span>
+            <span class="time">2 Days ago</span>
+          </div>
+        </div>
+        <span class="badge-ticket status-open">Open</span>
+      </a>
+
+      <a href="support-ticket-detail.html" class="ticket-item">
+        <div class="info">
+          <h6 class="title">Withdrawals &amp; Finances - Custom Inquiry</h6>
+          <div class="meta">
+            <span class="code">#1325401</span>
+            <span class="dot"></span>
+            <span class="time">3 Months ago</span>
+          </div>
+        </div>
+        <span class="badge-ticket status-solved">Solved</span>
+      </a>
+
+      <a href="support-ticket-detail.html" class="ticket-item">
+        <div class="info">
+          <h6 class="title">Withdrawals &amp; Finances - Custom Inquiry</h6>
+          <div class="meta">
+            <span class="code">#1325401</span>
+            <span class="dot"></span>
+            <span class="time">3 Months ago</span>
+          </div>
+        </div>
+        <span class="badge-ticket status-solved">Solved</span>
+      </a>
+
+      <a href="support-ticket-detail.html" class="ticket-item">
+        <div class="info">
+          <h6 class="title">Withdrawals &amp; Finances - Custom Inquiry</h6>
+          <div class="meta">
+            <span class="code">#1325401</span>
+            <span class="dot"></span>
+            <span class="time">3 Months ago</span>
+          </div>
+        </div>
+        <span class="badge-ticket status-solved">Solved</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="dropdown-more style-fab">
+    <button type="button" class="btn-more fab-add">
+      <svg class="icon-plus">
+        <use href="../icon/sprite.svg#plus"></use>
+      </svg>
+    </button>
+    <div class="dropdown-more_menu fab-menu">
+      <a href="#" class="item">
+        <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="2.5" y="4.5" width="15" height="11" rx="2" stroke="currentColor" stroke-width="1.3" />
+          <path d="M2.5 10H17.5" stroke="currentColor" stroke-width="1.3" stroke-dasharray="1.6 1.6" />
+        </svg>
+        Previous Ticket
+      </a>
+      <a href="#" class="item" data-bs-toggle="offcanvas" data-bs-target="#createTicketOffcanvas">
+        <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="2.5" y="2.5" width="15" height="15" rx="4" stroke="currentColor" stroke-width="1.3" />
+          <path d="M10 6.5V13.5M6.5 10H13.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" />
+        </svg>
+        Open new
+      </a>
+    </div>
+  </div>
+
+  <div class="offcanvas offcanvas-bottom popup-wrapper" tabindex="-1" id="createTicketOffcanvas"
+    aria-labelledby="createTicketLabel">
+    <div class="popup-inner">
+      <div class="popup-header">
+        <h3 class="title">Create Ticket</h3>
+        <button type="button" class="close-popup" data-bs-dismiss="offcanvas" aria-label="Close">
+          <svg class="icon-close">
+            <use href="../icon/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="popup-body">
+        <fieldset class="field mb14">
+          <label class="text-body-3 mb8">Subject</label>
+          <div class="select-wrap">
+            <select class="select">
+              <option>Select</option>
+              <option>Account Support</option>
+              <option>Withdrawals &amp; Finances</option>
+              <option>Order Issue</option>
+              <option>Other</option>
+            </select>
+            <svg class="icon-arrowDown">
+              <use href="../icon/sprite.svg#arrowDown"></use>
+            </svg>
+          </div>
+        </fieldset>
+        <fieldset class="field mb14">
+          <label class="text-body-3 mb8">Write a message</label>
+          <textarea placeholder="Type message"></textarea>
+        </fieldset>
+        <div class="upload-file mb20">
+          <button type="button" class="btn-choose-file">
+            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12.5 6.67L7.5 11.67C6.85 12.32 6.85 13.38 7.5 14.03C8.15 14.68 9.22 14.68 9.87 14.03L14.87 9.03C16.17 7.73 16.17 5.62 14.87 4.32C13.57 3.02 11.46 3.02 10.16 4.32L4.33 10.14C2.57 11.91 2.57 14.76 4.33 16.53C6.1 18.3 8.94 18.3 10.71 16.53"
+                stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            Choose File
+          </button>
+          <span class="file-name">Screenshot.jpg</span>
+        </div>
+        <div class="popup-footer-btns">
+          <button type="button" class="btn-line" data-bs-dismiss="offcanvas">Cancel</button>
+          <button type="button" class="btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/lazysize.min.js"></script>
+  <script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="../js/carousel.js"></script>
+  <script type="text/javascript" src="../js/jquery.nice-select.min.js"></script>
+  <script type="text/javascript" src="../js/count-down.js"></script>
+  <script type="text/javascript" src="../js/multiple-modal.js"></script>
+  <script type="text/javascript" src="../js/nouislider.min.js"></script>
+  <script type="text/javascript" src="../js/rangle-slider.js"></script>
+  <script type="text/javascript" src="../js/init.js"></script>
+  <script type="text/javascript" src="../js/main.js"></script>
+
+</body>
+
+</html>

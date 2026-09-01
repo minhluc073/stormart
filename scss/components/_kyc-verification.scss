@@ -1,0 +1,54 @@
+// KYC (add-kyc.html + kyc-verification.html)
+
+.btn-line-danger {
+  color: rgb(var(--error-base));
+  border-color: rgb(var(--error-base));
+
+  &:hover {
+    background-color: rgb(var(--error-base));
+    color: rgb(var(--text-white));
+    border-color: rgb(var(--error-base));
+  }
+}
+
+#kycSubmittedModal {
+  .modal-content {
+    gap: 16px;
+    text-align: center;
+    padding-top: 44px;
+  }
+
+  .box-illustration {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+  }
+}
+
+.kyc-card {
+  padding: 16px;
+  border-radius: 8px;
+  background-color: rgb(var(--text-white));
+  box-shadow: var(--shadow);
+  margin-bottom: 16px;
+}
+
+.kyc-actions {
+  .btn-line,
+  .btn-dark {
+    align-items: center;
+    gap: 6px;
+
+    svg {
+      width: 14px;
+      height: 14px;
+    }
+  }
+}
+
+.badge-status {
+  &.approved {
+    background-color: rgba(var(--success-base), 0.12);
+    color: rgb(var(--success-dark));
+  }
+}

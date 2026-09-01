@@ -1,0 +1,150 @@
+@use "../abstracts/index" as *;
+
+.main-page_addProduct {
+  .box-seller_step {
+    margin: 0 0 16px;
+  }
+}
+
+.btn-right.style-preview {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgb(var(--text-headline));
+
+  .icon-eye {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.field-readonly {
+  background-color: rgb(var(--state-100)) !important;
+  color: rgb(var(--state-500));
+}
+
+.radio-discount {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 4px;
+
+  .radio-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: rgb(var(--text-base));
+  }
+
+  input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1.5px solid rgb(var(--secondary-100));
+    background: rgb(var(--text-white));
+    position: relative;
+    cursor: pointer;
+    margin: 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: rgb(var(--success-base));
+      opacity: 0;
+    }
+
+    &:checked {
+      border-color: rgb(var(--success-base));
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.checkbox-tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.checkbox-tag {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: rgb(var(--text-headline));
+  cursor: pointer;
+
+  input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    border: 1.5px solid rgb(var(--secondary-100));
+    background: rgb(var(--text-white));
+    position: relative;
+    cursor: pointer;
+    margin: 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 2px;
+      left: 5px;
+      width: 4px;
+      height: 8px;
+      border: solid rgb(var(--text-white));
+      border-width: 0 1.5px 1.5px 0;
+      transform: rotate(45deg);
+      opacity: 0;
+    }
+
+    &:checked {
+      background: rgb(var(--primary-base));
+      border-color: rgb(var(--primary-base));
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+#productUploadedModal {
+  .modal-content {
+    position: relative;
+    gap: 16px;
+    text-align: center;
+    padding-top: 44px;
+  }
+
+  .modal-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: rgb(var(--state-500));
+  }
+
+  .box-illustration {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+  }
+}

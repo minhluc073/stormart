@@ -1644,6 +1644,195 @@ select {
   background-color: rgb(var(--state-50));
 }
 
+/* ---------------------------------------------------------
+    * Name: Jobko
+    * Version: 1.0.1
+    * Author: Themesflat
+    * Author URI: http://themesflat.com 
+
+	* Abstracts variable
+
+    * Reset css styles
+
+    * Settings
+
+    * Components
+        * alert
+        * avatar
+        * badge
+        * button
+        * card
+        * carousel
+        * chart
+        * dropdown
+        * form
+        * header
+        * modal
+        * preloader
+        * progressbar
+        * radio button
+        * range slider
+        * spinner
+        * stepper
+        * switch
+        * tabs
+
+    * widget
+
+/*--------- Abstracts variable ---------- */
+.main-page_addProduct .box-seller_step {
+  margin: 0 0 16px;
+}
+
+.btn-right.style-preview {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgb(var(--text-headline));
+}
+.btn-right.style-preview .icon-eye {
+  width: 18px;
+  height: 18px;
+}
+
+.field-readonly {
+  background-color: rgb(var(--state-100)) !important;
+  color: rgb(var(--state-500));
+}
+
+.radio-discount {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 4px;
+}
+.radio-discount .radio-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: rgb(var(--text-base));
+}
+.radio-discount input[type=radio] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1.5px solid rgb(var(--secondary-100));
+  background: rgb(var(--text-white));
+  position: relative;
+  cursor: pointer;
+  margin: 0;
+}
+.radio-discount input[type=radio]::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgb(var(--success-base));
+  opacity: 0;
+}
+.radio-discount input[type=radio]:checked {
+  border-color: rgb(var(--success-base));
+}
+.radio-discount input[type=radio]:checked::after {
+  opacity: 1;
+}
+
+.checkbox-tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.checkbox-tag {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: rgb(var(--text-headline));
+  cursor: pointer;
+}
+.checkbox-tag input[type=checkbox] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  border: 1.5px solid rgb(var(--secondary-100));
+  background: rgb(var(--text-white));
+  position: relative;
+  cursor: pointer;
+  margin: 0;
+}
+.checkbox-tag input[type=checkbox]::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  width: 4px;
+  height: 8px;
+  border: solid rgb(var(--text-white));
+  border-width: 0 1.5px 1.5px 0;
+  transform: rotate(45deg);
+  opacity: 0;
+}
+.checkbox-tag input[type=checkbox]:checked {
+  background: rgb(var(--primary-base));
+  border-color: rgb(var(--primary-base));
+}
+.checkbox-tag input[type=checkbox]:checked::after {
+  opacity: 1;
+}
+
+#productUploadedModal .modal-content {
+  position: relative;
+  gap: 16px;
+  text-align: center;
+  padding-top: 44px;
+}
+#productUploadedModal .modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: rgb(var(--state-500));
+}
+#productUploadedModal .box-illustration {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+.order-list-seller {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.order-list-seller .seller-order-card .meta-row {
+  justify-content: space-between;
+}
+
+.badge-status.pending {
+  background-color: rgba(var(--warning-base), 0.12);
+  color: rgb(var(--warning-dark));
+}
+.badge-status.canceled {
+  background-color: rgba(var(--error-base), 0.12);
+  color: rgb(var(--error-base));
+}
+
 .cart-list {
   display: flex;
   flex-direction: column;
@@ -1834,6 +2023,363 @@ select {
 .cart-empty .cart-empty_img {
   width: 94px;
   margin-inline: auto;
+}
+
+/* ---------------------------------------------------------
+    * Name: Jobko
+    * Version: 1.0.1
+    * Author: Themesflat
+    * Author URI: http://themesflat.com 
+
+	* Abstracts variable
+
+    * Reset css styles
+
+    * Settings
+
+    * Components
+        * alert
+        * avatar
+        * badge
+        * button
+        * card
+        * carousel
+        * chart
+        * dropdown
+        * form
+        * header
+        * modal
+        * preloader
+        * progressbar
+        * radio button
+        * range slider
+        * spinner
+        * stepper
+        * switch
+        * tabs
+
+    * widget
+
+/*--------- Abstracts variable ---------- */
+.main-page_allOrders .tab-content {
+  padding-top: 20px;
+}
+
+.request-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.request-map {
+  border-radius: 8px;
+  overflow: hidden;
+}
+.request-map iframe {
+  display: block;
+  width: 100%;
+}
+
+.request-card .btn-dark {
+  align-items: center;
+  gap: 6px;
+}
+.request-card .btn-dark svg {
+  width: 14px;
+  height: 14px;
+}
+
+.order-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 64px;
+}
+.order-empty_icon {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 24px;
+}
+.order-empty .title {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(var(--text-headline));
+  margin-bottom: 8px;
+}
+.order-empty .text {
+  font-size: 13px;
+  color: rgb(var(--state-600));
+  max-width: 220px;
+  margin-bottom: 20px;
+}
+
+/* ---------------------------------------------------------
+    * Name: Jobko
+    * Version: 1.0.1
+    * Author: Themesflat
+    * Author URI: http://themesflat.com 
+
+	* Abstracts variable
+
+    * Reset css styles
+
+    * Settings
+
+    * Components
+        * alert
+        * avatar
+        * badge
+        * button
+        * card
+        * carousel
+        * chart
+        * dropdown
+        * form
+        * header
+        * modal
+        * preloader
+        * progressbar
+        * radio button
+        * range slider
+        * spinner
+        * stepper
+        * switch
+        * tabs
+
+    * widget
+
+/*--------- Abstracts variable ---------- */
+.header-bg .wallet-line {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  line-height: 100%;
+  color: rgb(var(--success-light));
+}
+.header-bg .wallet-line .label {
+  color: rgba(var(--text-white), 0.7);
+}
+.header-bg .avatar.has-status {
+  position: relative;
+}
+.header-bg .avatar.has-status .status-dot {
+  position: absolute;
+  right: -1px;
+  bottom: -1px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(var(--primary-base));
+  border: 2px solid rgb(var(--primary-dark));
+}
+.header-bg .box-noti .qty.dot {
+  width: 8px;
+  height: 8px;
+  background-color: rgb(var(--warning-base));
+}
+
+.stat-card .icon-circle.orders-active {
+  background-color: rgba(var(--success-base), 0.14);
+  color: rgb(var(--success-dark));
+}
+.stat-card .icon-circle.orders-total {
+  background-color: rgba(249, 115, 22, 0.14);
+  color: rgb(234, 88, 12);
+}
+.stat-card .icon-circle.earning-today {
+  background-color: rgba(147, 51, 234, 0.14);
+  color: rgb(126, 34, 206);
+}
+.stat-card .icon-circle.earning-total {
+  background-color: rgba(236, 72, 153, 0.14);
+  color: rgb(219, 39, 119);
+}
+
+.request-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px;
+  border-radius: 12px;
+  background-color: rgb(var(--text-white));
+  box-shadow: var(--shadow);
+}
+.request-card .point {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.request-card .point .icon-circle {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.request-card .point .icon-circle svg {
+  width: 14px;
+  height: 14px;
+}
+.request-card .point .icon-circle.pickup {
+  background-color: rgba(var(--main-color2), 0.12);
+  color: rgb(var(--main-color2));
+}
+.request-card .point .icon-circle.dropoff {
+  background-color: rgba(var(--warning-base), 0.18);
+  color: rgb(var(--warning-dark));
+}
+.request-card .point .text {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.request-card .point .text .label {
+  font-size: 11px;
+  color: rgb(var(--state-500));
+}
+.request-card .point .text strong {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgb(var(--text-headline));
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.request-card .badge-time {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  height: 22px;
+  padding: 0 8px;
+  border-radius: 99px;
+  background-color: rgba(var(--error-base), 0.1);
+  color: rgb(var(--error-base));
+  font-size: 11px;
+  font-weight: 500;
+}
+.request-card .badge-time svg {
+  width: 12px;
+  height: 12px;
+}
+.request-card .request-meta {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-top: 1px solid rgb(var(--state-100));
+  border-bottom: 1px solid rgb(var(--state-100));
+}
+.request-card .request-meta .meta-item {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.request-card .request-meta .meta-item:last-child {
+  text-align: right;
+}
+.request-card .request-meta .meta-item .label {
+  font-size: 11px;
+  color: rgb(var(--state-500));
+}
+.request-card .request-meta .meta-item .value {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgb(var(--text-headline));
+}
+.request-card .request-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.request-card .request-actions button {
+  flex: 1 1 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  height: 40px;
+  padding: 0;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+}
+.request-card .request-actions button svg {
+  width: 14px;
+  height: 14px;
+}
+.request-card .request-actions .btn-decline {
+  border: 1px solid rgba(var(--error-base), 0.3);
+  background-color: rgba(var(--error-base), 0.06);
+  color: rgb(var(--error-base));
+}
+.request-card .request-actions .btn-accept {
+  border: none;
+  background-color: rgb(var(--primary-dark));
+  color: rgb(var(--text-white));
+}
+
+.earning-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.earning-item {
+  gap: 8px;
+}
+.earning-item .top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.earning-item .top .code {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgb(var(--text-headline));
+}
+.earning-item .top .commission {
+  margin-left: auto;
+  font-size: 13px;
+  font-weight: 600;
+  color: rgb(var(--main-color));
+}
+.earning-item .customer {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.earning-item .customer .name {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgb(var(--text-headline));
+}
+.earning-item .customer .address {
+  font-size: 12px;
+  color: rgb(var(--state-500));
+}
+.earning-item .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 12px;
+  color: rgb(var(--state-500));
+}
+.earning-item .bottom .total {
+  color: rgb(var(--text-headline));
+  font-weight: 500;
+}
+
+.badge-status.paid {
+  background-color: rgba(var(--success-base), 0.14);
+  color: rgb(var(--success-dark));
 }
 
 /* ---------------------------------------------------------
@@ -2702,6 +3248,51 @@ select {
 /* ---------- Support Ticket Replay (62) ---------- */
 .dropdown-more_menu .item.text-danger {
   color: rgb(var(--error-base));
+}
+
+.btn-line-danger {
+  color: rgb(var(--error-base));
+  border-color: rgb(var(--error-base));
+}
+.btn-line-danger:hover {
+  background-color: rgb(var(--error-base));
+  color: rgb(var(--text-white));
+  border-color: rgb(var(--error-base));
+}
+
+#kycSubmittedModal .modal-content {
+  gap: 16px;
+  text-align: center;
+  padding-top: 44px;
+}
+#kycSubmittedModal .box-illustration {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+.kyc-card {
+  padding: 16px;
+  border-radius: 8px;
+  background-color: rgb(var(--text-white));
+  box-shadow: var(--shadow);
+  margin-bottom: 16px;
+}
+
+.kyc-actions .btn-line,
+.kyc-actions .btn-dark {
+  align-items: center;
+  gap: 6px;
+}
+.kyc-actions .btn-line svg,
+.kyc-actions .btn-dark svg {
+  width: 14px;
+  height: 14px;
+}
+
+.badge-status.approved {
+  background-color: rgba(var(--success-base), 0.12);
+  color: rgb(var(--success-dark));
 }
 
 /* ---------------------------------------------------------
@@ -3974,6 +4565,97 @@ select {
     * widget
 
 /*--------- Abstracts variable ---------- */
+.main-page_myProductList .tab-content {
+  padding-top: 20px;
+}
+
+.badge-pending,
+.badge-reject {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  font-size: 11px;
+  line-height: 18px;
+  font-weight: 500;
+  padding: 0 8px;
+  border-radius: 99px;
+  height: 18px;
+}
+
+.badge-pending {
+  color: rgb(var(--text-headline));
+  background-color: rgb(var(--warning-base));
+}
+
+.badge-reject {
+  color: rgb(var(--text-white));
+  background-color: rgb(var(--error-base));
+}
+
+#deleteProductModal .modal-content {
+  position: relative;
+  gap: 16px;
+  text-align: center;
+  padding-top: 44px;
+}
+#deleteProductModal .modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: rgb(var(--state-500));
+}
+#deleteProductModal .icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.main-page_myStore .tab-content {
+  padding-top: 20px;
+}
+
+/* ---------------------------------------------------------
+    * Name: Jobko
+    * Version: 1.0.1
+    * Author: Themesflat
+    * Author URI: http://themesflat.com 
+
+	* Abstracts variable
+
+    * Reset css styles
+
+    * Settings
+
+    * Components
+        * alert
+        * avatar
+        * badge
+        * button
+        * card
+        * carousel
+        * chart
+        * dropdown
+        * form
+        * header
+        * modal
+        * preloader
+        * progressbar
+        * radio button
+        * range slider
+        * spinner
+        * stepper
+        * switch
+        * tabs
+
+    * widget
+
+/*--------- Abstracts variable ---------- */
 .header-main .btn-right.group-icon {
   display: flex;
   align-items: center;
@@ -4694,6 +5376,97 @@ select {
   gap: 15px;
 }
 
+.accordion-section-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.accordion-section {
+  border-radius: 8px;
+  background-color: rgb(var(--text-white));
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.accordion-section_toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+  padding: 14px 16px;
+  border: 0;
+  background: transparent;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(var(--text-headline));
+  text-align: left;
+}
+.accordion-section_toggle .icon-chevron {
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+  color: rgb(var(--text-headline));
+  transition: transform 0.2s ease;
+}
+.accordion-section_toggle:not(.collapsed) .icon-chevron {
+  transform: rotate(180deg);
+}
+
+.accordion-section_body {
+  padding: 0 16px 16px;
+  border-top: 1px solid rgb(var(--state-100));
+}
+.accordion-section_body .order-item {
+  padding-top: 16px;
+}
+
+.order-summary-detail {
+  padding-top: 16px;
+}
+.order-summary-detail .order-code {
+  margin-bottom: 12px;
+  font-size: 13px;
+  font-weight: 600;
+  color: rgb(var(--text-headline));
+}
+.order-summary-detail .text-discount {
+  color: rgb(var(--error-base));
+}
+
+.badge-status.complete {
+  background-color: rgba(var(--success-base), 0.12);
+  color: rgb(var(--success-dark));
+}
+
+.address-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 16px;
+}
+
+.address-tag {
+  display: inline-flex;
+  align-items: center;
+  height: 20px;
+  padding: 0 8px;
+  margin-bottom: 8px;
+  border-radius: 99px;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 100%;
+}
+.address-tag.billing {
+  background-color: rgba(var(--main-color2), 0.12);
+  color: rgb(var(--main-color2));
+}
+.address-tag.shipping {
+  background-color: rgba(var(--success-base), 0.12);
+  color: rgb(var(--success-dark));
+}
+
 /* ---------------------------------------------------------
     * Name: Jobko
     * Version: 1.0.1
@@ -5235,6 +6008,62 @@ select {
   color: rgb(var(--text-headline));
 }
 
+/* ---------------------------------------------------------
+    * Name: Jobko
+    * Version: 1.0.1
+    * Author: Themesflat
+    * Author URI: http://themesflat.com 
+
+	* Abstracts variable
+
+    * Reset css styles
+
+    * Settings
+
+    * Components
+        * alert
+        * avatar
+        * badge
+        * button
+        * card
+        * carousel
+        * chart
+        * dropdown
+        * form
+        * header
+        * modal
+        * preloader
+        * progressbar
+        * radio button
+        * range slider
+        * spinner
+        * stepper
+        * switch
+        * tabs
+
+    * widget
+
+/*--------- Abstracts variable ---------- */
+.product-thumbs-slider.style-seller .swiper-fraction {
+  position: absolute;
+  right: 16px;
+  bottom: 20px;
+  z-index: 1;
+  padding: 2px 10px;
+  border-radius: 99px;
+  background-color: rgba(var(--text-headline), 0.5);
+  color: rgb(var(--text-white));
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.menubar-button.style-seller-detail .btn-primary svg {
+  width: 14px;
+  height: 14px;
+  margin-right: 6px;
+}
+
 .box-profile {
   padding: 4px 20px 16px;
   background: var(--gradient-2);
@@ -5735,6 +6564,41 @@ select {
 .main-page_accountDel .icon img {
   width: 100%;
   height: auto;
+}
+
+.profile-item .icon-hanger {
+  width: 24px;
+  height: 24px;
+  color: inherit;
+}
+
+.box-become_seller.store-info .img {
+  height: 52px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.box-become_seller.store-info .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btn-edit-store {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 12px;
+  border-radius: 99px;
+  background-color: rgb(var(--text-white));
+  box-shadow: var(--shadow-4);
+  color: rgb(var(--state-700));
+  font-size: 12px;
+  line-height: 100%;
+}
+.btn-edit-store svg {
+  width: 14px;
+  height: 14px;
 }
 
 .review-product {
@@ -6289,6 +7153,124 @@ select {
   padding: 0 8px;
   border-radius: 99px;
   height: 18px;
+}
+
+/* ---------------------------------------------------------
+    * Name: Jobko
+    * Version: 1.0.1
+    * Author: Themesflat
+    * Author URI: http://themesflat.com 
+
+	* Abstracts variable
+
+    * Reset css styles
+
+    * Settings
+
+    * Components
+        * alert
+        * avatar
+        * badge
+        * button
+        * card
+        * carousel
+        * chart
+        * dropdown
+        * form
+        * header
+        * modal
+        * preloader
+        * progressbar
+        * radio button
+        * range slider
+        * spinner
+        * stepper
+        * switch
+        * tabs
+
+    * widget
+
+/*--------- Abstracts variable ---------- */
+.select-flag .select-current.placeholder .text-value {
+  font-weight: 400;
+  color: rgb(var(--state-400));
+}
+
+.vehicle-list {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+}
+
+.vehicle-card {
+  position: relative;
+  flex: 0 0 auto;
+  width: 82px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 8px;
+  border-radius: 12px;
+  border: 1px solid rgb(var(--state-200));
+  background-color: rgb(var(--text-white));
+}
+.vehicle-card.active {
+  border: 1.5px solid rgb(var(--primary-dark));
+}
+.vehicle-card.active .radio-dot {
+  display: none;
+}
+.vehicle-card.active .check-badge {
+  display: flex;
+}
+.vehicle-card .radio-dot {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid rgb(var(--state-300));
+}
+.vehicle-card .check-badge {
+  display: none;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(var(--primary-dark));
+  color: rgb(var(--text-white));
+}
+.vehicle-card .vehicle-icon {
+  display: flex;
+}
+.vehicle-card .vehicle-icon svg {
+  width: 28px;
+  height: 28px;
+}
+.vehicle-card .vehicle-icon.bike {
+  color: rgb(var(--main-color2));
+}
+.vehicle-card .vehicle-icon.motorbike {
+  color: rgb(var(--error-base));
+}
+.vehicle-card .vehicle-icon.car {
+  color: rgb(var(--success-base));
+}
+.vehicle-card .vehicle-icon.van {
+  color: rgb(234, 88, 12);
+}
+.vehicle-card .name {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 100%;
+  color: rgb(var(--text-headline));
 }
 
 /*# sourceMappingURL=styles.css.map */

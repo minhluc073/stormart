@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Jobko - Job Finder Mobile App</title>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+  <!-- font -->
+  <link rel="stylesheet" href="../fonts/fonts.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/nouislider.min.css" />
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+  <!-- manifest json -->
+  <link rel="manifest" href="../_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+  <!-- Favicon and Touch Icons  -->
+  <link rel="shortcut icon" href="../images/logo/168.png" />
+  <link rel="apple-touch-icon-precomposed" href="../images/logo/168.png" />
+
+</head>
+
+<body>
+
+  <header class="header-main">
+    <button class="btn-left btn_back">
+      <svg class="icon-back">
+        <use href="../icon/sprite.svg#back"></use>
+      </svg>
+    </button>
+    <h2 class="title">Order Details</h2>
+    <button class="btn-right" type="button">
+      <svg class="icon-filter">
+        <use href="../icon/sprite.svg#filter"></use>
+      </svg>
+    </button>
+  </header>
+
+  <div class="page-width spacing_top-2 spacing_bottom-2">
+    <div class="accordion-section-list">
+
+      <!-- Products Information -->
+      <div class="accordion-section">
+        <button class="accordion-section_toggle collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#secProducts" aria-expanded="false" aria-controls="secProducts">
+          Products Information
+          <svg class="icon-chevron">
+            <use href="../icon/sprite.svg#arrow-down"></use>
+          </svg>
+        </button>
+        <div class="collapse" id="secProducts">
+          <div class="accordion-section_body">
+            <div class="order-item">
+              <div class="order-item_top">
+                <div class="order-item_img" style="background-color: #ffebeb;">
+                  <img src="../images/user/product/product20.png" alt="Red Winter Long Jacket">
+                </div>
+                <div class="order-item_info">
+                  <p class="name">Red Winter Long Jacket</p>
+                  <div class="meta">
+                    <span>Color: Gray</span>
+                    <span>Size: M</span>
+                  </div>
+                  <div class="bottom">
+                    <span class="price">$59.99</span>
+                    <span class="qty">x1</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="order-item">
+              <div class="order-item_top">
+                <div class="order-item_img" style="background-color: #fdeaf0;">
+                  <img src="../images/user/product/product14.jpg" alt="Red Winter Long Jacket">
+                </div>
+                <div class="order-item_info">
+                  <p class="name">Red Winter Long Jacket</p>
+                  <div class="meta">
+                    <span>Color: Gray</span>
+                    <span>Size: M</span>
+                  </div>
+                  <div class="bottom">
+                    <span class="price">$59.99</span>
+                    <span class="qty">x1</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Order Summary -->
+      <div class="accordion-section">
+        <button class="accordion-section_toggle collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#secSummary" aria-expanded="false" aria-controls="secSummary">
+          Order Summary
+          <svg class="icon-chevron">
+            <use href="../icon/sprite.svg#arrow-down"></use>
+          </svg>
+        </button>
+        <div class="collapse" id="secSummary">
+          <div class="accordion-section_body">
+            <div class="order-summary-detail">
+              <p class="order-code">Order #45821</p>
+              <div class="order-summary">
+                <div class="totals">
+                  <div class="row">
+                    <span>Customer Name :</span>
+                    <span>Jonson Peter</span>
+                  </div>
+                  <div class="row">
+                    <span>Date :</span>
+                    <span>24 Feb 2026</span>
+                  </div>
+                  <div class="row">
+                    <span>Status :</span>
+                    <span class="badge-status complete">Complete</span>
+                  </div>
+                  <div class="row">
+                    <span>Total</span>
+                    <span>$420</span>
+                  </div>
+                  <div class="row">
+                    <span>Delivery Fee</span>
+                    <span>+$8.00</span>
+                  </div>
+                  <div class="row">
+                    <span>Discount (Coupon)</span>
+                    <span class="text-discount">-$20.00</span>
+                  </div>
+                  <div class="row subtotal">
+                    <span>Subtotal</span>
+                    <span>$420</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Address Information -->
+      <div class="accordion-section">
+        <button class="accordion-section_toggle" type="button" data-bs-toggle="collapse"
+          data-bs-target="#secAddress" aria-expanded="true" aria-controls="secAddress">
+          Address Information
+          <svg class="icon-chevron">
+            <use href="../icon/sprite.svg#arrow-down"></use>
+          </svg>
+        </button>
+        <div class="collapse show" id="secAddress">
+          <div class="accordion-section_body">
+            <div class="address-info-list">
+              <div class="shipping-address_card">
+                <div class="info">
+                  <span class="address-tag billing">Billing address</span>
+                  <p class="name">Jonson Roy #0154</p>
+                  <p class="phone">+880 16890 91933</p>
+                  <p class="address">House-8, Road-7, Block-A, Dhaka-1216</p>
+                </div>
+              </div>
+              <div class="shipping-address_card">
+                <div class="info">
+                  <span class="address-tag shipping">Shipping address</span>
+                  <p class="name">Jonson Roy #0154</p>
+                  <p class="phone">+880 16890 91933</p>
+                  <p class="address">House-8, Road-7, Block-A, Dhaka-1216</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/lazysize.min.js"></script>
+  <script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="../js/carousel.js"></script>
+  <script type="text/javascript" src="../js/jquery.nice-select.min.js"></script>
+  <script type="text/javascript" src="../js/count-down.js"></script>
+  <script type="text/javascript" src="../js/multiple-modal.js"></script>
+  <script type="text/javascript" src="../js/nouislider.min.js"></script>
+  <script type="text/javascript" src="../js/rangle-slider.js"></script>
+  <script type="text/javascript" src="../js/init.js"></script>
+  <script type="text/javascript" src="../js/main.js"></script>
+
+</body>
+
+</html>

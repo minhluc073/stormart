@@ -1,7 +1,15 @@
 
 @forward "account";
 
+@forward "add-product";
+
+@forward "all-orders";
+
 @forward "cart";
+
+@forward "delivery-all-orders";
+
+@forward "delivery-home";
 
 @forward "device-manager";
 
@@ -11,11 +19,19 @@
 
 @forward "help-support";
 
+@forward "kyc-verification";
+
 @forward "main";
 
 @forward "message";
 
 @forward "my-order";
+
+@forward "my-product-list";
+
+@forward "my-store";
+
+@forward "my-wallet";
 
 @forward "notification";
 
@@ -23,14 +39,22 @@
 
 @forward "order";
 
+@forward "order-details";
+
 @forward "order-tracking";
 
 @forward "product-detail";
 
+@forward "product-details-seller";
+
 @forward "profile";
+
+@forward "profile-seller";
 
 @forward "review";
 
 @forward "seller-detail";
 
 @forward "seller-home";
+
+@forward "start-working";

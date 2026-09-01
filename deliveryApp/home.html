@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Jobko - Job Finder Mobile App</title>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+  <!-- font -->
+  <link rel="stylesheet" href="../fonts/fonts.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/nouislider.min.css" />
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+  <!-- manifest json -->
+  <link rel="manifest" href="../_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+  <!-- Favicon and Touch Icons  -->
+  <link rel="shortcut icon" href="../images/logo/168.png" />
+  <link rel="apple-touch-icon-precomposed" href="../images/logo/168.png" />
+
+</head>
+
+<body>
+
+  <header class="bg-primary-dark header-bg">
+    <div class="page-width">
+      <div class="inner">
+        <div class="box-user">
+          <div class="avatar has-status">
+            <img src="../images/user/avatar/avt1.jpg" alt="Sam Charam">
+            <span class="status-dot"></span>
+          </div>
+          <div class="info">
+            <div class="name">Sam Charam</div>
+            <div class="wallet-line">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 8V6.5C20 5.67157 19.3284 5 18.5 5H5.5C4.11929 5 3 6.11929 3 7.5V16.5C3 17.8807 4.11929 19 5.5 19H18.5C19.3284 19 20 18.3284 20 17.5V16"
+                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M15 12.5C15 11.1193 16.1193 10 17.5 10H20.5C20.7761 10 21 10.2239 21 10.5V14.5C21 14.7761 20.7761 15 20.5 15H17.5C16.1193 15 15 13.8807 15 12.5Z"
+                  stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                <circle cx="17.5" cy="12.5" r="0.75" fill="currentColor" />
+              </svg>
+              $424 <span class="label">(Available)</span>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="box-noti">
+          <svg class="icon-bell">
+            <use href="../icon/sprite.svg#bell"></use>
+          </svg>
+          <sup class="qty dot"></sup>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-width stat-grid_wrap">
+    <div class="row-grid column-2 stat-grid">
+      <div class="stat-card">
+        <div class="icon-circle orders-active">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M3.5 8L12 4L20.5 8M3.5 8L12 12M3.5 8V16L12 20M20.5 8L12 12M20.5 8V16L12 20M12 12V20"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div class="info">
+          <span class="value">26</span>
+          <span class="label">Active Orders</span>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="icon-circle orders-total">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 7.5L12 3L21 7.5V16.5L12 21L3 16.5V7.5Z" stroke="currentColor" stroke-width="1.5"
+              stroke-linejoin="round" />
+            <path d="M3 7.5L12 12M12 12L21 7.5M12 12V21" stroke="currentColor" stroke-width="1.5"
+              stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div class="info">
+          <span class="value">1,234</span>
+          <span class="label">Total Orders</span>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="icon-circle earning-today">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 8V6.5C20 5.67157 19.3284 5 18.5 5H5.5C4.11929 5 3 6.11929 3 7.5V16.5C3 17.8807 4.11929 19 5.5 19H18.5C19.3284 19 20 18.3284 20 17.5V16"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M15 12.5C15 11.1193 16.1193 10 17.5 10H20.5C20.7761 10 21 10.2239 21 10.5V14.5C21 14.7761 20.7761 15 20.5 15H17.5C16.1193 15 15 13.8807 15 12.5Z"
+              stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+            <circle cx="17.5" cy="12.5" r="0.75" fill="currentColor" />
+          </svg>
+        </div>
+        <div class="info">
+          <span class="value">$524</span>
+          <span class="label">Today Earning</span>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="icon-circle earning-total">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.5 4H14.5L13 7H11L9.5 4Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+            <path d="M11 7C7 7 4.5 10.5 4.5 14.5C4.5 18 7.5 20 12 20C16.5 20 19.5 18 19.5 14.5C19.5 10.5 17 7 13 7H11Z"
+              stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+            <path d="M12 10.5V16.5M10 12H14M10 15H14" stroke="currentColor" stroke-width="1.3"
+              stroke-linecap="round" />
+          </svg>
+        </div>
+        <div class="info">
+          <span class="value">$52,400.00</span>
+          <span class="label">Total Earning</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="appContent spacing_bottom">
+    <section class="spacing-1">
+      <div class="page-width">
+        <div class="box-title">
+          <h3 class="title">Recent Request</h3>
+          <a href="#" class="btn-view">See All</a>
+        </div>
+        <div dir="ltr" class="swiper tf-swiper sw-overRight" data-swiper='{
+            "slidesPerView": 1.15,
+            "spaceBetween": 12,
+            "speed": 800
+          }'>
+          <div class="swiper-wrapper">
+            <!-- item 1 -->
+            <div class="swiper-slide">
+              <div class="request-card">
+                <div class="point">
+                  <div class="icon-circle pickup">
+                    <svg class="icon-location">
+                      <use href="../icon/sprite.svg#location"></use>
+                    </svg>
+                  </div>
+                  <span class="text"><span class="label">Pickup</span><strong>Green Mart Store</strong></span>
+                  <span class="badge-time">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 7V12L15 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path
+                        d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                        stroke="currentColor" stroke-width="1.5" />
+                    </svg>
+                    10:00
+                  </span>
+                </div>
+                <div class="point">
+                  <div class="icon-circle dropoff">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 11L21 3L13 21L11 13L3 11Z" stroke="currentColor" stroke-width="1.5"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <!-- NOTE: nhãn "Pickup" xuất hiện 2 lần trong ảnh gốc (dòng 2 lẽ ra là "Dropoff") — giữ nguyên theo ảnh, xem mục (d) trong tóm tắt cuối -->
+                  <span class="text"><span class="label">Pickup</span><strong>House 12, Road 8, Uttara</strong></span>
+                </div>
+                <div class="request-meta">
+                  <div class="meta-item">
+                    <span class="label">Distance</span>
+                    <span class="value">2.7 KM</span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="label">Earnings</span>
+                    <span class="value">$12.00</span>
+                  </div>
+                </div>
+                <div class="request-actions">
+                  <button type="button" class="btn-decline">
+                    <svg class="icon-close">
+                      <use href="../icon/sprite.svg#close"></use>
+                    </svg>
+                    Decline
+                  </button>
+                  <button type="button" class="btn-accept">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5 13L9.5 17.5L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                    Accept
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- item 2 -->
+            <div class="swiper-slide">
+              <div class="request-card">
+                <div class="point">
+                  <div class="icon-circle pickup">
+                    <svg class="icon-location">
+                      <use href="../icon/sprite.svg#location"></use>
+                    </svg>
+                  </div>
+                  <span class="text"><span class="label">Pickup</span><strong>Green Mart Store</strong></span>
+                  <span class="badge-time">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 7V12L15 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path
+                        d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                        stroke="currentColor" stroke-width="1.5" />
+                    </svg>
+                    10:00
+                  </span>
+                </div>
+                <div class="point">
+                  <div class="icon-circle dropoff">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 11L21 3L13 21L11 13L3 11Z" stroke="currentColor" stroke-width="1.5"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <span class="text"><span class="label">Pickup</span><strong>House 12, Road 8, Uttara</strong></span>
+                </div>
+                <div class="request-meta">
+                  <div class="meta-item">
+                    <span class="label">Distance</span>
+                    <span class="value">2.7 KM</span>
+                  </div>
+                  <div class="meta-item">
+                    <span class="label">Earnings</span>
+                    <span class="value">$12.00</span>
+                  </div>
+                </div>
+                <div class="request-actions">
+                  <button type="button" class="btn-decline">
+                    <svg class="icon-close">
+                      <use href="../icon/sprite.svg#close"></use>
+                    </svg>
+                    Decline
+                  </button>
+                  <button type="button" class="btn-accept">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5 13L9.5 17.5L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                    Accept
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="spacing-2 pt-0">
+      <div class="page-width">
+        <div class="box-title">
+          <h3 class="title">Earnings History</h3>
+          <a href="#" class="btn-view">See All</a>
+        </div>
+        <div class="earning-list">
+          <div class="order-item earning-item">
+            <div class="top">
+              <span class="code">Order #8472</span>
+              <span class="badge-status paid">Paid</span>
+              <span class="commission">Commission <strong>$120</strong></span>
+            </div>
+            <div class="customer">
+              <span class="name">Karim Ahmed</span>
+              <span class="address">Gulshan, Dhaka</span>
+            </div>
+            <div class="bottom">
+              <span class="date">Feb 18, 2026 · 3:45 PM</span>
+              <span class="total">Total: $850</span>
+            </div>
+          </div>
+          <div class="order-item earning-item">
+            <div class="top">
+              <span class="code">Order #8472</span>
+              <span class="badge-status paid">Paid</span>
+              <span class="commission">Commission <strong>$120</strong></span>
+            </div>
+            <div class="customer">
+              <span class="name">Karim Ahmed</span>
+              <span class="address">Gulshan, Dhaka</span>
+            </div>
+            <div class="bottom">
+              <span class="date">Feb 18, 2026 · 3:45 PM</span>
+              <span class="total">Total: $850</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="menubar-footer">
+    <div class="inner-bar">
+      <a href="home.html" class="item active">
+        <svg class="icon-home icon">
+          <use href="../icon/sprite.svg#home"></use>
+        </svg>
+        <svg class="icon-homeFill icon-active">
+          <use href="../icon/sprite.svg#homeFill"></use>
+        </svg>
+        Home
+      </a>
+      <a href="#" class="item">
+        <svg class="icon-mess">
+          <use href="../icon/sprite.svg#message"></use>
+        </svg>
+        Message
+      </a>
+      <a href="#" class="item addcart">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7 8V6.5C7 4.567 8.567 3 10.5 3H13.5C15.433 3 17 4.567 17 6.5V8" stroke="currentColor"
+            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M5.5 8H18.5L19.5 20.5C19.5 21.0523 19.0523 21.5 18.5 21.5H5.5C4.94772 21.5 4.5 21.0523 4.5 20.5L5.5 8Z"
+            stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+          <path d="M9.5 11V13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+          <path d="M14.5 11V13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+        </svg>
+      </a>
+      <a href="#" class="item">
+        <svg class="icon-profit">
+          <use href="../icon/sprite.svg#profit"></use>
+        </svg>
+        Wallet
+      </a>
+      <a href="#" class="item">
+        <svg class="icon-user icon">
+          <use href="../icon/sprite.svg#user"></use>
+        </svg>
+        <svg class="icon-userFill icon-active">
+          <use href="../icon/sprite.svg#userFill"></use>
+        </svg>
+        Profile
+      </a>
+    </div>
+  </div>
+
+
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/lazysize.min.js"></script>
+  <script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="../js/carousel.js"></script>
+  <script type="text/javascript" src="../js/jquery.nice-select.min.js"></script>
+  <script type="text/javascript" src="../js/count-down.js"></script>
+  <script type="text/javascript" src="../js/multiple-modal.js"></script>
+  <script type="text/javascript" src="../js/nouislider.min.js"></script>
+  <script type="text/javascript" src="../js/rangle-slider.js"></script>
+  <script type="text/javascript" src="../js/init.js"></script>
+  <script type="text/javascript" src="../js/main.js"></script>
+
+</body>
+
+</html>

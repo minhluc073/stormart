@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Jobko - Job Finder Mobile App</title>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+  <!-- font -->
+  <link rel="stylesheet" href="../fonts/fonts.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/nouislider.min.css" />
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+  <!-- manifest json -->
+  <link rel="manifest" href="../_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+  <!-- Favicon and Touch Icons  -->
+  <link rel="shortcut icon" href="../images/logo/168.png" />
+  <link rel="apple-touch-icon-precomposed" href="../images/logo/168.png" />
+
+</head>
+
+<body>
+
+  <header class="header-main">
+    <button class="btn-left btn_back">
+      <svg class="icon-back">
+        <use href="../icon/sprite.svg#back"></use>
+      </svg>
+    </button>
+    <h2 class="title">All Request</h2>
+    <button type="button" class="btn-right">
+      <svg class="icon-filter">
+        <use href="../icon/sprite.svg#filter"></use>
+      </svg>
+    </button>
+  </header>
+
+  <div class="page-width main-page_allOrders spacing_top-2 spacing_bottom-2">
+    <ul class="menu-tab column4 primary" role="tablist">
+      <li class="nav-tab-item" role="presentation">
+        <a href="#viewAll" class="tab-link active" data-bs-toggle="tab">View All</a>
+      </li>
+      <li class="nav-tab-item" role="presentation">
+        <a href="#active" class="tab-link" data-bs-toggle="tab">Active</a>
+      </li>
+      <li class="nav-tab-item" role="presentation">
+        <a href="#complete" class="tab-link" data-bs-toggle="tab">Complete</a>
+      </li>
+      <li class="nav-tab-item" role="presentation">
+        <a href="#decline" class="tab-link" data-bs-toggle="tab">Decline</a>
+      </li>
+    </ul>
+
+    <div class="tab-content">
+
+      <!-- TAB: View All -->
+      <div class="tab-pane fade show active" id="viewAll" role="tabpanel">
+
+        <!-- STATE: has data -->
+        <div class="request-list">
+          <div class="request-card">
+            <div class="point">
+              <div class="icon-circle pickup">
+                <svg class="icon-location">
+                  <use href="../icon/sprite.svg#location"></use>
+                </svg>
+              </div>
+              <span class="text"><span class="label">Pickup</span><strong>Green Mart Store</strong></span>
+              <span class="badge-time">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 7V12L15 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path
+                    d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                    stroke="currentColor" stroke-width="1.5" />
+                </svg>
+                10:00
+              </span>
+            </div>
+            <div class="point">
+              <div class="icon-circle dropoff">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 11L21 3L13 21L11 13L3 11Z" stroke="currentColor" stroke-width="1.5"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+              <span class="text"><span class="label">Pickup</span><strong>House 12, Road 8, Uttara</strong></span>
+            </div>
+            <div class="request-meta">
+              <div class="meta-item">
+                <span class="label">Distance</span>
+                <span class="value">2.7 KM</span>
+              </div>
+              <div class="meta-item">
+                <span class="label">Earnings</span>
+                <span class="value">$12.00</span>
+              </div>
+            </div>
+            <div class="request-actions">
+              <button type="button" class="btn-decline">
+                <svg class="icon-close">
+                  <use href="../icon/sprite.svg#close"></use>
+                </svg>
+                Decline
+              </button>
+              <button type="button" class="btn-accept">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 13L9.5 17.5L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                Accept
+              </button>
+            </div>
+          </div>
+          <div class="request-card">
+            <div class="point">
+              <div class="icon-circle pickup">
+                <svg class="icon-location">
+                  <use href="../icon/sprite.svg#location"></use>
+                </svg>
+              </div>
+              <span class="text"><span class="label">Pickup</span><strong>Green Mart Store</strong></span>
+              <span class="badge-time">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 7V12L15 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path
+                    d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                    stroke="currentColor" stroke-width="1.5" />
+                </svg>
+                10:00
+              </span>
+            </div>
+            <div class="point">
+              <div class="icon-circle dropoff">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 11L21 3L13 21L11 13L3 11Z" stroke="currentColor" stroke-width="1.5"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+              <span class="text"><span class="label">Pickup</span><strong>House 12, Road 8, Uttara</strong></span>
+            </div>
+            <div class="request-meta">
+              <div class="meta-item">
+                <span class="label">Distance</span>
+                <span class="value">2.7 KM</span>
+              </div>
+              <div class="meta-item">
+                <span class="label">Earnings</span>
+                <span class="value">$12.00</span>
+              </div>
+            </div>
+            <div class="request-actions">
+              <button type="button" class="btn-decline">
+                <svg class="icon-close">
+                  <use href="../icon/sprite.svg#close"></use>
+                </svg>
+                Decline
+              </button>
+              <button type="button" class="btn-accept">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 13L9.5 17.5L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                Accept
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- STATE: empty (demo only, hidden by default) -->
+        <div class="order-empty d-none">
+          <div class="order-empty_icon">
+            <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="60" cy="64" r="46" fill="rgb(var(--state-100))" />
+              <path d="M60 8L63 15L70 18L63 21L60 28L57 21L50 18L57 15Z" fill="rgb(var(--state-300))" />
+              <circle cx="92" cy="24" r="3" fill="rgb(var(--state-300))" />
+              <circle cx="26" cy="20" r="2.5" fill="rgb(var(--state-300))" />
+              <circle cx="30" cy="50" r="2" fill="rgb(var(--state-300))" />
+              <path d="M40 52L64 44L86 54L64 60Z" fill="rgb(var(--text-white))" stroke="rgb(var(--state-300))"
+                stroke-width="2" stroke-linejoin="round" />
+              <path d="M38 64L60 74L82 64V96L60 106L38 96Z" fill="rgb(var(--text-white))"
+                stroke="rgb(var(--state-300))" stroke-width="2" stroke-linejoin="round" />
+              <path d="M38 64L60 74L82 64" stroke="rgb(var(--state-300))" stroke-width="2" stroke-linejoin="round"
+                fill="none" />
+              <path d="M60 74V106" stroke="rgb(var(--state-300))" stroke-width="2" />
+            </svg>
+          </div>
+          <h3 class="title">No Orders Yet!</h3>
+          <p class="text">Add products you love and they'll show up here.</p>
+          <a href="#" class="btn-dark">Browse Orders</a>
+        </div>
+      </div>
+
+      <!-- TAB: Active -->
+      <div class="tab-pane fade" id="active" role="tabpanel">
+        <div class="request-list">
+          <div class="request-card">
+            <div class="point">
+              <div class="icon-circle pickup">
+                <svg class="icon-location">
+                  <use href="../icon/sprite.svg#location"></use>
+                </svg>
+              </div>
+              <span class="text"><span class="label">Pickup</span><strong>Green Mart Store</strong></span>
+              <span class="badge-time">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 7V12L15 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path
+                    d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                    stroke="currentColor" stroke-width="1.5" />
+                </svg>
+                10:00
+              </span>
+            </div>
+            <div class="point">
+              <div class="icon-circle dropoff">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 11L21 3L13 21L11 13L3 11Z" stroke="currentColor" stroke-width="1.5"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+              <span class="text"><span class="label">Pickup</span><strong>House 12, Road 8, Uttara</strong></span>
+            </div>
+            <div class="request-meta">
+              <div class="meta-item">
+                <span class="label">Distance</span>
+                <span class="value">2.7 KM</span>
+              </div>
+              <div class="meta-item">
+                <span class="label">Earnings</span>
+                <span class="value">$12.00</span>
+              </div>
+            </div>
+            <div class="request-map">
+              <iframe src="https://www.google.com/maps?q=House+12,+Road+8,+Uttara&output=embed" width="100%"
+                height="160" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=House+12,+Road+8,+Uttara" target="_blank"
+              rel="noopener noreferrer" class="btn-dark">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 11L21 3L13 21L11 13L3 11Z" stroke="currentColor" stroke-width="1.5"
+                  stroke-linejoin="round" />
+              </svg>
+              Open Navigation
+            </a>
+          </div>
+          <div class="request-card">
+            <div class="point">
+              <div class="icon-circle pickup">
+                <svg class="icon-location">
+                  <use href="../icon/sprite.svg#location"></use>
+                </svg>
+              </div>
+              <span class="text"><span class="label">Pickup</span><strong>Green Mart Store</strong></span>
+              <span class="badge-time">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 7V12L15 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path
+                    d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                    stroke="currentColor" stroke-width="1.5" />
+                </svg>
+                10:00
+              </span>
+            </div>
+            <div class="point">
+              <div class="icon-circle dropoff">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 11L21 3L13 21L11 13L3 11Z" stroke="currentColor" stroke-width="1.5"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+              <span class="text"><span class="label">Pickup</span><strong>House 12, Road 8, Uttara</strong></span>
+            </div>
+            <div class="request-meta">
+              <div class="meta-item">
+                <span class="label">Distance</span>
+                <span class="value">2.7 KM</span>
+              </div>
+              <div class="meta-item">
+                <span class="label">Earnings</span>
+                <span class="value">$12.00</span>
+              </div>
+            </div>
+            <div class="request-map">
+              <iframe src="https://www.google.com/maps?q=House+12,+Road+8,+Uttara&output=embed" width="100%"
+                height="160" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=House+12,+Road+8,+Uttara" target="_blank"
+              rel="noopener noreferrer" class="btn-dark">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 11L21 3L13 21L11 13L3 11Z" stroke="currentColor" stroke-width="1.5"
+                  stroke-linejoin="round" />
+              </svg>
+              Open Navigation
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB: Complete -->
+      <div class="tab-pane fade" id="complete" role="tabpanel">
+        <div class="request-list">
+          <div class="request-card">
+            <div class="point">
+              <div class="icon-circle pickup">
+                <svg class="icon-location">
+                  <use href="../icon/sprite.svg#location"></use>
+                </svg>
+              </div>
+              <span class="text"><span class="label">Pickup</span><strong>Green Mart Store</strong></span>
+              <span class="badge-time">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 7V12L15 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path
+                    d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                    stroke="currentColor" stroke-width="1.5" />
+                </svg>
+                10:00
+              </span>
+            </div>
+            <div class="point">
+              <div class="icon-circle dropoff">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 11L21 3L13 21L11 13L3 11Z" stroke="currentColor" stroke-width="1.5"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+              <span class="text"><span class="label">Pickup</span><strong>House 12, Road 8, Uttara</strong></span>
+            </div>
+            <div class="request-meta">
+              <div class="meta-item">
+                <span class="label">Distance</span>
+                <span class="value">2.7 KM</span>
+              </div>
+              <div class="meta-item">
+                <span class="label">Earnings</span>
+                <span class="value">$12.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="request-card">
+            <div class="point">
+              <div class="icon-circle pickup">
+                <svg class="icon-location">
+                  <use href="../icon/sprite.svg#location"></use>
+                </svg>
+              </div>
+              <span class="text"><span class="label">Pickup</span><strong>Green Mart Store</strong></span>
+              <span class="badge-time">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 7V12L15 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path
+                    d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                    stroke="currentColor" stroke-width="1.5" />
+                </svg>
+                10:00
+              </span>
+            </div>
+            <div class="point">
+              <div class="icon-circle dropoff">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 11L21 3L13 21L11 13L3 11Z" stroke="currentColor" stroke-width="1.5"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+              <span class="text"><span class="label">Pickup</span><strong>House 12, Road 8, Uttara</strong></span>
+            </div>
+            <div class="request-meta">
+              <div class="meta-item">
+                <span class="label">Distance</span>
+                <span class="value">2.7 KM</span>
+              </div>
+              <div class="meta-item">
+                <span class="label">Earnings</span>
+                <span class="value">$12.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB: Decline (không có khung minh họa riêng trong ảnh — dựng giống cấu trúc tab Complete, cần xác nhận thêm) -->
+      <div class="tab-pane fade" id="decline" role="tabpanel">
+        <div class="request-list">
+          <div class="request-card">
+            <div class="point">
+              <div class="icon-circle pickup">
+                <svg class="icon-location">
+                  <use href="../icon/sprite.svg#location"></use>
+                </svg>
+              </div>
+              <span class="text"><span class="label">Pickup</span><strong>Green Mart Store</strong></span>
+              <span class="badge-time">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 7V12L15 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path
+                    d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                    stroke="currentColor" stroke-width="1.5" />
+                </svg>
+                10:00
+              </span>
+            </div>
+            <div class="point">
+              <div class="icon-circle dropoff">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 11L21 3L13 21L11 13L3 11Z" stroke="currentColor" stroke-width="1.5"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+              <span class="text"><span class="label">Pickup</span><strong>House 12, Road 8, Uttara</strong></span>
+            </div>
+            <div class="request-meta">
+              <div class="meta-item">
+                <span class="label">Distance</span>
+                <span class="value">2.7 KM</span>
+              </div>
+              <div class="meta-item">
+                <span class="label">Earnings</span>
+                <span class="value">$12.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="menubar-footer">
+    <div class="inner-bar">
+      <a href="home.html" class="item">
+        <svg class="icon-home icon">
+          <use href="../icon/sprite.svg#home"></use>
+        </svg>
+        <svg class="icon-homeFill icon-active">
+          <use href="../icon/sprite.svg#homeFill"></use>
+        </svg>
+        Home
+      </a>
+      <a href="#" class="item">
+        <svg class="icon-mess">
+          <use href="../icon/sprite.svg#message"></use>
+        </svg>
+        Message
+      </a>
+      <a href="#" class="item addcart">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7 8V6.5C7 4.567 8.567 3 10.5 3H13.5C15.433 3 17 4.567 17 6.5V8" stroke="currentColor"
+            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M5.5 8H18.5L19.5 20.5C19.5 21.0523 19.0523 21.5 18.5 21.5H5.5C4.94772 21.5 4.5 21.0523 4.5 20.5L5.5 8Z"
+            stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+          <path d="M9.5 11V13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+          <path d="M14.5 11V13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+        </svg>
+      </a>
+      <a href="#" class="item active">
+        <svg class="icon-profit">
+          <use href="../icon/sprite.svg#profit"></use>
+        </svg>
+        Wallet
+      </a>
+      <a href="#" class="item">
+        <svg class="icon-user icon">
+          <use href="../icon/sprite.svg#user"></use>
+        </svg>
+        <svg class="icon-userFill icon-active">
+          <use href="../icon/sprite.svg#userFill"></use>
+        </svg>
+        Profile
+      </a>
+    </div>
+  </div>
+
+
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/lazysize.min.js"></script>
+  <script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="../js/carousel.js"></script>
+  <script type="text/javascript" src="../js/jquery.nice-select.min.js"></script>
+  <script type="text/javascript" src="../js/count-down.js"></script>
+  <script type="text/javascript" src="../js/multiple-modal.js"></script>
+  <script type="text/javascript" src="../js/nouislider.min.js"></script>
+  <script type="text/javascript" src="../js/rangle-slider.js"></script>
+  <script type="text/javascript" src="../js/init.js"></script>
+  <script type="text/javascript" src="../js/main.js"></script>
+
+</body>
+
+</html>

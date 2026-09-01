@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Jobko - Job Finder Mobile App</title>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+  <!-- font -->
+  <link rel="stylesheet" href="../fonts/fonts.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/nouislider.min.css" />
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+  <!-- manifest json -->
+  <link rel="manifest" href="../_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+  <!-- Favicon and Touch Icons  -->
+  <link rel="shortcut icon" href="../images/logo/168.png" />
+  <link rel="apple-touch-icon-precomposed" href="../images/logo/168.png" />
+
+</head>
+
+<body>
+
+  <header class="header-main">
+    <button class="btn-left btn_back">
+      <svg class="icon-back">
+        <use href="../icon/sprite.svg#back"></use>
+      </svg>
+    </button>
+    <h2 class="title">Add Product</h2>
+    <a href="#" class="btn-right style-preview">
+      <svg class="icon-eye">
+        <use href="../icon/sprite.svg#eye"></use>
+      </svg>
+      Preview
+    </a>
+  </header>
+
+  <div class="page-width main-page_addProduct spacing_top-2 spacing_bottom-2">
+    <div class="box-seller_step">
+      <div class="step-item active">
+        <span class="step">1</span>
+        <div class="content">
+          <span class="label">Step 1/2</span>
+          <div class="title">Information</div>
+        </div>
+      </div>
+      <div class="step-item">
+        <span class="step">2</span>
+        <div class="content">
+          <span class="label">Step 2/2</span>
+          <div class="title">Product Image</div>
+        </div>
+      </div>
+    </div>
+
+    <fieldset class="fieldset">
+      <label for="productTitle" class="label">Product Title</label>
+      <input type="text" id="productTitle" value="Double-Breasted Trench Coat">
+    </fieldset>
+
+    <div class="fieldset row-grid column-2">
+      <fieldset>
+        <label for="category" class="label">Category</label>
+        <div class="select-wrap">
+          <select id="category" class="select">
+            <option>Clothing</option>
+            <option>Footwear</option>
+            <option>Accessories</option>
+          </select>
+          <svg class="icon-arrowDown">
+            <use href="../icon/sprite.svg#arrowDown"></use>
+          </svg>
+        </div>
+      </fieldset>
+      <fieldset>
+        <label for="subCategory" class="label">Sub-Category</label>
+        <div class="select-wrap">
+          <select id="subCategory" class="select">
+            <option>Women</option>
+            <option>Men</option>
+            <option>Kids</option>
+          </select>
+          <svg class="icon-arrowDown">
+            <use href="../icon/sprite.svg#arrowDown"></use>
+          </svg>
+        </div>
+      </fieldset>
+    </div>
+
+    <fieldset class="fieldset">
+      <label for="brandName" class="label">Brand Name (Optional)</label>
+      <div class="select-wrap">
+        <select id="brandName" class="select">
+          <option>UrbanEdge</option>
+          <option>TrueStyle</option>
+          <option>Sailor Clothing</option>
+        </select>
+        <svg class="icon-arrowDown">
+          <use href="../icon/sprite.svg#arrowDown"></use>
+        </svg>
+      </div>
+    </fieldset>
+
+    <div class="fieldset row-grid column-2">
+      <fieldset>
+        <label for="originalPrice" class="label">Original Price</label>
+        <input type="text" id="originalPrice" value="98.99 USD">
+      </fieldset>
+      <fieldset>
+        <label for="sellingPrice" class="label">Selling Price (Auto)</label>
+        <input type="text" id="sellingPrice" class="field-readonly" value="68.99 USD" readonly>
+      </fieldset>
+    </div>
+
+    <fieldset class="fieldset">
+      <div class="radio-discount">
+        <label class="radio-item">
+          <input type="radio" name="discount">
+          No
+        </label>
+        <label class="radio-item">
+          <input type="radio" name="discount">
+          20%
+        </label>
+        <label class="radio-item">
+          <input type="radio" name="discount" checked>
+          30%
+        </label>
+        <label class="radio-item">
+          <input type="radio" name="discount">
+          40%
+        </label>
+      </div>
+    </fieldset>
+
+    <fieldset class="fieldset">
+      <label for="stockQuantity" class="label">Stock Quantity</label>
+      <input type="text" id="stockQuantity" value="300 Units">
+    </fieldset>
+
+    <fieldset class="fieldset">
+      <label for="shortOverview" class="label">Short Overview</label>
+      <input type="text" id="shortOverview" placeholder="Street, house, apartment/unit">
+    </fieldset>
+
+    <fieldset class="fieldset">
+      <label for="features" class="label">Features</label>
+      <input type="text" id="features" placeholder="Street, house, apartment/unit">
+    </fieldset>
+  </div>
+
+  <div class="menubar-button">
+    <a href="my-product-list.html" class="btn-line">Discard</a>
+    <a href="add-product-image.html" class="btn-primary">Continue</a>
+  </div>
+
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/lazysize.min.js"></script>
+  <script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="../js/carousel.js"></script>
+  <script type="text/javascript" src="../js/jquery.nice-select.min.js"></script>
+  <script type="text/javascript" src="../js/count-down.js"></script>
+  <script type="text/javascript" src="../js/multiple-modal.js"></script>
+  <script type="text/javascript" src="../js/nouislider.min.js"></script>
+  <script type="text/javascript" src="../js/rangle-slider.js"></script>
+  <script type="text/javascript" src="../js/init.js"></script>
+  <script type="text/javascript" src="../js/main.js"></script>
+
+</body>
+
+</html>

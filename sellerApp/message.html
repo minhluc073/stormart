@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Jobko - Job Finder Mobile App</title>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+  <!-- font -->
+  <link rel="stylesheet" href="../fonts/fonts.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/nouislider.min.css" />
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+  <!-- manifest json -->
+  <link rel="manifest" href="../_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+  <!-- Favicon and Touch Icons  -->
+  <link rel="shortcut icon" href="../images/logo/168.png" />
+  <link rel="apple-touch-icon-precomposed" href="../images/logo/168.png" />
+
+</head>
+
+<body>
+
+  <div class="message-page">
+    <header class="header-main">
+      <button class="btn-left btn_back">
+        <svg class="icon-back">
+          <use href="../icon/sprite.svg#back"></use>
+        </svg>
+      </button>
+      <h2 class="title">Message</h2>
+      <button class="btn-right">
+        <svg class="icon-more-vertical">
+          <use href="../icon/sprite.svg#more-vertical"></use>
+        </svg>
+      </button>
+    </header>
+
+    <div class="page-width spacing_top-2 spacing_bottom-2">
+      <div class="box-search mb16">
+        <form class="form-search">
+          <input type="search" placeholder="Search message...">
+          <svg class="icon-search">
+            <use href="../icon/sprite.svg#search"></use>
+          </svg>
+        </form>
+      </div>
+
+      <!-- STATE: 35_ Message - Empty -->
+      <div class="message-empty d-none">
+        <div class="message-empty_icon">
+          <svg viewBox="0 0 120 120" fill="none">
+            <circle cx="60" cy="64" r="46" fill="rgb(var(--state-100))" />
+            <path d="M60 8L63 15L70 18L63 21L60 28L57 21L50 18L57 15Z" fill="rgb(var(--state-200))" />
+            <circle cx="90" cy="22" r="3" fill="rgb(var(--state-300))" />
+            <circle cx="32" cy="16" r="2.5" fill="rgb(var(--state-300))" />
+            <circle cx="97" cy="46" r="2" fill="rgb(var(--state-300))" />
+            <path d="M34 62L60 50L86 62L86 96L60 108L34 96Z" fill="rgb(var(--text-white))"
+              stroke="rgb(var(--state-300))" stroke-width="2" stroke-linejoin="round" />
+            <path d="M34 62L60 74L86 62" stroke="rgb(var(--state-300))" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" fill="none" />
+            <path d="M60 74L60 108" stroke="rgb(var(--state-300))" stroke-width="2" />
+            <path d="M44 54Q44 42 60 42Q76 42 76 54" stroke="rgb(var(--state-300))" stroke-width="2" fill="none"
+              stroke-linecap="round" />
+            <circle cx="52" cy="80" r="2.5" fill="rgb(var(--state-500))" />
+            <circle cx="68" cy="80" r="2.5" fill="rgb(var(--state-500))" />
+            <path d="M54 90Q60 94 66 90" stroke="rgb(var(--state-500))" stroke-width="2" stroke-linecap="round"
+              fill="none" />
+          </svg>
+        </div>
+        <h3 class="title">No Orders Yet!</h3>
+        <p class="text">Add products you love and they'll show up here.</p>
+      </div>
+
+      <!-- STATE: 35_ Message - List of chat -->
+      <div class="message-list">
+        <a href="message-detail.html" class="message-item">
+          <div class="avatar">
+            <img src="../images/user/avatar/avt3.png" alt="Cody Fisher">
+          </div>
+          <div class="info">
+            <div class="top">
+              <p class="name">Cody Fisher</p>
+              <span class="time">04:00 PM</span>
+            </div>
+            <div class="bottom">
+              <p class="preview">Yes, of course. We will make it easy for you 😊</p>
+              <span class="badge-unread">2</span>
+            </div>
+          </div>
+        </a>
+        <a href="message-detail.html" class="message-item">
+          <div class="avatar">
+            <img src="../images/user/avatar/avt4.png" alt="Devon Lane">
+          </div>
+          <div class="info">
+            <div class="top">
+              <p class="name">Devon Lane</p>
+              <span class="time">04:00 PM</span>
+            </div>
+            <div class="bottom">
+              <p class="preview">Hey there's a promo waiting for you, don't miss it!</p>
+            </div>
+          </div>
+        </a>
+        <a href="message-detail.html" class="message-item">
+          <div class="avatar">
+            <img src="../images/user/avatar/avt2.jpg" alt="Jacob Jones">
+          </div>
+          <div class="info">
+            <div class="top">
+              <p class="name">Jacob Jones</p>
+              <span class="time">04:00 PM</span>
+            </div>
+            <div class="bottom">
+              <p class="preview">No problem 😊</p>
+            </div>
+          </div>
+        </a>
+        <a href="message-detail.html" class="message-item">
+          <div class="avatar">
+            <img src="../images/user/avatar/avt1.jpg" alt="Jane Cooper">
+          </div>
+          <div class="info">
+            <div class="top">
+              <p class="name">Jane Cooper</p>
+              <span class="time">May 30</span>
+            </div>
+            <div class="bottom">
+              <p class="preview">Yes, of course. We will make it easy for you 😊</p>
+              <span class="badge-unread">2</span>
+            </div>
+          </div>
+        </a>
+        <a href="message-detail.html" class="message-item">
+          <div class="avatar">
+            <img src="../images/user/avatar/avt4.png" alt="Robert Fox">
+          </div>
+          <div class="info">
+            <div class="top">
+              <p class="name">Robert Fox</p>
+              <span class="time">May 20</span>
+            </div>
+            <div class="bottom">
+              <p class="preview">Yes, of course. We will make it easy for you 😊</p>
+              <span class="badge-unread">2</span>
+            </div>
+          </div>
+        </a>
+        <a href="message-detail.html" class="message-item">
+          <div class="avatar">
+            <img src="../images/user/avatar/avt2.jpg" alt="Jerome Bell">
+          </div>
+          <div class="info">
+            <div class="top">
+              <p class="name">Jerome Bell</p>
+              <span class="time">04:00 PM</span>
+            </div>
+            <div class="bottom">
+              <p class="preview">No problem 😊</p>
+            </div>
+          </div>
+        </a>
+        <a href="message-detail.html" class="message-item">
+          <div class="avatar">
+            <img src="../images/user/avatar/avt2.jpg" alt="Jacob Jones">
+          </div>
+          <div class="info">
+            <div class="top">
+              <p class="name">Jacob Jones</p>
+              <span class="time">04:00 PM</span>
+            </div>
+            <div class="bottom">
+              <p class="preview">No problem 😊</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="menubar-footer">
+      <div class="inner-bar">
+        <a href="home.html" class="item">
+          <svg class="icon-home icon">
+            <use href="../icon/sprite.svg#home"></use>
+          </svg>
+          <svg class="icon-homeFill icon-active">
+            <use href="../icon/sprite.svg#homeFill"></use>
+          </svg>
+          Home
+        </a>
+        <a href="#" class="item">
+          <svg class="icon-document">
+            <use href="../icon/sprite.svg#document"></use>
+          </svg>
+          Order
+        </a>
+        <a href="#" class="item addcart">
+          <svg class="icon-plus">
+            <use href="../icon/sprite.svg#plus"></use>
+          </svg>
+        </a>
+        <a href="#" class="item">
+          <svg class="icon-profit">
+            <use href="../icon/sprite.svg#profit"></use>
+          </svg>
+          Wallet
+        </a>
+        <a href="#" class="item">
+          <svg class="icon-user icon">
+            <use href="../icon/sprite.svg#user"></use>
+          </svg>
+          <svg class="icon-userFill icon-active">
+            <use href="../icon/sprite.svg#userFill"></use>
+          </svg>
+          Profile
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/lazysize.min.js"></script>
+  <script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="../js/carousel.js"></script>
+  <script type="text/javascript" src="../js/jquery.nice-select.min.js"></script>
+  <script type="text/javascript" src="../js/count-down.js"></script>
+  <script type="text/javascript" src="../js/multiple-modal.js"></script>
+  <script type="text/javascript" src="../js/nouislider.min.js"></script>
+  <script type="text/javascript" src="../js/rangle-slider.js"></script>
+  <script type="text/javascript" src="../js/init.js"></script>
+  <script type="text/javascript" src="../js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Jobko - Job Finder Mobile App</title>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+  <!-- font -->
+  <link rel="stylesheet" href="../fonts/fonts.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/nouislider.min.css" />
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+  <!-- manifest json -->
+  <link rel="manifest" href="../_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+  <!-- Favicon and Touch Icons  -->
+  <link rel="shortcut icon" href="../images/logo/168.png" />
+  <link rel="apple-touch-icon-precomposed" href="../images/logo/168.png" />
+
+</head>
+
+<body>
+
+  <header class="header-main">
+    <button class="btn-left btn_back">
+      <svg class="icon-back">
+        <use href="../icon/sprite.svg#back"></use>
+      </svg>
+    </button>
+    <h2 class="title">Start Working</h2>
+  </header>
+
+  <div class="appContent spacing_top-2 spacing_bottom-2">
+    <div class="page-width">
+      <fieldset class="fieldset select-flag">
+        <label class="label">Service Area</label>
+        <button class="select-current placeholder" type="button">
+          <span class="text-value">Preferred Delivery Area</span>
+          <svg class="icon-arrowDown">
+            <use href="../icon/sprite.svg#arrowDown"></use>
+          </svg>
+        </button>
+        <ul class="select-list">
+          <li data-value="uttara"><span>Uttara, Dhaka</span></li>
+          <li data-value="gulshan"><span>Gulshan, Dhaka</span></li>
+          <li data-value="mirpur"><span>Mirpur, Dhaka</span></li>
+        </ul>
+        <input type="hidden" name="service_area" value="">
+      </fieldset>
+
+      <div class="fieldset">
+        <label class="label">Vehicle Type</label>
+        <div class="vehicle-list sw-overRight flat-check-list">
+          <div class="vehicle-card check-item">
+            <span class="radio-dot"></span>
+            <span class="check-badge">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 13L9.5 17.5L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </span>
+            <span class="vehicle-icon bike">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="5.5" cy="17.5" r="3.5" stroke="currentColor" stroke-width="1.5" />
+                <circle cx="18.5" cy="17.5" r="3.5" stroke="currentColor" stroke-width="1.5" />
+                <path d="M5.5 17.5L10 10H15L12 17.5M10 10L8.5 7H6.5M15 10L18.5 17.5M10 10L13 13H18.5"
+                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+            <span class="name">Bike</span>
+          </div>
+          <div class="vehicle-card check-item active">
+            <span class="radio-dot"></span>
+            <span class="check-badge">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 13L9.5 17.5L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </span>
+            <span class="vehicle-icon motorbike">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="6" cy="18" r="2.5" stroke="currentColor" stroke-width="1.5" />
+                <circle cx="18" cy="18" r="2.5" stroke="currentColor" stroke-width="1.5" />
+                <path d="M6 18H10L13 12H16.5C17.8807 12 19 13.1193 19 14.5V15.5" stroke="currentColor"
+                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M8 12H12M9 8H12L13 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </span>
+            <span class="name">Motorbike</span>
+          </div>
+          <div class="vehicle-card check-item">
+            <span class="radio-dot"></span>
+            <span class="check-badge">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 13L9.5 17.5L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </span>
+            <span class="vehicle-icon car">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4 16V13.5C4 12.6716 4.55 12 5.3 11.7L6.5 8.7C6.8 7.9 7.6 7.5 8.4 7.5H15.6C16.4 7.5 17.2 7.9 17.5 8.7L18.7 11.7C19.45 12 20 12.6716 20 13.5V16"
+                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M4 16H20V17.5C20 18.0523 19.5523 18.5 19 18.5H18C17.4477 18.5 17 18.0523 17 17.5V16.5H7V17.5C7 18.0523 6.55228 18.5 6 18.5H5C4.44772 18.5 4 18.0523 4 17.5V16Z"
+                  stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                <circle cx="7.5" cy="14" r="1" fill="currentColor" />
+                <circle cx="16.5" cy="14" r="1" fill="currentColor" />
+              </svg>
+            </span>
+            <span class="name">Car</span>
+          </div>
+          <div class="vehicle-card check-item">
+            <span class="radio-dot"></span>
+            <span class="check-badge">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 13L9.5 17.5L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </span>
+            <span class="vehicle-icon van">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 16V9.5C3 8.94772 3.44772 8.5 4 8.5H13V16" stroke="currentColor" stroke-width="1.5"
+                  stroke-linejoin="round" />
+                <path d="M13 11.5H17.5L20.5 14V16H13V11.5Z" stroke="currentColor" stroke-width="1.5"
+                  stroke-linejoin="round" />
+                <path d="M3 16H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                <circle cx="7" cy="17.5" r="1.5" stroke="currentColor" stroke-width="1.5" />
+                <circle cx="17" cy="17.5" r="1.5" stroke="currentColor" stroke-width="1.5" />
+              </svg>
+            </span>
+            <span class="name">Van</span>
+          </div>
+        </div>
+      </div>
+
+      <fieldset class="fieldset">
+        <label for="regNumber" class="label">Registration Number</label>
+        <input type="text" id="regNumber" value="DH LA 31-7530">
+      </fieldset>
+    </div>
+  </div>
+
+  <div class="menubar-button full">
+    <a href="home.html" class="btn-primary">Start</a>
+  </div>
+
+
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/lazysize.min.js"></script>
+  <script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="../js/carousel.js"></script>
+  <script type="text/javascript" src="../js/jquery.nice-select.min.js"></script>
+  <script type="text/javascript" src="../js/count-down.js"></script>
+  <script type="text/javascript" src="../js/multiple-modal.js"></script>
+  <script type="text/javascript" src="../js/nouislider.min.js"></script>
+  <script type="text/javascript" src="../js/rangle-slider.js"></script>
+  <script type="text/javascript" src="../js/init.js"></script>
+  <script type="text/javascript" src="../js/main.js"></script>
+
+</body>
+
+</html>

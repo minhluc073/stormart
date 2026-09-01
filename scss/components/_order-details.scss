@@ -1,0 +1,98 @@
+.accordion-section-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.accordion-section {
+  border-radius: 8px;
+  background-color: rgb(var(--text-white));
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.accordion-section_toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+  padding: 14px 16px;
+  border: 0;
+  background: transparent;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgb(var(--text-headline));
+  text-align: left;
+
+  .icon-chevron {
+    flex-shrink: 0;
+    width: 14px;
+    height: 14px;
+    color: rgb(var(--text-headline));
+    transition: transform 0.2s ease;
+  }
+
+  &:not(.collapsed) .icon-chevron {
+    transform: rotate(180deg);
+  }
+}
+
+.accordion-section_body {
+  padding: 0 16px 16px;
+  border-top: 1px solid rgb(var(--state-100));
+
+  .order-item {
+    padding-top: 16px;
+  }
+}
+
+.order-summary-detail {
+  padding-top: 16px;
+
+  .order-code {
+    margin-bottom: 12px;
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(var(--text-headline));
+  }
+
+  .text-discount {
+    color: rgb(var(--error-base));
+  }
+}
+
+.badge-status {
+  &.complete {
+    background-color: rgba(var(--success-base), 0.12);
+    color: rgb(var(--success-dark));
+  }
+}
+
+.address-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 16px;
+}
+
+.address-tag {
+  display: inline-flex;
+  align-items: center;
+  height: 20px;
+  padding: 0 8px;
+  margin-bottom: 8px;
+  border-radius: 99px;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 100%;
+
+  &.billing {
+    background-color: rgba(var(--main-color2), 0.12);
+    color: rgb(var(--main-color2));
+  }
+  &.shipping {
+    background-color: rgba(var(--success-base), 0.12);
+    color: rgb(var(--success-dark));
+  }
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Jobko - Job Finder Mobile App</title>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+  <!-- font -->
+  <link rel="stylesheet" href="../fonts/fonts.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/nouislider.min.css" />
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+  <!-- manifest json -->
+  <link rel="manifest" href="../_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+  <!-- Favicon and Touch Icons  -->
+  <link rel="shortcut icon" href="../images/logo/168.png" />
+  <link rel="apple-touch-icon-precomposed" href="../images/logo/168.png" />
+
+</head>
+
+<body>
+
+  <div class="message-detail-page">
+    <header class="header-main style-message">
+      <button class="btn-left btn_back">
+        <svg class="icon-back">
+          <use href="../icon/sprite.svg#back"></use>
+        </svg>
+      </button>
+
+      <div class="user-chat">
+        <div class="avatar">
+          <img src="../images/user/avatar/avt3.png" alt="Jonson Roy">
+        </div>
+        <div class="info">
+          <p class="name">Jonson Roy</p>
+          <p class="status">On Demand Service</p>
+        </div>
+      </div>
+
+      <div class="dropdown-more">
+        <button class="btn-more" type="button">
+          <svg class="icon-more-vertical">
+            <use href="../icon/sprite.svg#more-vertical"></use>
+          </svg>
+        </button>
+        <div class="dropdown-more_menu">
+          <a href="#" class="item text-danger">
+            <svg class="icon-close">
+              <use href="../icon/sprite.svg#close"></use>
+            </svg>
+            End Ticket
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="chat-body page-width spacing_top-3 spacing_bottom">
+      <span class="chat-date">Today</span>
+
+      <div class="chat-group">
+        <span class="chat-time">04:21</span>
+        <div class="chat-bubble">Hello! 👋</div>
+      </div>
+
+      <div class="chat-group right">
+        <span class="chat-time">04:20</span>
+        <div class="chat-bubble bubble-w208">Is there insurance for car maintenance?</div>
+      </div>
+
+      <div class="chat-group">
+        <span class="chat-time">04:21</span>
+        <div class="chat-bubble bubble-w198">Yes, of course. We will you make it easy for you 😊</div>
+      </div>
+
+      <div class="chat-group">
+        <span class="chat-time">04:21</span>
+        <div class="chat-attach">
+          <div class="chat-attach_item">
+            <img src="../images/user/product/product10.jpg" alt="">
+            <span class="file-size">1.5 MB</span>
+          </div>
+          <div class="chat-attach_item">
+            <img src="../images/user/product/product11.jpg" alt="">
+            <span class="file-size">1.5 MB</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="chat-input-bar">
+      <div class="input-wrap">
+        <button type="button" class="btn-emoji" aria-label="Emoji">
+          <svg viewBox="0 0 20 20" fill="none">
+            <circle cx="10" cy="10" r="8.33" stroke="currentColor" stroke-width="1.25"/>
+            <path d="M6.67 12.5C7.5 13.5 8.67 14.17 10 14.17C11.33 14.17 12.5 13.5 13.33 12.5" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/>
+            <path d="M7.08 8.33H7.09M12.92 8.33H12.93" stroke="currentColor" stroke-width="1.67" stroke-linecap="round"/>
+          </svg>
+        </button>
+
+        <span class="divider"></span>
+
+        <input type="text" class="ip-message" placeholder="Write message...">
+
+        <div class="input-actions">
+          <button type="button" class="btn-attach" aria-label="Attach file">
+            <svg viewBox="0 0 20 20" fill="none">
+              <path d="M12.5 6.67L7.5 11.67C6.85 12.32 6.85 13.38 7.5 14.03C8.15 14.68 9.22 14.68 9.87 14.03L14.87 9.03C16.17 7.73 16.17 5.62 14.87 4.32C13.57 3.02 11.46 3.02 10.16 4.32L4.33 10.14C2.57 11.91 2.57 14.76 4.33 16.53C6.1 18.3 8.94 18.3 10.71 16.53" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <button type="button" class="btn-photo" aria-label="Camera">
+            <svg class="icon-camera">
+              <use href="../icon/sprite.svg#camera"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <button type="button" class="btn-send" aria-label="Send message">
+        <svg viewBox="0 0 24 24" fill="none">
+          <path d="M3.4 20.4L20.85 12.92C21.63 12.58 21.63 11.42 20.85 11.08L3.4 3.6C2.72 3.31 1.99 3.87 2.06 4.6L3.63 10.9L14.59 12L3.63 13.1L2.06 19.4C1.99 20.13 2.72 20.69 3.4 20.4Z" fill="white"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/lazysize.min.js"></script>
+  <script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="../js/carousel.js"></script>
+  <script type="text/javascript" src="../js/jquery.nice-select.min.js"></script>
+  <script type="text/javascript" src="../js/count-down.js"></script>
+  <script type="text/javascript" src="../js/multiple-modal.js"></script>
+  <script type="text/javascript" src="../js/nouislider.min.js"></script>
+  <script type="text/javascript" src="../js/rangle-slider.js"></script>
+  <script type="text/javascript" src="../js/init.js"></script>
+  <script type="text/javascript" src="../js/main.js"></script>
+
+</body>
+
+</html>

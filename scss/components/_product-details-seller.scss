@@ -1,0 +1,25 @@
+@use "../abstracts/index" as *;
+
+.product-thumbs-slider.style-seller {
+  .swiper-fraction {
+    position: absolute;
+    right: 16px;
+    bottom: 20px;
+    z-index: 1;
+    padding: 2px 10px;
+    border-radius: 99px;
+    background-color: rgba(var(--text-headline), 0.5);
+    color: rgb(var(--text-white));
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+}
+
+.menubar-button.style-seller-detail {
+  .btn-primary svg {
+    width: 14px;
+    height: 14px;
+    margin-right: 6px;
+  }
+}

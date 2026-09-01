@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Jobko - Job Finder Mobile App</title>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+  <!-- font -->
+  <link rel="stylesheet" href="../fonts/fonts.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/nouislider.min.css" />
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+  <!-- manifest json -->
+  <link rel="manifest" href="../_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+  <!-- Favicon and Touch Icons  -->
+  <link rel="shortcut icon" href="../images/logo/168.png" />
+  <link rel="apple-touch-icon-precomposed" href="../images/logo/168.png" />
+
+</head>
+
+<body>
+
+  <header class="header-main">
+    <button class="btn-left btn_back">
+      <svg class="icon-back">
+        <use href="../icon/sprite.svg#back"></use>
+      </svg>
+    </button>
+    <h2 class="title">All Orders</h2>
+    <button class="btn-right" type="button">
+      <svg class="icon-filter">
+        <use href="../icon/sprite.svg#filter"></use>
+      </svg>
+    </button>
+  </header>
+
+  <div class="page-width main-page_order spacing_top-2 spacing_bottom-2">
+    <ul class="menu-tab column4 primary" role="tablist">
+      <li class="nav-tab-item" role="presentation">
+        <a href="#viewAll" class="tab-link active" data-bs-toggle="tab">View All</a>
+      </li>
+      <li class="nav-tab-item" role="presentation">
+        <a href="#active" class="tab-link" data-bs-toggle="tab">Active</a>
+      </li>
+      <li class="nav-tab-item" role="presentation">
+        <a href="#pending" class="tab-link" data-bs-toggle="tab">Pending</a>
+      </li>
+      <li class="nav-tab-item" role="presentation">
+        <a href="#cancel" class="tab-link" data-bs-toggle="tab">Cancel</a>
+      </li>
+    </ul>
+
+    <div class="tab-content">
+
+      <!-- TAB: View All -->
+      <div class="tab-pane fade show active" id="viewAll" role="tabpanel">
+        <div class="order-list-seller">
+          <div class="seller-order-card">
+            <div class="top">
+              <span class="code">Order #45821</span>
+              <svg class="icon-arrowRight">
+                <use href="../icon/sprite.svg#arrowRight"></use>
+              </svg>
+            </div>
+            <div class="product-line">
+              <span class="name">Slim Fit Shirt x 2</span>
+              <span class="price">$420</span>
+            </div>
+            <div class="meta-row">
+              <span class="label">Status :</span>
+              <span class="badge-status processing">Processing</span>
+            </div>
+            <div class="meta-row">
+              <span class="label">Date :</span>
+              <span class="value">24 Feb 2026</span>
+            </div>
+            <div class="meta-row">
+              <span class="label">Customer Name :</span>
+              <span class="value">Jonson Peter</span>
+            </div>
+          </div>
+
+          <div class="seller-order-card">
+            <div class="top">
+              <span class="code">Order #45821</span>
+              <svg class="icon-arrowRight">
+                <use href="../icon/sprite.svg#arrowRight"></use>
+              </svg>
+            </div>
+            <div class="product-line">
+              <span class="name">Slim Fit Shirt x 2</span>
+              <span class="price">$420</span>
+            </div>
+            <div class="meta-row">
+              <span class="label">Status :</span>
+              <span class="badge-status pending">Processing</span>
+            </div>
+            <div class="meta-row">
+              <span class="label">Date :</span>
+              <span class="value">24 Feb 2026</span>
+            </div>
+            <div class="meta-row">
+              <span class="label">Customer Name :</span>
+              <span class="value">Jonson Peter</span>
+            </div>
+          </div>
+
+          <div class="seller-order-card">
+            <div class="top">
+              <span class="code">Order #45821</span>
+              <svg class="icon-arrowRight">
+                <use href="../icon/sprite.svg#arrowRight"></use>
+              </svg>
+            </div>
+            <div class="product-line">
+              <span class="name">Slim Fit Shirt x 2</span>
+              <span class="price">$420</span>
+            </div>
+            <div class="meta-row">
+              <span class="label">Status :</span>
+              <span class="badge-status canceled">Canceled</span>
+            </div>
+            <div class="meta-row">
+              <span class="label">Date :</span>
+              <span class="value">24 Feb 2026</span>
+            </div>
+            <div class="meta-row">
+              <span class="label">Customer Name :</span>
+              <span class="value">Jonson Peter</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- STATE: 24_ All Orders_ Empty -->
+        <div class="message-empty d-none">
+          <div class="message-empty_icon">
+            <svg viewBox="0 0 120 120" fill="none">
+              <circle cx="60" cy="64" r="46" fill="rgb(var(--state-100))" />
+              <path d="M60 8L63 15L70 18L63 21L60 28L57 21L50 18L57 15Z" fill="rgb(var(--state-200))" />
+              <circle cx="90" cy="22" r="3" fill="rgb(var(--state-300))" />
+              <circle cx="32" cy="16" r="2.5" fill="rgb(var(--state-300))" />
+              <circle cx="97" cy="46" r="2" fill="rgb(var(--state-300))" />
+              <path d="M34 62L60 50L86 62L86 96L60 108L34 96Z" fill="rgb(var(--text-white))"
+                stroke="rgb(var(--state-300))" stroke-width="2" stroke-linejoin="round" />
+              <path d="M34 62L60 74L86 62" stroke="rgb(var(--state-300))" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" fill="none" />
+              <path d="M60 74L60 108" stroke="rgb(var(--state-300))" stroke-width="2" />
+              <path d="M44 54Q44 42 60 42Q76 42 76 54" stroke="rgb(var(--state-300))" stroke-width="2" fill="none"
+                stroke-linecap="round" />
+              <circle cx="52" cy="80" r="2.5" fill="rgb(var(--state-500))" />
+              <circle cx="68" cy="80" r="2.5" fill="rgb(var(--state-500))" />
+              <path d="M54 90Q60 94 66 90" stroke="rgb(var(--state-500))" stroke-width="2" stroke-linecap="round"
+                fill="none" />
+            </svg>
+          </div>
+          <h3 class="title">No Orders Yet!</h3>
+          <p class="text">Add products you love and they'll show up here.</p>
+        </div>
+      </div>
+
+      <!-- TAB: Active -->
+      <div class="tab-pane fade" id="active" role="tabpanel">
+        <div class="order-list-seller">
+          <div class="seller-order-card">
+            <div class="top">
+              <span class="code">Order #45821</span>
+              <svg class="icon-arrowRight">
+                <use href="../icon/sprite.svg#arrowRight"></use>
+              </svg>
+            </div>
+            <div class="product-line">
+              <span class="name">Slim Fit Shirt x 2</span>
+              <span class="price">$420</span>
+            </div>
+            <div class="meta-row">
+              <span class="label">Status :</span>
+              <span class="badge-status processing">Processing</span>
+            </div>
+            <div class="meta-row">
+              <span class="label">Date :</span>
+              <span class="value">24 Feb 2026</span>
+            </div>
+            <div class="meta-row">
+              <span class="label">Customer Name :</span>
+              <span class="value">Jonson Peter</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB: Pending -->
+      <div class="tab-pane fade" id="pending" role="tabpanel">
+        <div class="order-list-seller">
+          <div class="seller-order-card">
+            <div class="top">
+              <span class="code">Order #45821</span>
+              <svg class="icon-arrowRight">
+                <use href="../icon/sprite.svg#arrowRight"></use>
+              </svg>
+            </div>
+            <div class="product-line">
+              <span class="name">Slim Fit Shirt x 2</span>
+              <span class="price">$420</span>
+            </div>
+            <div class="meta-row">
+              <span class="label">Status :</span>
+              <span class="badge-status pending">Processing</span>
+            </div>
+            <div class="meta-row">
+              <span class="label">Date :</span>
+              <span class="value">24 Feb 2026</span>
+            </div>
+            <div class="meta-row">
+              <span class="label">Customer Name :</span>
+              <span class="value">Jonson Peter</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB: Cancel -->
+      <div class="tab-pane fade" id="cancel" role="tabpanel">
+        <div class="order-list-seller">
+          <div class="seller-order-card">
+            <div class="top">
+              <span class="code">Order #45821</span>
+              <svg class="icon-arrowRight">
+                <use href="../icon/sprite.svg#arrowRight"></use>
+              </svg>
+            </div>
+            <div class="product-line">
+              <span class="name">Slim Fit Shirt x 2</span>
+              <span class="price">$420</span>
+            </div>
+            <div class="meta-row">
+              <span class="label">Status :</span>
+              <span class="badge-status canceled">Canceled</span>
+            </div>
+            <div class="meta-row">
+              <span class="label">Date :</span>
+              <span class="value">24 Feb 2026</span>
+            </div>
+            <div class="meta-row">
+              <span class="label">Customer Name :</span>
+              <span class="value">Jonson Peter</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="menubar-footer">
+    <div class="inner-bar">
+      <a href="home.html" class="item">
+        <svg class="icon-home icon">
+          <use href="../icon/sprite.svg#home"></use>
+        </svg>
+        <svg class="icon-homeFill icon-active">
+          <use href="../icon/sprite.svg#homeFill"></use>
+        </svg>
+        Home
+      </a>
+      <a href="all-orders.html" class="item active">
+        <svg class="icon-document">
+          <use href="../icon/sprite.svg#document"></use>
+        </svg>
+        Order
+      </a>
+      <a href="#" class="item addcart">
+        <svg class="icon-plus">
+          <use href="../icon/sprite.svg#plus"></use>
+        </svg>
+      </a>
+      <a href="#" class="item">
+        <svg class="icon-profit">
+          <use href="../icon/sprite.svg#profit"></use>
+        </svg>
+        Wallet
+      </a>
+      <a href="#" class="item">
+        <svg class="icon-user icon">
+          <use href="../icon/sprite.svg#user"></use>
+        </svg>
+        <svg class="icon-userFill icon-active">
+          <use href="../icon/sprite.svg#userFill"></use>
+        </svg>
+        Profile
+      </a>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/lazysize.min.js"></script>
+  <script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="../js/carousel.js"></script>
+  <script type="text/javascript" src="../js/jquery.nice-select.min.js"></script>
+  <script type="text/javascript" src="../js/count-down.js"></script>
+  <script type="text/javascript" src="../js/multiple-modal.js"></script>
+  <script type="text/javascript" src="../js/nouislider.min.js"></script>
+  <script type="text/javascript" src="../js/rangle-slider.js"></script>
+  <script type="text/javascript" src="../js/init.js"></script>
+  <script type="text/javascript" src="../js/main.js"></script>
+
+</body>
+
+</html>
