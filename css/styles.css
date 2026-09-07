@@ -878,6 +878,19 @@ select {
 .pagination-bullets.style-3 .swiper-pagination-bullet-active::before {
   background-color: rgb(var(--text-white));
 }
+.pagination-bullets.style-4 {
+  padding: 0;
+  background-color: transparent;
+  gap: 8px;
+}
+.pagination-bullets.style-4 > .swiper-pagination-bullet {
+  background: rgb(var(--primary-base));
+  width: 8px;
+  height: 8px;
+}
+.pagination-bullets.style-4 .swiper-pagination-bullet-active {
+  width: 24px;
+}
 
 .swiper .pagination-bullets {
   caret-color: transparent !important;
@@ -4886,195 +4899,75 @@ select {
   height: auto;
 }
 
-/* ---------- Onboarding (02, 03, 04) ---------- */
-.onboarding-page {
-  position: relative;
-  min-height: 100vh;
-  background-color: rgb(var(--text-white));
+.content-boaring_wrapper {
+  padding: 32px 20px 48px;
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+  box-shadow: var(--shadow);
   overflow: hidden;
-}
-.onboarding-page .btn-skip {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 20;
-  font-size: 14px;
-  font-weight: 500;
-  color: rgb(var(--text-headline));
+  background-color: rgb(var(--text-white));
 }
 
-.onboarding-swiper {
-  position: relative;
-  z-index: 5;
+.header-main.boarding {
+  background-color: rgb(var(--state-50));
+}
+
+.onboarding-page {
   height: 100vh;
-  background: transparent;
-}
-.onboarding-swiper .swiper-wrapper,
-.onboarding-swiper .swiper-slide {
-  background: transparent;
-}
-.onboarding-swiper .swiper-slide {
-  position: relative;
+  background-color: rgb(var(--state-50));
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding-top: 64px;
-  padding-inline: 24px;
+  justify-content: space-between;
 }
 
-.onboard-mockup {
-  position: relative;
-  z-index: 1;
+.img-boarding_wrapper {
+  flex: 1;
+  padding-inline: 10px;
+}
+.img-boarding_wrapper .img-boarding,
+.img-boarding_wrapper .swiper {
+  height: 100%;
+}
+.img-boarding_wrapper img {
   width: 100%;
-  max-width: 280px;
-  height: 300px;
-  flex-shrink: 0;
-  border-radius: 16px;
-  overflow: hidden;
-  background-color: rgb(var(--text-white));
-  box-shadow: var(--shadow-2);
-  margin-bottom: 28px;
-}
-.onboard-mockup .mockup-scale {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 350px;
-  transform: scale(0.8);
-  transform-origin: top left;
-  pointer-events: none;
-}
-.onboard-mockup .mockup-overlay {
-  position: absolute;
-  inset: 0;
-  background-color: rgba(255, 255, 255, 0.32);
-  z-index: 2;
+  height: 100%;
+  object-fit: contain;
 }
 
-.onboard-card-bg {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 287px;
-  border-radius: 20px 20px 0 0;
-  background-color: rgb(var(--text-white));
-  box-shadow: var(--shadow-2);
-  z-index: 2;
-  pointer-events: none;
-}
-
-.onboard-card {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 287px;
-  background: transparent;
-  box-shadow: none;
-  padding: 32px 20px 0;
-  text-align: center;
-  z-index: 3;
-}
-.onboard-card .title {
-  font-size: 20px;
-  font-weight: 600;
-  color: rgb(var(--text-headline));
-  margin-bottom: 16px;
-}
-.onboard-card .text {
-  font-size: 13px;
-  line-height: 20px;
-  color: rgb(var(--state-600));
-}
-
-.btn-onboard-next {
-  position: fixed;
-  right: 20px;
-  bottom: 48px;
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  background-color: rgb(var(--primary-dark));
-  color: rgb(var(--text-white));
+.content-boaring_wrapper .box-pagination {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  box-shadow: var(--shadow-3);
-  z-index: 30;
-}
-.btn-onboard-next svg {
-  width: 20px;
-  height: 20px;
-}
-
-.onboarding-pagination {
-  position: absolute;
-  left: 0 !important;
-  right: 0 !important;
-  bottom: 140px;
-  transform: none !important;
-  width: auto !important;
-  z-index: 6;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 4px;
-}
-.onboarding-pagination .swiper-pagination-bullet {
-  margin: 0 !important;
-  width: 6px;
-  height: 6px;
-  border-radius: 99px;
-  background-color: rgb(var(--state-200));
-  opacity: 1;
-  transition: all 0.3s ease-in-out;
-}
-.onboarding-pagination .swiper-pagination-bullet-active {
-  width: 20px;
-  background-color: rgb(var(--primary-base));
-}
-
-.mockup-media {
+  margin-top: 32px;
   position: relative;
+  padding-block: 20px;
 }
-
-/* ---------- Decorative extras on the mockup frames ---------- */
-.onboard-decor-hearts {
-  position: absolute;
-  top: -14px;
-  left: 10px;
-  z-index: 3;
-  color: #b9a6f7;
-}
-.onboard-decor-hearts svg {
-  width: 46px;
-  height: 30px;
-}
-
-.badge-discount-round {
-  position: absolute;
-  top: -14px;
-  right: -10px;
-  z-index: 3;
-  width: 64px;
-  height: 64px;
+.content-boaring_wrapper .btn-onboard-next {
+  background-color: rgb(var(--primary-dark));
   border-radius: 50%;
-  background-color: #7c5cfc;
-  color: rgb(var(--text-white));
+  width: 48px;
+  height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  font-size: 10px;
-  font-weight: 700;
-  line-height: 12px;
-  transform: rotate(12deg);
-  box-shadow: var(--shadow-2);
+  color: rgb(var(--text-white));
+  transform: rotate(-180deg);
+  position: absolute;
+  right: 0;
 }
 
-.badge-sale.style-orange {
-  background-color: #ff8a00;
+.content-boarding {
+  text-align: center;
+  display: grid;
+  gap: 16px;
+}
+.content-boarding .title {
+  font-size: 24px;
+  font-weight: 500;
+}
+.content-boarding .text {
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .order-confirm {

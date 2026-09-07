@@ -733,6 +733,19 @@ select {
       }
     }
   }
+  &.style-4 {
+    padding: 0;
+    background-color: transparent;
+    gap: 8px;
+    > .swiper-pagination-bullet {
+      background: rgb(var(--primary-base));
+      width: 8px;
+      height: 8px;
+    }
+    .swiper-pagination-bullet-active{
+      width: 24px;
+    }
+  }
 }
 .swiper .pagination-bullets {
   caret-color: transparent !important;

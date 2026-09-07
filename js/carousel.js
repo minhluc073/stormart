@@ -106,3 +106,29 @@ if ($(".product-thumbs-slider").length > 0) {
         updateActiveButtonThumbs(type, main.activeIndex);
     });
 }
+
+
+
+if ($(".boarding-swiper").length > 0) {
+    var effect = $(".boarding-swiper").data("effect") || "slide";
+    const swThumb = new Swiper(".img-boarding-swiper", {
+        speed: 800,
+        spaceBetween: 0,
+        effect: effect, 
+        fadeEffect: effect === "fade" ? { crossFade: true } : undefined,
+        
+    });
+    const swTesMain = new Swiper(".contact-boarding-swiper", {
+        speed: 800,
+        effect: effect, 
+        fadeEffect: effect === "fade" ? { crossFade: true } : undefined,
+        pagination: {
+            el: ".pagination-boarding",
+            clickable: true,
+        },
+        spaceBetween: 0,
+    });
+
+    swThumb.controller.control = swTesMain;
+    swTesMain.controller.control = swThumb;
+}
