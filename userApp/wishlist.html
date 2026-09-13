@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Jobko - Job Finder Mobile App</title>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+  <!-- font -->
+  <link rel="stylesheet" href="../fonts/fonts.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/nouislider.min.css" />
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+  <!-- manifest json -->
+  <link rel="manifest" href="../_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+  <!-- Favicon and Touch Icons  -->
+  <link rel="shortcut icon" href="../images/logo/168.png" />
+  <link rel="apple-touch-icon-precomposed" href="../images/logo/168.png" />
+
+</head>
+
+<body>
+
+  <!-- STATE 32: All Wishlist -->
+  <header class="header-main">
+    <button class="btn-left btn_back">
+      <svg class="icon-back">
+        <use href="../icon/sprite.svg#back"></use>
+      </svg>
+    </button>
+    <h2 class="title">All Wishlist</h2>
+    <a href="select-wishlist.html" class="btn-right">
+      <svg class="icon-listView">
+        <use href="../icon/sprite.svg#listView"></use>
+      </svg>
+    </a>
+  </header>
+
+  <div class="page-width spacing_top-2 spacing_bottom-2">
+
+    <!-- STATE 32: All Wishlist - has items -->
+    <div class="wishlist-list" id="wishlistData">
+      <div class="wishlist-item">
+        <div class="wishlist-item_img">
+          <img src="../images/user/product/product1.jpg" alt="Vibrant Maxi Dress">
+          <span class="badge-sale">25%</span>
+          <button class="btn-wishlist active">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.4107 19.9677C7.58942 17.858 2 13.0348 2 8.69444C2 5.82563 4.10526 3.5 7 3.5C8.5 3.5 10 4 12 6C14 4 15.5 3.5 17 3.5C19.8947 3.5 22 5.82563 22 8.69444C22 13.0348 16.4106 17.858 13.5893 19.9677C12.6399 20.6776 11.3601 20.6776 10.4107 19.9677Z"
+                fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <div class="wishlist-item_info">
+          <p class="name">Vibrant Maxi Dress</p>
+          <ul class="meta-box">
+            <li class="box-rate">
+              <svg class="icon-star">
+                <use href="../icon/sprite.svg#star"></use>
+              </svg>
+              4.8 <span class="num">(379)</span>
+            </li>
+            <li class="sold">540 Sold</li>
+          </ul>
+          <div class="box-price">
+            <span class="price-new">$59.99</span>
+            <span class="price-old">$59.99</span>
+          </div>
+        </div>
+        <button class="btn-add-cart">
+              <svg class="icon-star">
+                <use href="../icon/sprite.svg#star"></use>
+              </svg>
+        </button>
+      </div>
+      <div class="wishlist-item">
+        <div class="wishlist-item_img">
+          <img src="../images/user/product/product2.jpg" alt="Vibrant Maxi Dress">
+          <span class="badge-sale">25%</span>
+          <button class="btn-wishlist active">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.4107 19.9677C7.58942 17.858 2 13.0348 2 8.69444C2 5.82563 4.10526 3.5 7 3.5C8.5 3.5 10 4 12 6C14 4 15.5 3.5 17 3.5C19.8947 3.5 22 5.82563 22 8.69444C22 13.0348 16.4106 17.858 13.5893 19.9677C12.6399 20.6776 11.3601 20.6776 10.4107 19.9677Z"
+                fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <div class="wishlist-item_info">
+          <p class="name">Vibrant Maxi Dress</p>
+          <ul class="meta-box">
+            <li class="box-rate">
+              <svg class="icon-star">
+                <use href="../icon/sprite.svg#star"></use>
+              </svg>
+              4.8 <span class="num">(379)</span>
+            </li>
+            <li class="sold">540 Sold</li>
+          </ul>
+          <div class="box-price">
+            <span class="price-new">$59.99</span>
+            <span class="price-old">$59.99</span>
+          </div>
+        </div>
+        <button class="btn-add-cart">
+          <svg class="icon-cart">
+            <use href="../icon/sprite.svg#cart"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="wishlist-item">
+        <div class="wishlist-item_img">
+          <img src="../images/user/product/product3.jpg" alt="Vibrant Maxi Dress">
+          <span class="badge-sale">25%</span>
+          <button class="btn-wishlist active">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.4107 19.9677C7.58942 17.858 2 13.0348 2 8.69444C2 5.82563 4.10526 3.5 7 3.5C8.5 3.5 10 4 12 6C14 4 15.5 3.5 17 3.5C19.8947 3.5 22 5.82563 22 8.69444C22 13.0348 16.4106 17.858 13.5893 19.9677C12.6399 20.6776 11.3601 20.6776 10.4107 19.9677Z"
+                fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <div class="wishlist-item_info">
+          <p class="name">Vibrant Maxi Dress</p>
+          <ul class="meta-box">
+            <li class="box-rate">
+              <svg class="icon-star">
+                <use href="../icon/sprite.svg#star"></use>
+              </svg>
+              4.8 <span class="num">(379)</span>
+            </li>
+            <li class="sold">540 Sold</li>
+          </ul>
+          <div class="box-price">
+            <span class="price-new">$59.99</span>
+            <span class="price-old">$59.99</span>
+          </div>
+        </div>
+        <button class="btn-add-cart">
+          <svg class="icon-cart">
+            <use href="../icon/sprite.svg#cart"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="wishlist-item">
+        <div class="wishlist-item_img">
+          <img src="../images/user/product/product4.jpg" alt="Vibrant Maxi Dress">
+          <span class="badge-sale">25%</span>
+          <button class="btn-wishlist active">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.4107 19.9677C7.58942 17.858 2 13.0348 2 8.69444C2 5.82563 4.10526 3.5 7 3.5C8.5 3.5 10 4 12 6C14 4 15.5 3.5 17 3.5C19.8947 3.5 22 5.82563 22 8.69444C22 13.0348 16.4106 17.858 13.5893 19.9677C12.6399 20.6776 11.3601 20.6776 10.4107 19.9677Z"
+                fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <div class="wishlist-item_info">
+          <p class="name">Vibrant Maxi Dress</p>
+          <ul class="meta-box">
+            <li class="box-rate">
+              <svg class="icon-star">
+                <use href="../icon/sprite.svg#star"></use>
+              </svg>
+              4.8 <span class="num">(379)</span>
+            </li>
+            <li class="sold">540 Sold</li>
+          </ul>
+          <div class="box-price">
+            <span class="price-new">$59.99</span>
+            <span class="price-old">$59.99</span>
+          </div>
+        </div>
+        <button class="btn-add-cart">
+          <svg class="icon-cart">
+            <use href="../icon/sprite.svg#cart"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="wishlist-item">
+        <div class="wishlist-item_img">
+          <img src="../images/user/product/product5.jpg" alt="Vibrant Maxi Dress">
+          <span class="badge-sale">25%</span>
+          <button class="btn-wishlist active">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.4107 19.9677C7.58942 17.858 2 13.0348 2 8.69444C2 5.82563 4.10526 3.5 7 3.5C8.5 3.5 10 4 12 6C14 4 15.5 3.5 17 3.5C19.8947 3.5 22 5.82563 22 8.69444C22 13.0348 16.4106 17.858 13.5893 19.9677C12.6399 20.6776 11.3601 20.6776 10.4107 19.9677Z"
+                fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <div class="wishlist-item_info">
+          <p class="name">Vibrant Maxi Dress</p>
+          <ul class="meta-box">
+            <li class="box-rate">
+              <svg class="icon-star">
+                <use href="../icon/sprite.svg#star"></use>
+              </svg>
+              4.8 <span class="num">(379)</span>
+            </li>
+            <li class="sold">540 Sold</li>
+          </ul>
+          <div class="box-price">
+            <span class="price-new">$59.99</span>
+            <span class="price-old">$59.99</span>
+          </div>
+        </div>
+        <button class="btn-add-cart">
+          <svg class="icon-cart">
+            <use href="../icon/sprite.svg#cart"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="wishlist-item">
+        <div class="wishlist-item_img">
+          <img src="../images/user/product/product6.jpg" alt="Vibrant Maxi Dress">
+          <span class="badge-sale">25%</span>
+          <button class="btn-wishlist active">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.4107 19.9677C7.58942 17.858 2 13.0348 2 8.69444C2 5.82563 4.10526 3.5 7 3.5C8.5 3.5 10 4 12 6C14 4 15.5 3.5 17 3.5C19.8947 3.5 22 5.82563 22 8.69444C22 13.0348 16.4106 17.858 13.5893 19.9677C12.6399 20.6776 11.3601 20.6776 10.4107 19.9677Z"
+                fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <div class="wishlist-item_info">
+          <p class="name">Vibrant Maxi Dress</p>
+          <ul class="meta-box">
+            <li class="box-rate">
+              <svg class="icon-star">
+                <use href="../icon/sprite.svg#star"></use>
+              </svg>
+              4.8 <span class="num">(379)</span>
+            </li>
+            <li class="sold">540 Sold</li>
+          </ul>
+          <div class="box-price">
+            <span class="price-new">$59.99</span>
+            <span class="price-old">$59.99</span>
+          </div>
+        </div>
+        <button class="btn-add-cart">
+          <svg class="icon-cart">
+            <use href="../icon/sprite.svg#cart"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- STATE 33: All Wishlist - Empty -->
+    <div class="wishlist-empty d-none" id="wishlistEmpty">
+      <div class="wishlist-empty_icon">
+        <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="54" cy="64" r="46" fill="rgb(var(--state-100))" />
+          <circle cx="88" cy="24" r="3" fill="rgb(var(--state-300))" />
+          <circle cx="18" cy="34" r="2.5" fill="rgb(var(--state-300))" />
+          <circle cx="94" cy="52" r="2" fill="rgb(var(--state-300))" />
+          <path d="M54 34V28" stroke="rgb(var(--state-400))" stroke-width="2" stroke-linecap="round" />
+          <circle cx="54" cy="24" r="4" fill="none" stroke="rgb(var(--state-400))" stroke-width="2" />
+          <path
+            d="M40 40L24 50L30 60L40 54V92C40 93.1046 40.8954 94 42 94H66C67.1046 94 68 93.1046 68 92V54L78 60L84 50L68 40C66 44 61 47 54 47C47 47 42 44 40 40Z"
+            fill="rgb(var(--text-white))" stroke="rgb(var(--state-300))" stroke-width="2" stroke-linejoin="round"
+            stroke-linecap="round" />
+          <circle cx="88" cy="88" r="15" fill="rgb(var(--error-base))" stroke="rgb(var(--text-white))"
+            stroke-width="3" />
+          <path
+            d="M88 95C82.9 91.6 79.5 88.5 79.5 84.9C79.5 82.4 81.5 80.5 83.9 80.5C85.5 80.5 87 81.3 88 82.6C89 81.3 90.5 80.5 92.1 80.5C94.5 80.5 96.5 82.4 96.5 84.9C96.5 88.5 93.1 91.6 88 95Z"
+            fill="rgb(var(--text-white))" />
+        </svg>
+      </div>
+      <h3 class="title">Your Wishlist is Empty</h3>
+      <p class="text">Save your favorite items to keep them all in one place.</p>
+      <a href="all-products.html" class="btn-dark">Browse Products</a>
+    </div>
+  </div>
+
+  <div class="menubar-footer">
+    <div class="inner-bar">
+      <a href="home.html" class="item">
+        <svg class="icon-home icon">
+          <use href="../icon/sprite.svg#home"></use>
+        </svg>
+        <svg class="icon-homeFill icon-active">
+          <use href="../icon/sprite.svg#homeFill"></use>
+        </svg>
+        Home
+      </a>
+      <a href="message.html" class="item">
+        <svg class="icon-mess icon">
+          <use href="../icon/sprite.svg#message"></use>
+        </svg>
+        <svg class="icon-messFill icon-active">
+          <use href="../icon/sprite.svg#messageFill"></use>
+        </svg>
+        Message
+      </a>
+      <a href="checkout-items.html" class="item addcart">
+        <svg class="icon-cart">
+          <use href="../icon/sprite.svg#cart"></use>
+        </svg>
+      </a>
+      <a href="wishlist.html" class="item active">
+        <svg class="icon-hearth icon">
+          <use href="../icon/sprite.svg#hearth"></use>
+        </svg>
+        <svg class="icon-hearthFill icon-active">
+          <use href="../icon/sprite.svg#hearthFill"></use>
+        </svg>
+        Favorites
+      </a>
+      <a href="profile.html" class="item">
+        <svg class="icon-user icon">
+          <use href="../icon/sprite.svg#user"></use>
+        </svg>
+        <svg class="icon-userFill icon-active">
+          <use href="../icon/sprite.svg#userFill"></use>
+        </svg>
+        Profile
+      </a>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/lazysize.min.js"></script>
+  <script type="text/javascript" src="../js/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="../js/carousel.js"></script>
+  <script type="text/javascript" src="../js/jquery.nice-select.min.js"></script>
+  <script type="text/javascript" src="../js/count-down.js"></script>
+  <script type="text/javascript" src="../js/multiple-modal.js"></script>
+  <script type="text/javascript" src="../js/nouislider.min.js"></script>
+  <script type="text/javascript" src="../js/rangle-slider.js"></script>
+  <script type="text/javascript" src="../js/init.js"></script>
+  <script type="text/javascript" src="../js/main.js"></script>
+
+</body>
+
+</html>

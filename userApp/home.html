@@ -40,7 +40,7 @@
             </div>
           </div>
         </div>
-        <a href="notification.html" class="box-noti">
+        <a href="#notification" data-bs-toggle="offcanvas" class="box-noti">
           <svg class="icon-bell">
             <use href="../icon/sprite.svg#bell"></use>
           </svg>
@@ -772,7 +772,7 @@
   </div>
   <div class="menubar-footer">
     <div class="inner-bar">
-      <a href="index.html" class="item active">
+      <a href="home.html" class="item active">
         <svg class="icon-home icon">
           <use href="../icon/sprite.svg#home"></use>
         </svg>
@@ -790,12 +790,12 @@
         </svg>
         Message
       </a>
-      <a href="#" class="item addcart">
+      <a href="checkout-items.html" class="item addcart">
         <svg class="icon-cart">
           <use href="../icon/sprite.svg#cart"></use>
         </svg>
       </a>
-      <a href="#" class="item">
+      <a href="wishlist.html" class="item">
         <svg class="icon-hearth icon">
           <use href="../icon/sprite.svg#hearth"></use>
         </svg>
@@ -813,6 +813,180 @@
         </svg>
         Profile
       </a>
+    </div>
+  </div>
+
+  <div class="offcanvas offcanvas-end full popup-wrapper" tabindex="-1" id="notification" aria-labelledby="notification">
+    <div class="header-main">
+      <button class="btn-left" data-bs-dismiss="offcanvas" aria-label="Close">
+        <svg class="icon-back">
+          <use href="../icon/sprite.svg#back"></use>
+        </svg>
+      </button>
+      <h2 class="title">Notification</h2>
+      <div class="btn-right group-icon">
+        <a href="#" class="icon-btn">
+          <svg class="icon-paintBrush"><use href="../icon/sprite.svg#paintBrush"></use></svg>
+        </a>
+        <button type="button" class="icon-btn">
+          <svg class="icon-setting"><use href="../icon/sprite.svg#setting"></use></svg>
+        </button>
+      </div>
+    </div>
+    <div class="page-width spacing_top-2 spacing_bottom-3" id="notificationData">
+      <div class="notification-group">
+        <span class="group-label">Today</span>
+
+        <div class="notification-item">
+          <div class="icon-circle type-shipped">
+            <svg class="icon-profile"><use href="../icon/sprite.svg#profile"></use></svg>
+          </div>
+          <div class="content">
+            <div class="top">
+              <h6 class="title">Order Shipped</h6>
+              <span class="time">2:15 PM</span>
+            </div>
+            <p class="desc">Your order #78423 has been shipped. Track delivery</p>
+          </div>
+        </div>
+
+        <div class="notification-item">
+          <div class="icon-circle type-sale">
+            <svg class="icon-discountTag"><use href="../icon/sprite.svg#discountTag"></use></svg>
+          </div>
+          <div class="content">
+            <div class="top">
+              <h6 class="title">Flash Sale Starts Now!</h6>
+              <span class="time">2:15 PM</span>
+            </div>
+            <p class="desc">Get up to 70% OFF on electronics next 24 hours...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="notification-group">
+        <span class="group-label">Yesterday</span>
+
+        <div class="notification-item">
+          <div class="icon-circle type-stock">
+            <svg class="icon-truckReturn">
+              <use href="../icon/sprite.svg#truckReturn"></use>
+            </svg>
+          </div>
+          <div class="content">
+            <div class="top">
+              <h6 class="title">Item Back in Stock</h6>
+              <span class="time">2:15 PM</span>
+            </div>
+            <p class="desc">Your favorite Wireless Earbuds are back in stock.</p>
+          </div>
+        </div>
+
+        <div class="notification-item">
+          <div class="icon-circle type-price">
+            <svg class="icon-happy">
+              <use href="../icon/sprite.svg#happy"></use>
+            </svg>
+          </div>
+          <div class="content">
+            <div class="top">
+              <h6 class="title">Price Drop Alert</h6>
+              <span class="time">2:15 PM</span>
+            </div>
+            <p class="desc">The Men's Leather Jacket you is now $79 (was $119).</p>
+          </div>
+        </div>
+
+        <div class="notification-item">
+          <div class="icon-circle type-sale">
+            <svg class="icon-discountTag"><use href="../icon/sprite.svg#discountTag"></use></svg>
+          </div>
+          <div class="content">
+            <div class="top">
+              <h6 class="title">Flash Sale Starts Now!</h6>
+              <span class="time">2:15 PM</span>
+            </div>
+            <p class="desc">Get up to 70% OFF on electronics for the next 24 hours...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="notification-group">
+        <span class="group-label">Earlier</span>
+
+        <div class="notification-item">
+          <div class="icon-circle type-gift">
+            <svg class="icon-gift"><use href="../icon/sprite.svg#gift"></use></svg>
+          </div>
+          <div class="content">
+            <div class="top">
+              <h6 class="title">Welcome Gift Unlocked 🎉</h6>
+              <span class="time">2:15 PM</span>
+            </div>
+            <p class="desc">You've earned a $5 coupon on your first purchase.</p>
+          </div>
+        </div>
+
+        <div class="notification-item">
+          <div class="icon-circle type-price">
+            <svg class="icon-bag">
+              <use href="../icon/sprite.svg#bag"></use>
+            </svg>
+          </div>
+          <div class="content">
+            <div class="top">
+              <h6 class="title">New Collection Alert</h6>
+              <span class="time">2:15 PM</span>
+            </div>
+            <p class="desc">Check out our Fall Fashion Collection</p>
+          </div>
+        </div>
+
+        <div class="notification-item">
+          <div class="icon-circle type-stock">
+            <svg class="icon-truckReturn">
+              <use href="../icon/sprite.svg#truckReturn"></use>
+            </svg>
+          </div>
+          <div class="content">
+            <div class="top">
+              <h6 class="title">Item Back in Stock</h6>
+              <span class="time">2:15 PM</span>
+            </div>
+            <p class="desc">Your favorite Wireless Earbuds are now back in stock...</p>
+          </div>
+        </div>
+
+        <div class="notification-item">
+          <div class="icon-circle type-shipped">
+            <svg class="icon-profile">
+              <use href="../icon/sprite.svg#profile"></use>
+            </svg>
+          </div>
+          <div class="content">
+            <div class="top">
+              <h6 class="title">Order Delivered</h6>
+              <span class="time">2:15 PM</span>
+            </div>
+            <p class="desc">Your order #78423 has been shipped. Track delivery ...</p>
+          </div>
+        </div>
+
+        <div class="notification-item">
+          <div class="icon-circle type-gift">
+            <svg class="icon-bookmarkRemove">
+              <use href="../icon/sprite.svg#bookmarkRemove"></use>
+            </svg>
+          </div>
+          <div class="content">
+            <div class="top">
+              <h6 class="title">Order Canceled</h6>
+              <span class="time">2:15 PM</span>
+            </div>
+            <p class="desc">Your Order #77088 has canceled as per your request.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 

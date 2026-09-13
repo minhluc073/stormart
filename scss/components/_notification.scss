@@ -3,37 +3,35 @@
 .header-main .btn-right.group-icon {
   display: flex;
   align-items: center;
-  gap: 18px;
-}
-
-.icon-btn {
-  width: auto;
-  padding: 0;
-  border: 0;
-  color: rgb(var(--text-headline));
-  svg {
-    width: 22px;
-    height: 22px;
+  gap: 10px;
+  .icon-btn {
+    width: auto;
+    padding: 0;
+    border: 0;
+    color: rgb(var(--text-base));
   }
 }
 
+
+
 .notification-group {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   &:last-child {
     margin-bottom: 0;
   }
   .group-label {
     display: block;
     font-size: 12px;
-    color: rgb(var(--state-500));
-    margin-bottom: 10px;
+    color: rgb(var(--text-base));
+    line-height: 16px;
+    margin-bottom: 4px;
   }
 }
 
 .notification-item {
   display: flex;
-  gap: 12px;
-  padding-block: 12px;
+  gap: 10px;
+  padding-block: 8px;
   border-bottom: 1px solid rgb(var(--state-100));
 
   &:last-child {
@@ -54,24 +52,24 @@
     }
 
     &.type-shipped {
-      background-color: rgba(var(--success-base), 0.14);
-      color: rgb(var(--success-dark));
+      background-color: rgba(var(--success-base), 0.12);
+      color: rgb(var(--success-base));
     }
     &.type-sale {
-      background-color: rgba(var(--error-base), 0.1);
+      background-color: rgba(254, 247, 247, 1);
       color: rgb(var(--error-base));
     }
     &.type-stock {
-      background-color: rgba(var(--warning-base), 0.18);
-      color: rgb(var(--warning-dark));
+      background-color: rgba(var(--warning-base), 0.15);
+      color: rgb(var(--warning-base));
     }
     &.type-price {
-      background-color: rgba(var(--main-color2), 0.12);
-      color: rgb(var(--main-color2));
+      background-color: rgba(var(--primary-base), 0.12);
+      color: rgb(var(--primary-base));
     }
     &.type-gift {
-      background-color: rgba(var(--error-dark), 0.14);
-      color: rgb(var(--error-dark));
+      background-color: rgba(254, 247, 247, 1);
+      color: rgb(var(--error-base));
     }
   }
 
@@ -80,7 +78,7 @@
     min-width: 0;
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 5px;
   }
 
   .top {
@@ -90,20 +88,19 @@
     gap: 8px;
     .title {
       font-size: 14px;
-      font-weight: 600;
       color: rgb(var(--text-headline));
     }
     .time {
       flex-shrink: 0;
-      font-size: 11px;
-      color: rgb(var(--state-400));
+      font-size: 12px;
+      line-height: 16px;
+      color: rgb(var(--text-base));
     }
   }
 
   .desc {
     font-size: 12px;
-    line-height: 17px;
-    color: rgb(var(--state-600));
+    line-height: 16px;
   }
 }
 
@@ -162,4 +159,7 @@
       }
     }
   }
+}
+#notification .page-width {
+  overflow: auto;
 }
