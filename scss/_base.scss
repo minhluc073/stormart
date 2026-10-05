@@ -389,7 +389,7 @@ input[type="color"] {
   padding: 15px 16px;
   font-weight: 400;
   border-radius: 8px;
-  border: 1.5px solid rgb(var(--state-100));
+  border: 1px solid rgb(var(--state-100));
   background-color: rgb(var(--state-50));
   color: rgb(var(--text-base));
 }
@@ -488,6 +488,7 @@ select {
   width: 10px;
   height: 5px;
 }
+.icon-imgUpload,
 .icon-trash2,
 .icon-arrowDown,
 .icon-close,
@@ -642,6 +643,10 @@ select {
 
 .spacing_top-3 {
   padding-top: 68px;
+}
+
+.spacing_top-4 {
+  padding-top: 70px;
 }
 
 .spacing_bottom {

@@ -91,6 +91,10 @@
   }
 }
 
+.main-page_become--seller-2 .box-seller_step {
+  margin-bottom: 19px;
+}
+
 .profile-item {
   display: flex;
   justify-content: space-between;
@@ -199,8 +203,8 @@
       }
     }
     &.current .step {
-      background-color: rgb(var(--primary-dark));
-      border-color: rgb(var(--primary-dark));
+      background-color: rgb(var(--primary-base));
+      border-color: rgb(var(--primary-base));
       color: rgb(var(--text-white));
     }
     .icon-check {
@@ -221,31 +225,46 @@
   border-radius: 8px;
   background-color: rgb(var(--state-50));
   text-align: center;
-
+  position: relative;
   .icon-image {
     width: 26px;
     height: 26px;
-    color: rgb(var(--state-400));
+    color: rgb(var(--text-headline));
   }
 
   .btn-choose {
-    font-size: 13px;
-    font-weight: 600;
-    color: rgb(var(--main-color));
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(0, 106, 255, 1);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .ip-file{
+    position: absolute;
+    inset: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+}
+.text-upload {
+  span {
+    color: #323B49;
   }
 }
 
 .file-preview {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-top: 10px;
+  gap: 8px;
+  margin-top: 12px;
 
   .thumb {
     flex-shrink: 0;
-    width: 36px;
-    height: 36px;
-    border-radius: 6px;
+    width: 50px;
+    height: 40px;
+    border-radius: 4px;
     overflow: hidden;
     img {
       width: 100%;
@@ -261,13 +280,14 @@
     flex-direction: column;
     gap: 2px;
     .name {
-      font-size: 13px;
-      font-weight: 500;
+      font-size: 14px;
+      font-weight: 400;
       color: rgb(var(--text-headline));
+      margin-bottom: 4px;
     }
     .size {
-      font-size: 11px;
-      color: rgb(var(--state-500));
+      font-size: 12px;
+      color: rgb(var(--state-700));
     }
   }
 
@@ -525,3 +545,4 @@
     }
   }
 }
+

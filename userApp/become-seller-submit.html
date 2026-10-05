@@ -36,7 +36,7 @@
     </a>
   </header>
 
-  <div class="page-width main-page_become--seller spacing_top-2 spacing_bottom-2">
+  <div class="page-width main-page_become--seller-2 spacing_top-2 spacing_bottom-2">
     <div class="box-seller_step">
       <div class="step-item active">
         <span class="step">
@@ -91,52 +91,44 @@
     </div>
 
     <fieldset class="fieldset">
-      <label class="label">Upload Document (JPEG, PDF &amp; PNG Max. 10MB)</label>
+      <label class="label text-upload">Upload Document <span>(JPEG, PDF &amp; PNG Max. 10MB)</span></label>
       <div class="upload-box">
-        <svg class="icon-image" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.5" />
-          <circle cx="8.5" cy="9.5" r="1.5" stroke="currentColor" stroke-width="1.5" />
-          <path d="M4 17L8.5 12.5C9.19 11.81 10.31 11.81 11 12.5L14 15.5" stroke="currentColor" stroke-width="1.5"
-            stroke-linecap="round" stroke-linejoin="round" />
-          <path d="M13 16.5L15.5 14C16.19 13.31 17.31 13.31 18 14L20 16" stroke="currentColor" stroke-width="1.5"
-            stroke-linecap="round" stroke-linejoin="round" />
-        </svg>
+        <input type="file" class="ip-file">
+        <svg class="icon-imgUpload"><use href="../icon/sprite.svg#imgUpload"></use></svg>
         <a href="#" class="btn-choose">Choose File</a>
       </div>
       <div class="file-preview">
         <div class="thumb">
-          <img src="../images/user/avatar/avt4.png" alt="Passport.jpg">
+          <img src="../images/user/passport.png" alt="Passport.jpg">
         </div>
         <div class="info">
           <span class="name">Passport.jpg</span>
           <span class="size">2.4 mb</span>
         </div>
-        <div class="dots">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle opacity="0.8" cx="12" cy="4" r="2" fill="#006AFF"/>
+          <circle opacity="0.3" cx="12" cy="20" r="2" fill="#006AFF"/>
+          <circle cx="18.9281" cy="7.99963" r="2" transform="rotate(60 18.9281 7.99963)" fill="#006AFF"/>
+          <circle opacity="0.4" cx="5.07166" cy="15.9996" r="2" transform="rotate(60 5.07166 15.9996)" fill="#006AFF"/>
+          <circle opacity="0.3" cx="18.9281" cy="15.9996" r="2" transform="rotate(120 18.9281 15.9996)" fill="#006AFF"/>
+          <circle opacity="0.6" cx="5.07166" cy="7.99963" r="2" transform="rotate(120 5.07166 7.99963)" fill="#006AFF"/>
+        </svg>
+
       </div>
     </fieldset>
 
     <fieldset class="fieldset">
       <label class="label">Company Logo</label>
       <div class="upload-box">
-        <svg class="icon-image" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.5" />
-          <circle cx="8.5" cy="9.5" r="1.5" stroke="currentColor" stroke-width="1.5" />
-          <path d="M4 17L8.5 12.5C9.19 11.81 10.31 11.81 11 12.5L14 15.5" stroke="currentColor" stroke-width="1.5"
-            stroke-linecap="round" stroke-linejoin="round" />
-          <path d="M13 16.5L15.5 14C16.19 13.31 17.31 13.31 18 14L20 16" stroke="currentColor" stroke-width="1.5"
-            stroke-linecap="round" stroke-linejoin="round" />
-        </svg>
+        <input type="file" class="ip-file">
+        <svg class="icon-imgUpload"><use href="../icon/sprite.svg#imgUpload"></use></svg>
         <a href="#" class="btn-choose">Choose File</a>
       </div>
     </fieldset>
 
     <fieldset class="fieldset">
       <label for="shortNote" class="label">Short Note</label>
-      <textarea id="shortNote" placeholder="Check my documents">Check my documents</textarea>
+      <input type="text" id="shortNote" placeholder="Check my documents"></input>
     </fieldset>
 
     <div class="checkbox">
