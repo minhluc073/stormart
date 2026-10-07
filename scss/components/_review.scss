@@ -1,12 +1,12 @@
 .review-product {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
 
   &_img {
     flex-shrink: 0;
-    width: 64px;
-    height: 72px;
+    width: 56px;
+    height: 63px;
     border-radius: 4px;
     overflow: hidden;
     display: flex;
@@ -21,10 +21,10 @@
   &_info {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 8px;
 
     .name {
-      font-size: 14px;
+      font-size: 12px;
       font-weight: 500;
       color: rgb(var(--text-headline));
     }
@@ -33,8 +33,9 @@
       display: flex;
       align-items: center;
       gap: 8px;
-      font-size: 12px;
-      color: rgb(var(--state-600));
+      font-size: 11px;
+      color: rgb(var(--text-headline));
+
     }
   }
 }
@@ -44,9 +45,6 @@
   flex-direction: column;
   gap: 14px;
   margin-top: 20px;
-  padding-block: 20px;
-  border-top: 1px solid rgb(var(--state-100));
-  border-bottom: 1px solid rgb(var(--state-100));
 }
 
 .rating-row {

@@ -605,6 +605,10 @@ select {
   padding-inline: 20px;
   width: 100%;
 }
+.page-width.bg {
+  padding-top: 56px;
+  background: rgb(247, 250, 255);
+}
 
 .bg-primary-dark {
   background-color: rgb(var(--primary-dark));
@@ -668,6 +672,11 @@ select {
 .icon-search {
   width: 20px;
   height: 20px;
+}
+
+.icon-truck2 {
+  width: 18px;
+  height: 18px;
 }
 
 .icon-star {
@@ -992,6 +1001,13 @@ select {
 }
 .menu-tab.primary .tab-link::after {
   background-color: rgb(var(--primary-base));
+}
+
+.bg .menu-tab .tab-link {
+  color: rgb(var(--text-headline));
+}
+.bg .menu-tab .tab-link.active {
+  background-color: rgba(var(--text-white));
 }
 
 .btn-line {
@@ -2718,6 +2734,34 @@ select {
   height: 48px;
   border: 1px solid rgb(var(--state-100));
 }
+.header-main.style-search.bg {
+  background: rgb(247, 250, 255);
+  gap: 12px;
+  height: 56px;
+}
+.header-main.style-search.bg .icon-search {
+  width: 14px;
+  height: 14px;
+}
+.header-main.style-search.bg input {
+  height: 40px;
+  padding-block: 12px;
+  padding-left: 36px;
+}
+.header-main.style-search.bg input::placeholder {
+  color: rgb(var(--state-300));
+}
+.header-main.style-search .btn-searchFiter {
+  width: auto;
+  height: auto;
+  border: 0;
+  background: transparent;
+  border-radius: 0;
+}
+.header-main.style-search .btn-searchFiter .icon-filter {
+  width: 20px;
+  height: 20px;
+}
 
 .header-abs {
   position: absolute;
@@ -4430,13 +4474,13 @@ select {
 }
 
 .main-page_order .tab-content {
-  padding-top: 20px;
+  padding-top: 24px;
 }
 
 .order-list {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 16px;
 }
 
 .order-group {
@@ -4449,6 +4493,8 @@ select {
   align-items: center;
   justify-content: space-between;
   gap: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgb(var(--state-100));
 }
 .order-group_head .status {
   font-size: 14px;
@@ -4457,7 +4503,7 @@ select {
 }
 .order-group_head .date {
   font-size: 12px;
-  color: rgb(var(--state-500));
+  color: rgb(var(--state-400));
 }
 
 .order-item {
@@ -4473,13 +4519,13 @@ select {
 }
 .order-item_top {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 10px;
 }
 .order-item_img {
   flex-shrink: 0;
-  width: 64px;
-  height: 72px;
+  width: 66px;
+  height: 74px;
   border-radius: 4px;
   overflow: hidden;
   display: flex;
@@ -4494,10 +4540,10 @@ select {
   min-width: 0;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 8px;
 }
 .order-item_info .name {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   line-height: normal;
   color: rgb(var(--text-headline));
@@ -4505,24 +4551,21 @@ select {
 .order-item_info .meta {
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-size: 12px;
-  color: rgb(var(--state-600));
+  gap: 7px;
+  font-size: 11px;
+  color: rgb(var(--text-headline));
 }
 .order-item_info .bottom {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 8px;
-}
-.order-item_info .bottom .price {
-  font-size: 14px;
-  font-weight: 600;
+  margin-top: 2px;
+  font-size: 12px;
   color: rgb(var(--text-headline));
 }
-.order-item_info .bottom .qty {
-  font-size: 12px;
-  color: rgb(var(--state-500));
+.order-item_info .bottom .price {
+  font-weight: 600;
 }
 .order-item.has-review .order-item_top {
   align-items: center;
@@ -4531,51 +4574,52 @@ select {
   flex-shrink: 0;
   width: auto;
   margin-left: auto;
-  padding: 6px 16px;
-  border-radius: 6px;
-  border: 1px solid rgb(var(--main-color));
+  padding: 4px 11px;
+  border-radius: 4px;
+  border: 1px solid rgb(var(--primary-dark));
   background-color: transparent;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 500;
-  color: rgb(var(--main-color));
+  color: rgb(var(--primary-dark));
   white-space: nowrap;
+  margin-top: auto;
 }
 
 .order-tracking {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 10px 12px;
+  padding: 8px 12px;
   border-radius: 8px;
-  background-color: rgb(var(--state-50));
+  background-color: rgb(247, 250, 255);
 }
-.order-tracking .icon-truck {
+.order-tracking .icon-truck2 {
   flex-shrink: 0;
-  width: 20px;
-  height: 20px;
-  color: rgb(var(--state-600));
+  width: 18px;
+  height: 18px;
 }
 .order-tracking .text {
   flex: 1 1 auto;
   min-width: 0;
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 6px;
 }
 .order-tracking .text .label {
   font-size: 12px;
   font-weight: 500;
   color: rgb(var(--text-headline));
+  display: flex;
+  gap: 6px;
+  align-items: center;
 }
 .order-tracking .text .date {
   font-size: 11px;
-  color: rgb(var(--state-500));
+  color: rgb(var(--text-base));
 }
 .order-tracking .icon-arrowRight {
   flex-shrink: 0;
-  width: 14px;
-  height: 14px;
-  color: rgb(var(--state-400));
+  color: rgb(var(--text-headline));
 }
 
 /* ---------------------------------------------------------
@@ -6552,12 +6596,12 @@ select {
 .review-product {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
 }
 .review-product_img {
   flex-shrink: 0;
-  width: 64px;
-  height: 72px;
+  width: 56px;
+  height: 63px;
   border-radius: 4px;
   overflow: hidden;
   display: flex;
@@ -6570,10 +6614,10 @@ select {
 .review-product_info {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 8px;
 }
 .review-product_info .name {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   color: rgb(var(--text-headline));
 }
@@ -6581,8 +6625,8 @@ select {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 12px;
-  color: rgb(var(--state-600));
+  font-size: 11px;
+  color: rgb(var(--text-headline));
 }
 
 .rating-list {
@@ -6590,9 +6634,6 @@ select {
   flex-direction: column;
   gap: 14px;
   margin-top: 20px;
-  padding-block: 20px;
-  border-top: 1px solid rgb(var(--state-100));
-  border-bottom: 1px solid rgb(var(--state-100));
 }
 
 .rating-row {

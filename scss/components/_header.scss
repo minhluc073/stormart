@@ -127,6 +127,34 @@
         border: 1px solid rgb(var(--state-100));
       }
     }
+    &.bg {
+       background: rgba(247, 250, 255, 1);
+       gap: 12px;
+       height: 56px;
+       .icon-search{
+        width: 14px;
+        height: 14px;
+       }
+       input{
+        height: 40px;
+        padding-block: 12px;
+        padding-left: 36px;
+        &::placeholder{
+          color: rgb(var(--state-300));
+        }
+       }
+    }
+    .btn-searchFiter{
+      width: auto;
+      height: auto;
+      border: 0;
+      background: transparent;
+      border-radius: 0;
+      .icon-filter{
+        width: 20px;
+        height: 20px;
+      }
+    }
   }
 }
 

@@ -1,13 +1,13 @@
 .main-page_order {
   .tab-content {
-    padding-top: 20px;
+    padding-top: 24px;
   }
 }
 
 .order-list {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 16px;
 }
 
 .order-group {
@@ -20,7 +20,8 @@
     align-items: center;
     justify-content: space-between;
     gap: 8px;
-
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgb(var(--state-100));
     .status {
       font-size: 14px;
       font-weight: 500;
@@ -29,7 +30,7 @@
 
     .date {
       font-size: 12px;
-      color: rgb(var(--state-500));
+      color: rgb(var(--state-400));
     }
   }
 }
@@ -48,14 +49,14 @@
 
   &_top {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 10px;
   }
 
   &_img {
     flex-shrink: 0;
-    width: 64px;
-    height: 72px;
+    width: 66px;
+    height: 74px;
     border-radius: 4px;
     overflow: hidden;
     display: flex;
@@ -72,10 +73,10 @@
     min-width: 0;
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 8px;
 
     .name {
-      font-size: 14px;
+      font-size: 12px;
       font-weight: 500;
       line-height: normal;
       color: rgb(var(--text-headline));
@@ -84,9 +85,9 @@
     .meta {
       display: flex;
       align-items: center;
-      gap: 8px;
-      font-size: 12px;
-      color: rgb(var(--state-600));
+      gap: 7px;
+      font-size: 11px;
+      color: rgb(var(--text-headline));
     }
 
     .bottom {
@@ -94,16 +95,11 @@
       align-items: center;
       justify-content: space-between;
       gap: 8px;
-
+      margin-top: 2px;
+      font-size: 12px;
+      color: rgb(var(--text-headline));
       .price {
-        font-size: 14px;
         font-weight: 600;
-        color: rgb(var(--text-headline));
-      }
-
-      .qty {
-        font-size: 12px;
-        color: rgb(var(--state-500));
       }
     }
   }
@@ -116,14 +112,15 @@
     flex-shrink: 0;
     width: auto;
     margin-left: auto;
-    padding: 6px 16px;
-    border-radius: 6px;
-    border: 1px solid rgb(var(--main-color));
+    padding: 4px 11px;
+    border-radius: 4px;
+    border: 1px solid rgb(var(--primary-dark));
     background-color: transparent;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 500;
-    color: rgb(var(--main-color));
+    color: rgb(var(--primary-dark));
     white-space: nowrap;
+    margin-top: auto;
   }
 }
 
@@ -131,15 +128,14 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 10px 12px;
+  padding: 8px 12px;
   border-radius: 8px;
-  background-color: rgb(var(--state-50));
+  background-color: rgba(247, 250, 255, 1);
 
-  .icon-truck {
+  .icon-truck2 {
     flex-shrink: 0;
-    width: 20px;
-    height: 20px;
-    color: rgb(var(--state-600));
+    width: 18px;
+    height: 18px;
   }
 
   .text {
@@ -147,24 +143,25 @@
     min-width: 0;
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 6px;
 
     .label {
       font-size: 12px;
       font-weight: 500;
       color: rgb(var(--text-headline));
+      display: flex;
+      gap: 6px;
+      align-items: center;
     }
 
     .date {
       font-size: 11px;
-      color: rgb(var(--state-500));
+      color: rgb(var(--text-base));
     }
   }
 
   .icon-arrowRight {
     flex-shrink: 0;
-    width: 14px;
-    height: 14px;
-    color: rgb(var(--state-400));
+    color: rgb(var(--text-headline));
   }
 }

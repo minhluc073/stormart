@@ -478,6 +478,10 @@ select {
   margin-inline: auto;
   padding-inline: 20px;
   width: 100%;
+  &.bg {
+    padding-top: 56px;
+    background: rgba(247, 250, 255, 1);
+  }
 }
 
 .bg-primary-dark {
@@ -540,6 +544,10 @@ select {
 .icon-search {
   width: 20px;
   height: 20px;
+}
+.icon-truck2{
+  width: 18px;
+  height: 18px;
 }
 .icon-star {
   width: 18px;
@@ -846,6 +854,16 @@ select {
       }
       &::after {
         background-color: rgb(var(--primary-base));
+      }
+    }
+  }
+}
+.bg{
+  .menu-tab{
+    .tab-link{
+      color: rgb(var(--text-headline));
+      &.active{
+        background-color: rgba(var(--text-white));
       }
     }
   }
